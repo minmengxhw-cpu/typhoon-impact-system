@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Tropical Cyclone Main Page｜Hong Kong Observatory(HKO)｜Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tropical Cyclone Main Page, Current Tropical Cyclone Warning and Related Information,Tropical Cyclone Warning Services,Educational Material on Tropical Cyclone,Tropical Cyclone Statistics and HKO Warnings &amp; Signals Database,Tropical Cyclone Warning System for Hong Kong,Tropical Cyclone Reports and Publications">
+    <meta name="description" content="Tropical Cyclone Main Page, Current Tropical Cyclone Warning and Related Information,Tropical Cyclone Warning Services,Educational Material on Tropical Cyclone,Tropical Cyclone Statistics and HKO Warnings &amp; Signals Database,Tropical Cyclone Warning System for Hong Kong,Tropical Cyclone Reports and Publications">
+    <meta name="recordId" content="2018123100000011778">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tropical Cyclone Main Page" />
+	<meta property="og:description" content="Current Tropical Cyclone Warning and Related Information Tropical Cyclone Warning Bulletin (for local public) Tropical Cyclone Track and Positions Tropical Cyclone Track Probability Forecast Tropical Cyclone Warning for Shipping Recent" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/informtc/tcMain.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+				.subtitle {
+		background-color:#525bc0 !important;
+		padding:5px;
+	}
+	.subtitle  p{
+	    margin-top: 9px;
+		padding-left: 11px;
+		padding-right: 11px;
+		margin-bottom: 9px;
+		font-size: 19px;
+		/*font-weight: 100;*/
+	}
+	.subtitle  a,.subtitle  a:hover{
+		color:#fff !important;
+		text-decoration:none;
+	}
+	.content_table{
+		border:1px solid #f0eee0 !important;
+	/*	width: calc(50% - 1em);*/
+	width:100%;
+		float:left;
+		margin-bottom:1em;
+		margin-right:1em;
+	}
+	.content_table:nth-child(even){
+		margin-right:0;
+		/*margin-left:1em;*/
+	}
+	.table_content{
+		overflow:hidden;
+	}
+	.table_content ul{
+		padding: 0 1em !important;
+		list-style: none;
+		 /*margin-top: -1em !important;*/
+		 font-size: 16px;
+		  margin-left: 9px;
+	}
+	.table_content li:before { 
+		content: "";
+		border-color: transparent #525bc0;
+		border-style: solid;
+		border-width: 0.35em 0 0.35em 0.45em;
+		display: block;
+		height: 0;
+		width: 0;
+		left: -1em;
+		top: 1em;
+		position: relative;
+	}
+	.content_table a{
+		text-decoration:none;
+		color:inherit;
+	}
+	.siteMap_btn{
+		background-color:#5e91d8;
+		padding:1em;
+		border-radius:16px;
+	}
+	.siteMap_btn a{
+		color:#fff !important;
+		text-decoration:none;
+	}
+	.more:before{
+		content: '';
+		border-color: transparent #525bc0;
+		border-style: solid;
+		border-width: 0.35em 0 0.35em 0.45em;
+		display: block;
+		height: 0;
+		width: 0;
+		left: -1em;
+		top: 1em;
+		position: relative;
+	}
+	.more{
+		float:right;
+		color:#525bc0  !important;
+		margin-right: 1em;
+		margin-bottom: 5px;
+		font-size:14px;
+	}
+	.typhoon_content{
+	display: inline-block;
+	width: calc(50% - 1em);
+	padding-bottom: 1px;
+    padding-top: 4px;
+	}
+	.no-border{
+		border:0 !important;
+	}
+	.typhoon_content.left{
+		margin-right:2em;
+	}
+	.siteMap_btn_div{
+		margin-top:1em;
+	}
+	.more{
+		text-transform: uppercase;
+	}
+	@media screen and (max-width: 676px) {
+		.typhoon_content{
+		width:100%;
+		}
+	}
+/*@media screen and (max-width: 500px) {
+	body .mainContent .content_table{
+		width: 100%;
+		margin-left:0;
+		margin-right:0;
+	}
+}*/
+		    <!--
+.style45 { font-color: red; 		
+} 			
+.style46 {
+.style48 {color: #FF0000; font-weight: bold;  }
+.style49 {
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '1';
+var section_id = '2018010100000010369';
+
+                                                                                            
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1"> Tropical Cyclone Main Page</h1>
+                <div class="border_blank">
+                    <script></script>
+<!--Social Network -->
+
+<!-- End Social Network -->
+
+<div><img alt="Tropical Cyclone" src="images/tcbanner_c.jpg"></div>
+<div class="typhoon_content left">
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcWarninge.htm" target=_self>Current Tropical Cyclone Warning and Related Information</a></p></div>
+		<div class="table_content">
+			<ul>
+					<li><a href="../../en/wxinfo/currwx/tc.htm" target=_self>Tropical Cyclone Warning Bulletin (for local public)</a></li>
+					<li><a href="../../en/wxinfo/currwx/tc_gis.htm" target=_self>Tropical Cyclone Track and Positions</a></li>
+					<li><a href="../../en/probfcst/tc_spm.htm" target=_self>Tropical Cyclone Track Probability Forecast</a></li>
+					<li><a href="../../en/wxinfo/currwx/tcswarn.htm" target=_self>Tropical Cyclone Warning for Shipping </a></li>
+                    <li><a href="../../en/wxinfo/currwx/tc_prevpos.htm" target=_self>Recent Tropical Cyclone Tracks</a></li>
+				</ul>
+				<a href="tcWarninge.htm" class="more">More</a>
+		</div>
+	</div>
+	
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcservice_ship.htm" target="_self">Tropical Cyclone Warning Services</a></p></div>
+		<div class="table_content">
+		<ul>
+			<li><a href="tcservice_ship.htm" target=_self>Tropical Cyclone Warning Services for the Public, Shipping, Aviation and Specialized Users</a></li>
+		</ul>
+		</div>
+	</div>
+	
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcInfoe.htm" target="_self">Educational Material on Tropical Cyclone</a></p></div>
+		<div class="table_content">
+			<ul>
+              <li><a href="https://kids.weather.gov.hk/eBook/ebook_TC/tablet_en.html" target="_self">A Tour of Tropical Cyclones</a> </li>
+				<li><a href="../../en/education/educational-resources-webpage/Tropical_Cyclone_Category.html" target=_parent>Tropical Cyclone Basics</a></li>
+				<li><a href="nature.htm" target=_parent>Nature and Structure of Tropical Cyclones</a></li>
+				<li><a href="tracking.htm">Tracking and Forecasting Tropical Cyclones</a></li>
+				<li><a href="economice.htm" target=_parent>Social and Economic Impact of Tropical Cyclones</a></li>
+			</ul>
+			<a href="tcInfoe.htm" class="more">More</a>
+		</div>
+	</div>
+	
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcStatistic.htm" target=_self>Tropical Cyclone Statistics and HKO Warnings & Signals Database</a></p></div>
+		<div class="table_content">
+			<ul>
+					<li><a href="tcStatistic.htm" target=_self>Tropical Cyclone Statistics</a></li>
+              <li><a href="../../en/wxinfo/climat/warndb/warndb1.shtml" target=_self>HKO Warnings and Signals Database </a></li>
+					<li><a href="../../en/wservice/tsheet/pms/stormsurgedb.htm" target=_self>Storm Surge Records Database </a></li>
+				</ul>
+				<a href="tcStatistic.htm" class="more">More</a>
+		</div>
+	</div>
+	
+</div><!--
+	
+	
+ --><div class="typhoon_content right">
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcService.htm" target="_self">Tropical Cyclone Warning System for Hong Kong</a></p></div>
+		<div class="table_content">
+			<ul>
+				<li><a href="../../en/100YearsTCSignals/index.htm" target=_self>100 years of Numbered Typhoon Signals</a></li>
+				<li><a href="class.htm" target=_self>Classification of Tropical Cyclones</a></li>
+				<li><a href="../../en/publica/gen_pub/files/tcws.pdf" target=_blank>Pamphlet on Tropical Cyclone Warning Signals</a></li>
+				<li><a href="precaution.htm" target=_self>Precautionary Measures when Tropical Cyclone Warning Signals are in force</a></li>
+				<li><a href="sound/tcname2026e.html" target=_self>Tropical Cyclone Names in the western North Pacific and the South China Sea with effect from 2026</a></li>
+			</ul>
+			<a href="tcService.htm" class="more">More</a>
+		</div>
+	</div>
+	
+
+	
+	<div class="content_table">
+		<div class="subtitle"><p class="style49"><a href="tcReporte.htm" target=_top>Tropical Cyclone Reports and Publications</a></p></div>
+		<div class="table_content">
+	 
+					
+		<ul>
+<li><a href="tcReporte.htm" target=_parent>2025 Tropical Cyclone Overview</a></li>              
+                 
+<li><a href="tcReporte.htm" target=_parent>Tropical Cyclones Affecting Hong Kong in 2025</a></li>   
+					
+					<li><a href="../../en/publica/pubtc.htm" target=_parent>Tropical Cyclone Annual Publication (1968 - 2024)</a></li>
+				</ul>
+				<a href="tcReporte.htm" class="more">More</a>
+		</div>
+	</div>
+	
+	<div class="content_table no-border siteMap_btn_div"><p class="siteMap_btn self_align_center"> <a class="style50" href="tcSmape.htm">Tropical Cyclone Site Map</a> </p></div>
+	
+	</div>
+<script>var last_revision_date = '1 June 2026';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

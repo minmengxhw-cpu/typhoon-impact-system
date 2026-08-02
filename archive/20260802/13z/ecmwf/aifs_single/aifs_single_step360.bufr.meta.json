@@ -1,0 +1,16 @@
+{
+  "source": "ecmwf/aifs_single",
+  "filename": "aifs_single_step360.bufr",
+  "archived_at_utc": "2026-08-02T13:52:12.967997+00:00",
+  "size_bytes": 32253,
+  "meta": {
+    "mirror": "aws",
+    "model": "aifs-single",
+    "stream": "oper",
+    "type": "tf",
+    "step": 360,
+    "forecast_ref_time": "2026-08-02 00:00:00",
+    "license": "CC-BY-4.0",
+    "attribution": "ECMWF Open Data"
+  }
+}

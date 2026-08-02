@@ -1,0 +1,16 @@
+{
+  "source": "ecmwf/ifs_oper",
+  "filename": "ifs_oper_step360.bufr",
+  "archived_at_utc": "2026-08-02T13:52:10.622096+00:00",
+  "size_bytes": 85343,
+  "meta": {
+    "mirror": "aws",
+    "model": "ifs",
+    "stream": "oper",
+    "type": "tf",
+    "step": 360,
+    "forecast_ref_time": "2026-08-02 00:00:00",
+    "license": "CC-BY-4.0",
+    "attribution": "ECMWF Open Data"
+  }
+}

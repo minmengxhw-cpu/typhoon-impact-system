@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+.env
+.DS_Store
+*.grib2
+/tmp/
+.pytest_cache/
+.mypy_cache/
+
+# Runtime products (full); demo snapshot lives in web/data/
+products/
+
+# Large raw archives
+archive/**/*.bufr
+archive/**/*.jsonp
+archive/run_summary_*.json
+
+# Bulky audit binaries (keep small .sample / .json / .txt / meta)
+data/samples/ecmwf/*.bufr
+data/samples/ecmwf/*.grib2
+data/samples/ecmwf/http_*.bin
+data/samples/ecmwf/client_*.bufr
+data/samples/agencies/*.dat
+data/samples/agencies/*.gz
+data/samples/agencies/*.dat.txt
+
+data/samples/agencies/*.dat.txt
+data/samples/agencies/*decoded*

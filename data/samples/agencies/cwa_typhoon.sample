@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-Hant-TW" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-Hant-TW" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-Hant-TW">
+<!--<![endif]-->
+
+<head>
+    <title>颱風消息 | 交通部中央氣象署</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--Facebook_meta_begin-->
+    <!-- Facebook -->
+    <meta property="og:url" content="https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html" />
+    <meta property="og:title" content="颱風消息 - 中央氣象署全球資訊網" />
+    <meta property="og:image" content="/Data/satellite/LCC_VIS_TRGB_1000/LCC_VIS_TRGB_1000.jpg?" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:description" content="目前發布之颱風及熱帶性低氣壓消息" />
+    <meta property="og:site_name" content="中央氣象署全球資訊網" />
+    <!--Facebook_meta_end-->
+    <!--tw.gov_meta_begin-->
+    <meta name="DC.Creator" content="交通部中央氣象署" />
+    <meta name="DC.Contributor" content="交通部中央氣象署" />
+    <meta name="DC.Type" content="服務" />
+    <meta name="DC.Format" content="text" />
+    <meta name="DC.Source" content="交通部中央氣象署" />
+    <meta name="DC.Language" content="中文" />
+    <meta name="DC.coverage.t.min" content="2026-07-01" />
+    <meta name="DC.coverage.t.max" content="2031-07-01" />
+    <meta name="DC.Publisher" content="交通部中央氣象署" />
+    <meta name="DC.Date" content="2026-07-01 09:04" />
+    <meta name="DC.Identifier" content="A15020000H" />
+    <meta name="DC.Relation" content="" />
+    <meta name="DC.Rights" content="交通部中央氣象署" />
+    <meta name="Category.Theme" content="650" />
+    <meta name="Category.Cake" content="CM0" />
+    <meta name="Category.Service" content="EZ0" />
+    <meta name="DC.Title" content="中央氣象署全球資訊網" />
+    <meta name="DC.Subject" content="警特報" />
+    <meta name="DC.Description" content="颱風消息" />
+    <meta name="Keywords" content="颱風消息,颱風,熱帶性低氣壓,熱帶低氣壓,熱帶低壓,低氣壓,低壓,熱帶氣旋,颱風現況,颱風預測,路徑潛勢預報,暴風區到達機率,各地暴風區到達機率" />
+    <!--tw.gov_meta_end-->
+    <!--common_css_begin-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="中央氣象署">
+    <meta name="msapplication-TileImage" content="/V8/assets/img/win10/cwbPinlogo.png">
+    <meta name="msapplication-square70x70logo" content="/V8/assets/img/win10/cwbPinlogo70.png">
+    <meta name="msapplication-square150x150logo" content="/V8/assets/img/win10/cwbPinlogo150.png">
+    <meta name="msapplication-square310x310logo" content="/V8/assets/img/win10/cwbPinlogo310.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/V8/assets/plugins/bootstrap/css/bootstrap.min.css?v=20230418">
+    <link rel="stylesheet" href="/V8/assets/plugins/font-awesome/css/font-awesome.min.css?v=20191223">
+    <link rel="stylesheet" href="/V8/assets/plugins/cwb-fonticon/style.css?v=20250505">
+    <link rel="stylesheet" href="/V8/assets/plugins/plugins.css?v=20191223">
+    <link rel="stylesheet" href="/V8/assets/css/main.css?v=20240429">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P7QGZ2G');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXGLP2G');</script>
+    <!-- End Google Tag Manager -->
+    <!--common_css_end-->
+    <link rel="stylesheet" href="/V8/assets/plugins/OwlCarousel/css/owl.carousel.min.css">
+    <style>
+    .img_fixed {position:fixed;top:0}
+    footer div,address {background-color:#ffffff;}
+    @media (min-width: 992px) {
+        .featured .featured-col {
+            flex: 0 0 33.3%;
+            max-width: 33.3%
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <a class="focusable" href="#center-content" title="跳到主要內容區塊" tabindex="1">跳到主要內容區塊</a>
+    <noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7QGZ2G" title="GTM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXGLP2G" title="GTM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <!-- End Google Tag Manager (noscript) -->
+        <h2>您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。</h2>
+        <a href="/V8/C/sitemap.html" target="_self" title="可點此前往" style="font-size:1.2rem;">網站導覽</a>
+    </noscript>
+    <!--=== Header ===-->
+    <header class="header" id="header"></header>
+    <!--=== End Header ===-->
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="#center-content" accesskey="C" id="center-content" class="acc" title=":::中間內容區導盲磚">:::</a>
+            <ul class="pull-right breadcrumb breadcrumb-left">
+                <li><a href="/V8/C/index.html" title="回首頁" target="_self"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">首頁</span></a></li>
+                <li>警特報</li>
+                <li>颱風</li>
+                <li>颱風消息</li>
+            </ul>
+        </div>
+    </div>
+    <!--=== End Breadcrumbs ===-->
+    <div class="main-title-bar">
+        <div class="container">
+            <h2 class="main-title"><i class="icon-cwb-question" aria-hidden="true"></i>颱風消息</h2>
+        </div>
+    </div>
+    <!--=== Content Part ===-->
+    <div class="tab-default margin-bottom-0">
+        <div class="container">
+            <ul class="nav nav-tabs" id="tabselect">
+                <li class="active"><a href="#business-1" role="button" data-toggle="tab" aria-expanded="false" data-gtmtitle="颱風消息_頁籤切換_消息總覽">消息總覽</a></li>
+                <li><a href="#data-1" role="button" data-toggle="tab" aria-expanded="true" data-gtmtitle="颱風消息_頁籤切換_路徑潛勢預報">路徑潛勢預報</a></li>
+                <li><a href="#data-2" role="button" data-toggle="tab" aria-expanded="true" data-gtmtitle="颱風消息_頁籤切換_暴風圈侵襲機率">暴風到達時間及機率</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <main class="main-content container">
+            <div class="tab-content" id="ContentTable">
+                <div class="tab-pane fade in active" id="business-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row visible-sm visible-xs Overall Mobile"></div>
+                            <div class="player_block">
+                                <form action="#" class="sky-form2 sky-form label-rounded typhoon-form">
+                                    <div class="row">
+                                        <!-- <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="inline-group">
+                                                        <label class="checkbox" for="typhoonNameCheck-1">
+                                                            <input type="checkbox" id="typhoonNameCheck-1" name="area" value="1"><i aria-hidden="true"></i>颱風名稱顯示
+                                                        </label>
+                                                        <label class="checkbox" for="coordinate-1">
+                                                            <input type="checkbox" name="area" id="coordinate-1" value="1"><i aria-hidden="true"></i>經緯度顯示
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div> -->
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="play_function">
+                                                        <li id="play-1"><a href="javascript:void(0);" role="button" title="播放"><i class="icon-play" aria-hidden="true"></i><span>播放</span></a></li>
+                                                        <li id="prevlink-1"><a href="javascript:void(0);" role="button" title="上一則"><i class="fa fa-step-backward" aria-hidden="true"></i><span class="sr-only">上一則</span></a></li>
+                                                        <li id="nextlink-1"><a href="javascript:void(0);" role="button" title="下一則"><i class="fa fa-step-forward" aria-hidden="true"></i><span class="sr-only">下一則</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row hidden-sm hidden-xs Overall BigScreen"></div>
+                            <div class="row hidden-sm hidden-xs">
+                                <div class="col-md-12">
+                                    <div class="other">
+                                        <p class="note-md">颱風產品的發布時間</p>
+                                        <ul class="list-unstyled">
+                                            <li>颱風資訊需配合國際氣象觀測時間（每日02、08、14、20時），並經過資料收集及分析研判等程序，約需1.5至2小時的作業時間始得發布。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-md-12">
+                                    <h4>目前 (<span id="TY_TIME"></span>) 太平洋地區<span id="TY_COUNT"></span>：</h4>
+                                    <div class="panel-group acc-v1 vision_1 margin-top-30" id="accordion-1"></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-md-8">
+                            <form action="#" class="sky-form vision_1 no-border">
+                                <!-- <fieldset class="padding-0"> -->
+                                <fieldset>
+                                    <legend class="sr-only"><span>颱風消息輪播圖</span></legend>
+                                    <div class="typhoon-slider">
+                                        <img id="slideImage-1" src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="颱風消息輪播圖" class="img-responsive">
+                                        <!-- 經緯度線 -->
+                                        <!-- <div id="grid-1"></div> -->
+                                        <!-- 颱風名稱 -->
+                                        <!-- <div class="name" id="typhoonName-1" style="left: 50%;top:60%; display: none;">
+                                            <span>康芮</span>
+                                        </div> -->
+                                        <div class="typhoon-donlow-img">
+                                            <a id="download-1" class="btn btn-default" href="javascript:void(0)" target="_blank" rel="noreferrer noopener" title="點此另開新視窗檢視">另存圖檔&ensp;<i class="icon-open" aria-hidden="true"></i></a>
+                                            <!-- <button class="btn btn-default" type="button">另存圖檔</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="pull-right">
+                                            <label class="checkbox" for="carousel">
+                                                <input type="checkbox" id="carousel"><i aria-hidden="true"></i>自動輪播
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="typhoon-slider-list margin-bottom-10" id="typhoonSlider">
+                                        <div class="automatic-slider"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                                <div class="other visible-sm visible-xs">
+                                    <p class="note-md">颱風產品的發布時間</p>
+                                    <ul class="list-unstyled">
+                                        <li>颱風資訊需配合國際氣象觀測時間（每日02、08、14、20時），並經過資料收集及分析研判等程序，約需1.5至2小時的作業時間始得發布。</li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="other">
+                                    <p class="note-md">相關連結</p>
+                                    <ul class="list-unstyled">
+                                        <li class="datalink">
+                                            <a href="/V8/C/K/Encyclopedia/typhoon/" title="點此前往參閱" target="_self"><i class="icon-open" aria-hidden="true"></i>颱風百問</a>
+                                        </li>
+                                        <li class="datalink">
+                                            <a href="/V8/assets/pdf/know/typhoon/TY_NEWS_QA_ZHTW.pdf?v=20250110" title="點此另開新視窗開啟 TY_NEWS_QA_ZHTW.pdf 檔案參閱" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i>颱風機率產品說明(PDF)</a>
+                                        </li>
+                                        <li class="datalink">
+                                            <a href="https://app.cwa.gov.tw/web/obsmap/typhoon.html" title="點此另開新視窗前往" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i><span lang="en">Open Street Map</span> 版網頁</a>
+                                        </li>
+                                        <li class="datalink">
+                                            <a href="https://www.dgpa.gov.tw/typh/daily/nds.html?" title="點此另開新視窗前往" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i>人事行政總處停班停課資訊</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="other">
+                                <p class="note-md">相關連結</p>
+                                <ul class="list-unstyled">
+                                    <li class="datalink">
+                                        <a href="/V8/C/K/Encyclopedia/typhoon/" title="點此前往參閱" target="_self"><i class="icon-open" aria-hidden="true"></i>颱風百問</a>
+                                    </li>
+                                    <li class="datalink">
+                                        <a href="/V8/assets/pdf/know/typhoon/TY_NEWS_QA_ZHTW.pdf?v=20250110" title="點此另開新視窗開啟 TY_NEWS_QA_ZHTW.pdf 檔案參閱" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i>颱風機率產品說明(PDF)</a>
+                                    </li>
+                                    <li class="datalink">
+                                        <a href="https://app.cwa.gov.tw/web/obsmap/typhoon.html" title="點此另開新視窗前往" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i>颱風消息 GIS 版</a>
+                                    </li>
+                                    <li class="datalink">
+                                        <a href="https://www.dgpa.gov.tw/typh/daily/nds.html?" title="點此另開新視窗前往" target="_blank" rel="noreferrer noopener"><i class="icon-open" aria-hidden="true"></i>人事行政總處停班停課資訊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="MeteorologicalGraphics" class="row margin-top-50">
+                        <div class="col-md-12">
+                            <div class="main-title-bar-v2 center">
+                                <h3 class="main-title">氣象資訊</h3>
+                            </div>
+                            <!-- Tab v2 -->
+                            <div class="tab-default vision_2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/W/OBS_Sat.html" data-gtmtitle="颱風消息_氣象資訊_衛星雲圖">
+                                            <div class="cube-head">衛星雲圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/satellite/LCC_TRGB_1000/LCC_TRGB_1000_forPreview.jpg">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/W/OBS_Radar.html" data-gtmtitle="颱風消息_氣象資訊_雷達回波圖">
+                                            <div class="cube-head">雷達回波圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/radar/CV1_TW_1000.png">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/P/Rainfall/Rainfall_QZJ.html" data-gtmtitle="颱風消息_氣象資訊_雨量日累積圖">
+                                            <div class="cube-head">雨量日累積圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/rainfall/QZJ_forPreview.jpg">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/P/Rainfall/Rainfall_Town.html" data-gtmtitle="颱風消息_氣象資訊_雨量日累積鄉鎮分布圖">
+                                            <div class="cube-head">雨量日累積鄉鎮分布圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/rainfall/rain_town/rainfall_town_day.png">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab v1 -->
+                        </div>
+                    </div>
+                    <div id="MarineInfo" class="row margin-top-50">
+                        <div class="col-md-12">
+                            <div class="main-title-bar-v2 center">
+                                <h3 class="main-title">海象資訊</h3>
+                            </div>
+                            <!-- Tab v2 -->
+                            <div class="tab-default vision_2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/W/analysis.html#TDD_MURSST" data-gtmtitle="颱風消息_海象資訊_海水表面溫度">
+                                            <div class="cube-head">海水表面溫度</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" id="MURSST">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/W/analysis.html#TDD_TCHP" data-gtmtitle="颱風消息_海象資訊_海洋熱潛勢">
+                                            <div class="cube-head">海洋熱潛勢</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" id="TCHP">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/M/wave.html" data-gtmtitle="颱風消息_海象資訊_波浪預報圖">
+                                            <div class="cube-head">24小時波浪預報圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/fcst_img/WaveAna24PO-00.jpg">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/P/watch_waves.html" data-gtmtitle="颱風消息_海象資訊_浪高潮位監測">
+                                            <div class="cube-head">浪高潮位監測</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/warning/Surge_Swell/Surge_Wave_Taiwan03.png">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此查看更多資訊" target="_self" href="/V8/C/M/tide_full.html" data-gtmtitle="颱風消息_海象資訊_滿潮預報圖">
+                                            <div class="cube-head">滿潮預報圖</div>
+                                            <div class="cube-body">
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive" data-img="/Data/marine/tide_predict/full_0.png">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab v1 -->
+                        </div>
+                    </div>
+                    <div id="AdvInfo" class="row margin-top-50">
+                        <div class="col-md-12 featured">
+                            <div class="main-title-bar-v2 center">
+                                <h3 class="main-title">氣象平台精選</h3>
+                            </div>
+                            <div class="featured-wrapper">
+                                <div class="featured-content pc">
+                                    <div class="featured-col">
+                                        <a href="https://wifi.cwa.gov.tw/v2/" title="點擊開新視窗「風場預報」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_風場預報">
+                                            <div class="featured-icon"><i class="icon-obs_detail_puff" aria-hidden="true"></i></div>
+                                            <span>風場預報</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://ocean.cwa.gov.tw/V2/" title="點擊開新視窗「海洋資訊環境平台」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_海洋資訊環境平台">
+                                            <div class="featured-icon"><i class="icon-cli_newest" aria-hidden="true"></i></div>
+                                            <span>海洋資訊環境平台</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://qpeplus.cwa.gov.tw/" title="點擊開新視窗「劇烈天氣監測」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_劇烈天氣監測">
+                                            <div class="featured-icon"><i class="icon-news-ste" aria-hidden="true"></i></div>
+                                            <span>劇烈天氣監測</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://npd.cwa.gov.tw/NPD/focus_topic/typhoon_path" title="點擊開新視窗「數值天氣預報產品」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_數值天氣預報產品">
+                                            <div class="featured-icon"><i class="icon-plus" aria-hidden="true"></i></div>
+                                            <span>數值天氣預報產品</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://app.cwa.gov.tw/web/obsmap/typhoon.html" title="點擊開新視窗「颱風消息GIS版」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_颱風消息GIS版">
+                                            <!-- <div class="featured-icon"><i class="icon-cli_typhoon" aria-hidden="true"></i></div> -->
+                                            <div class="featured-icon"><img alt="" class="img-responsive" src="/V8/assets/img/icons/typhoon_gis.png" style="width:32px;position:absolute;transform:translate(-50%,-50%);top:50%;left:50%;"></div>
+                                            <span>颱風消息GIS版</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://tctracker.cwa.gov.tw/" title="點擊開新視窗「展期熱帶氣旋預報系統」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_展期熱帶氣旋預報系統">
+                                            <!-- <div class="featured-icon"><i class="icon-cli_typhoon" aria-hidden="true"></i></div> -->
+                                            <div class="featured-icon"><img alt="" class="img-responsive" src="/V8/assets/img/icons/tc_tracker.png" style="width:32px;position:absolute;transform:translate(-50%,-50%);top:50%;left:50%;"></div>
+                                            <span>展期熱帶氣旋預報系統</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured-content sp owl-carousel owl-theme">
+                                    <div class="featured-col">
+                                        <a href="https://wifi.cwa.gov.tw/v2/" title="點擊開新視窗「風場預報」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_風場預報">
+                                            <div class="featured-icon"><i class="icon-obs_detail_puff" aria-hidden="true"></i></div>
+                                            <span>風場預報</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://ocean.cwa.gov.tw/V2/" title="點擊開新視窗「海洋資訊環境平台」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_海洋資訊環境平台">
+                                            <div class="featured-icon"><i class="icon-cli_newest" aria-hidden="true"></i></div>
+                                            <span>海洋資訊環境平台</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://qpeplus.cwa.gov.tw/" title="點擊開新視窗「劇烈天氣監測」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_劇烈天氣監測">
+                                            <div class="featured-icon"><i class="icon-news-ste" aria-hidden="true"></i></div>
+                                            <span>劇烈天氣監測</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://npd.cwa.gov.tw/NPD/focus_topic/typhoon_path" title="點擊開新視窗「數值天氣預報產品」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_數值天氣預報產品">
+                                            <div class="featured-icon"><i class="icon-plus" aria-hidden="true"></i></div>
+                                            <span>數值天氣預報產品</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://app.cwa.gov.tw/web/obsmap/typhoon.html" title="點擊開新視窗「颱風消息GIS版」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_颱風消息GIS版">
+                                            <!-- <div class="featured-icon"><i class="icon-cli_typhoon" aria-hidden="true"></i></div> -->
+                                            <div class="featured-icon"><img alt="" class="img-responsive" src="/V8/assets/img/icons/typhoon_gis.png" style="width:32px;position:absolute;transform:translate(-50%,-50%);top:50%;left:50%;"></div>
+                                            <span>颱風消息GIS版</span>
+                                        </a>
+                                    </div>
+                                    <div class="featured-col">
+                                        <a href="https://tctracker.cwa.gov.tw/" title="點擊開新視窗「展期熱帶氣旋預報系統」" target="_blank" rel="noopener" data-gtmtitle="颱風消息_氣象平台精選_展期熱帶氣旋預報系統">
+                                            <!-- <div class="featured-icon"><i class="icon-cli_typhoon" aria-hidden="true"></i></div> -->
+                                            <div class="featured-icon"><img alt="" class="img-responsive" src="/V8/assets/img/icons/tc_tracker.png" style="width:32px;position:absolute;transform:translate(-50%,-50%);top:50%;left:50%;"></div>
+                                            <span>展期熱帶氣旋預報系統</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab v2 -->
+                            <!-- <div class="tab-default vision_2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_blank" rel="noopener noreferrer" href="https://wifi.cwa.gov.tw/v2/redirect.html?lang=zh-tw" data-gtmtitle="颱風消息_氣象平台精選_風場預報">
+                                            <div class="cube-head">風場預報</div>
+                                            <div class="cube-body" id="wifi">
+                                                < !-- <iframe src="https://wifi.cwa.gov.tw/v2/redirect.html?lang=zh-tw" width="100%" height="100%" title="風場預報"></iframe> -- >
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_blank" rel="noopener noreferrer" href="https://ocean.cwa.gov.tw/V2/" data-gtmtitle="颱風消息_氣象平台精選_海洋資訊環境平台">
+                                            <div class="cube-head">海洋資訊環境平台</div>
+                                            <div class="cube-body">
+                                                < !-- <iframe src="https://ocean.cwa.gov.tw/V2/" width="100%" height="100%" title=""></iframe> -- >
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_blank" rel="noopener noreferrer" href="https://qpeplus.cwa.gov.tw/pub/" data-gtmtitle="颱風消息_氣象平台精選_劇烈天氣監測">
+                                            <div class="cube-head">劇烈天氣監測</div>
+                                            <div class="cube-body">
+                                                < !-- <iframe src="https://qpeplus.cwa.gov.tw/pub/" width="100%" height="100%" title=""></iframe> -- >
+                                                <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_blank" rel="noopener noreferrer" href="https://npd.cwa.gov.tw" data-gtmtitle="颱風消息_氣象平台精選_數值天氣預報產品">
+                                            <div class="cube-head">數值天氣預報產品</div>
+                                            <div class="cube-body">
+                                                < !-- <iframe src="https://npd.cwa.gov.tw" width="100%" height="100%" title=""></iframe> -- >
+                                                <img src="/V8/assets/img/prevent/NPD.gif" alt="" class="img-responsive">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_blank" rel="noopener noreferrer" href="https://tctracker.cwa.gov.tw/" data-gtmtitle="颱風消息_氣象平台精選_展期熱帶氣旋預報系統">
+                                            <div class="cube-head">展期熱帶氣旋預報系統</div>
+                                            <div class="cube-body">
+                                                < !-- <iframe src="https://tctracker.cwa.gov.tw/" width="100%" height="100%" title=""></iframe> -- >
+                                                <img src="/V8/assets/img/prevent/tctracker.png" alt="" class="img-responsive">
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="cube-wrap" title="點此另開新視窗前往檢視" target="_self" href="https://app.cwa.gov.tw/web/obsmap/typhoon.html" data-gtmtitle="颱風消息_氣象平台精選_颱風消息GIS版">
+                                            <div class="cube-head">颱風消息GIS版</div>
+                                            <div class="cube-body">
+                                                <iframe src="https://app.cwa.gov.tw/web/obsmap/typhoon.html" width="100%" height="100%" title=""></iframe>
+                                                < !-- <img src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="" class="img-responsive"> -- >
+                                                <div class="ovr-text">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    <span>更多資訊</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- End Tab v1 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="data-1">
+                    <div class="row">
+                        <div class="col-md-12 hidden visible-sm visible-xs">
+                            <div id="form2_m" class="player_block"></div>
+                        </div>
+                        <div class="col-md-8 col-md-push-4">
+                            <div class="scroll-fix">
+                                <div class="typhoon-slider">
+                                    <img id="slideImage-2" src="/V8/assets/img/cwb/earthquake/Processing.jpg" alt="路徑潛勢預報圖" class="img-responsive">
+                                    <!-- 經緯度線 -->
+                                    <!-- <div id="grid-2"></div> -->
+                                    <!-- 颱風名稱 -->
+                                    <!-- <div class="name" id="typhoonName-2" style="left: 50%;top:60%;display: none;">
+                                        <span>康芮</span>
+                                    </div> -->
+                                    <div class="typhoon-donlow-img">
+                                        <a id="download-2" class="btn btn-default" href="javascript:void(0)" target="_blank" rel="noreferrer noopener" title="點此另開新視窗檢視">另存圖檔&ensp;<i class="icon-open" aria-hidden="true"></i></a>
+                                        <!-- <button class="btn btn-default" type="button">另存圖檔</button> -->
+                                    </div>
+                                </div>
+                                <div class="typhoon-slider-list margin-bottom-20">
+                                    <div class="legend">
+                                        <img src="/V8/assets/img/cwb/prevent/typhoon/PTA_Description_C.png" alt="路徑潛勢預報圖例說明" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-pull-8">
+                            <div id="form2_PC" class="player_block visible hidden-sm hidden-xs">
+                                <form action="#" class="sky-form2 sky-form label-rounded typhoon-form">
+                                    <div class="row">
+                                        <div class="col-md-12 margin-bottom-10">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="label" for="TS-2">請選擇</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="row" id="typhoonSelect-2">
+                                                        <!-- <div class="col-xs-8"></div> -->
+                                                        <div class="col-xs-12">
+                                                            <label class="select">
+                                                                <select id="TS-2">
+                                                                    <option value="#" selected>全區域顯示</option>
+                                                                    <option value="#">區域</option>
+                                                                </select><i aria-hidden="true"></i>
+                                                            </label>
+                                                        </div>
+                                                        <!-- <div class="col-xs-4">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default btn-block" type="button">確定</button>
+                                                            </span>
+                                                        </div> -->
+                                                    </div>
+                                                    <!-- <div class="inline-group">
+                     

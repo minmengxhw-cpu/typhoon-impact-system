@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="description" content="台风路径实时发布系统是由中央气象台权威发布台风信息系统,系统可及时准确地提供最新最全的台风实时信息、预报路径,同时整合卫星云图、气象雷达、降雨等内容" />
+    <meta name="keywords" content="台风,台风网,实时台风,台风路径,台风路径实时发布,中央气象台,中央气象台台风网,台风公报,台风快讯" />
+    <title>中央气象台台风网</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet"
+        href="http://typhoon.nmc.cn/css/??home.min.css,leaflet/leaflet.min.css,leafletLabel/leaflet.label.min.css,boTabs/boTabs.min.css,jqueryUI/jquery-ui.min.css"
+        type="text/css" />
+
+    <script type="text/javascript"
+        src="http://typhoon.nmc.cn/js/??jquery-1.8.3.min.js,jqueryUI/jquery-ui.min.js,boTabs/boTabs.min.js,leaflet/leaflet.min.js,leafletLabel/leaflet.label.js,typhoon/leaflet-typhoon.min.js,typhoon/leaflet-closedContours.min.js,typhoon/leaflet-stationDiv.min.js,typhoon/leaflet-bgmarker.min.js,typhoon/leaflet-yjmarker.min.js,typhoon/leaflet-pathline.min.js,typhoon/gis.js?v=2026070317,typhoon/typhoon-datas-inner.js?v=20220610,typhoon/typhoon-web.js?v=20250924,jquery.slimscroll.min.js"></script>
+
+
+    <style type="text/css">
+        .abc {}
+
+        .tfzz {
+            display: block;
+            float: left;
+            width: 70px;
+            background-image: url(./images/tfzz_v1.png);
+            height: 64px;
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+
+        a.tfzz:hover {
+            background-color: #4d94f8;
+        }
+
+        .menu span.tb {
+            height: 64px;
+        }
+
+        .menu .menu_typhoon,
+        .menu .menu_earlyWarning,
+        .menu .menu_forecast_weather,
+        .menu .menu_rainFall,
+        .menu .menu_disasterWeather,
+        .menu .menu_satelliteCloud,
+        .menu .menu_radar,
+        .menu .menu_weatherLive {
+            height: 64px;
+        }
+
+        .toolslist span.autoRefreshOff {
+            background: url("./images/autoRefreshOff.png?v=1") no-repeat;
+        }
+
+        .toolslist span.autoRefreshOn {
+            background: url("./images/autoRefreshOn.png?v=1") no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cur_typhoon">
+        <div class="cur_typhoonlist"></div>
+        <div class="typhoon_inforContent"></div>
+        <!--	<a class="b_v1" style="position: absolute; right: 20px; top: 5px; color: #666; cursor: pointer; display: none; text-decoration: none;" href="http://eng.nmc.cn/typhoon">English</a>
+    --> <a class="b_v"
+            style="position: absolute; right: 10px; bottom: 5px; color: #ff8000; cursor: pointer; display: none; text-decoration: none;"
+            href="./mobile.html">触屏版</a>
+        <span class="clr"></span>
+    </div>
+    <div id="map" style="">
+    </div>
+    <div class="menu">
+        <dl class="menu_1">
+            <dt class="menu_typhoon ts menuDefault"><span class="tb tbDefault"></span></dt>
+            <dd class="menu_typhoon_panel">
+                <div class="typhoon_content">
+                    <div class="typhoon_search">
+                        <div class="search_year">年份</div>
+                        <div class="search_month">月份</div>
+                        <ul class="month_list">
+                            <li>无</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                        </ul>
+                        <input class="search_name" type="text" placeholder="请输入台风名称...">
+                        <input class="search_btn" type="button">
+                    </div>
+                    <div class="typhoon_res">
+                        <div class="listTitle" style="height: 53px; line-height: 53px;">台风列表
+                            <div class="select_year" style="position: absolute; top: 0px;">
+                                <div class="search_year">年份</div>
+                                <div class="btn_arrow"><span class="btn_arr_down"></span></div>
+                            </div>
+                            <span class="typhoonClose">×</span><input style="display: none;" type="checkbox"
+                                id="synradar"><input style="display: none;" type="checkbox"
+                                id="synSatelliteCloud"><input style="display: none;" type="checkbox" id="synFloatShip">
+                        </div>
+                        <ul class="year_list" style="max-height: 312px; overflow: auto;">
+                        </ul>
+                        <ul class="typhoon_list">
+                        </ul>
+                        <div class="orgs">
+                            <p>预报机构</p>
+                        </div>
+                        <div class="paths">
+                            <p class="curName"><span class="tfName"></span>路径信息</p>
+                            <div id="pathContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <a class="tfzz" href="http://m.nmc.cn/ty" target="_blank"></a>
+        <dl>
+            <dt class="menu_earlyWarning menuDefault"><span class="tb tbDefault"></span></dt>
+        </dl>
+        <dl>
+            <dt class="menu_forecast_weather menuDefault"><span class="tb tbDefault"></span></dt>
+            <dd class="menu_forecast_weather_panel">
+                <div class="menu_forecast_weather_content">
+                    <div class="area">
+                        <input id="inland" name="inland" type="checkbox" value="3"><label for="inland">内陆</label>
+                        <input id="seacoast" name="sea" type="checkbox" value="0"><label for="seacoast">沿岸</label>
+                        <input id="inshore" name="sea" type="checkbox" value="1"><label for="inshore">近海</label>
+                        <input id="highSeas" name="sea" type="checkbox" value="2"><label for="highSeas">远海</label>
+                    </div>
+                    <div class="timeliness ">
+                        <input id="time24" name="tl" type="radio" value="24"><label for="time24">24小时</label>
+                        <input id="time48" name="tl" type="radio" value="48"><label for="time48">48小时</label>
+                        <input id="time72" name="tl" type="radio" value="72"><label for="time72">72小时</label>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="menu_rainFall menuDefault"><span class="tb tbDefault"></span></dt>
+            <dd class="menu_rainFall_panel">
+                <div class="menu_rainFall_content">
+                    <div class="menu_rainFall_type">
+                        <input id="rf24" type="radio" value="24"><label for="rf24">24小时</label>
+                        <input id="rf48" type="radio" value="48"><label for="rf48">48小时</label>
+                        <input id="rf72" type="radio" value="72"><label for="rf72">72小时</label>
+                    </div>
+                    <div class="menu_rainFall_desc" style="display: none;">
+                        <input id="rfS" type="checkbox" value="S" checked="checked"><label for="rfS">小雨</label>
+                        <input id="rfM" type="checkbox" value="M" checked="checked"><label for="rfM">中雨</label>
+                        <input id="rfL" type="checkbox" value="L" checked="checked"><label for="rfL">大雨</label>
+                        <input id="rfLX" type="checkbox" value="LX" checked="checked"><label for="rfLX">暴雨</label>
+                        <input id="rfLXX" type="checkbox" value="LXX" checked="checked"><label for="rfLXX">大暴雨</label>
+                        <input id="rfLXXX" type="checkbox" value="LXXX" checked="checked"><label
+                            for="rfLXXX">特大暴雨</label>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="menu_disasterWeather menuDefault"><span class="tb tbDefault"></span></dt>
+            <dd class="menu_disasterWeather_panel">
+                <div class="menu_disasterWeather_content">
+                    <div class="menu_disasterWeather_type">
+                        <div style="padding: 4px 0px 3px 0px;">
+                            <input id="baoyu" type="checkbox" value="LX" checked="checked"><label for="baoyu">暴雨</label>
+                            <input id="seaWind" name="seaWind" type="checkbox" value="4"><label
+                                for="seaWind">海区大风</label>
+                            <input id="jwdf" type="checkbox" value="0"><label for="jwdf">降温大风</label><br>
+                        </div>
+                        <div style="padding: 4px 0px 3px 0px;">
+                            <input id="sc" type="checkbox" value="1"><label for="sc">沙尘</label>
+                            <input id="fog" type="checkbox" value="2"><label for="fog"
+                                style="margin-right:57px">雾</label>
+                            <input id="haze" type="checkbox" value="2"><label for="haze">霾</label>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="menu_satelliteCloud menuDefault"><span class="tb tbDefault"></span></dt>
+        </dl>
+        <dl>
+            <dt class="menu_radar menuDefault"><span class="tb tbDefault"></span></dt>
+        </dl>
+        <dl>
+            <dt class="menu_weatherLive menuDefault"><span class="tb tbDefault"></span></dt>
+        </dl>
+    </div>
+    <div class="toolslist">
+        <span class="toolsbtn r-a"></span>
+        <div class="allTools">
+            <span class="fullScreen" title="全屏/退出全屏"></span>
+            <span class="totalGraph" title="全图"></span>
+            <span class="measure" title="测距:双击完成"></span>
+            <span class="fangda" title="放大"></span>
+            <span class="suoxiao" title="缩小"></span>
+            <div class="mapLayerDiv">
+                <span class="spt"></span>
+                <span class="dmap" title="行政区划" dv="d"></span>
+                <span class="tmap" title="地形" dv="t"></span>
+                <span class="smap" title="影像" dv="s"></span>
+            </div>
+            <span id="autoRefresh" class="autoRefreshOff" title="定时间隔5分钟自动刷新页面"></span>
+        </div>
+    </div>
+    <div class="legend">图例<span id="legend-arrow" class="tuli_down"></span></div>
+    <div class="legendContent"></div>
+    <div style="display:none;">
+        <script type="text/javascript">
+            var _maq = _maq || [];
+            _maq.push(['_siteid', '7']);
+            (function () {
+                var ma = document.createElement('script');
+                ma.type = 'text/javascript';
+                ma.async = true;
+                ma.src = 'https://www.nmc.cn/static/nmclog/nmclog.js?v=20220612';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ma, s);
+            })();
+        </script>
+        <script type="text/javascript" src="https://www.nmc.cn/npt/track/stat.js?siteid=25"></script>
+        <script type="text/javascript">
+            window._NmcLog && window._NmcLog.log({ "category_id": window.categoryid || '' });
+            $('.menu dl>dt,.menu dl>dd input').click(function () { _NmcLog.log(); });
+        </script>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?5da04bed31a189c5360cb691f6ab7b22";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+
+                $('#autoRefresh').click(function () {
+                    // 使用localStorage存储自动刷新状态
+                    if ($(this).hasClass('autoRefreshOn')) {
+                        $(this).removeClass('autoRefreshOn');
+                        $(this).addClass('autoRefreshOff');
+                        $(this).attr('title', '定时间隔5分钟自动刷新页面');
+                        console.log('关闭定时间隔自动刷新');
+                        clearInterval(window.autoRefreshTimer);
+                        localStorage.setItem('autoRefreshEnabled', 'false');
+                    } else {
+                        $(this).removeClass('autoRefreshOff');
+                        $(this).addClass('autoRefreshOn');
+                        $(this).attr('title', '关闭定时间隔自动刷新');
+                        console.log('开启定时间隔自动刷新');
+                        window.autoRefreshTimer = setInterval(function () {
+                            location.reload();
+                        }, 1000 * 60 * 5);
+                        localStorage.setItem('autoRefreshEnabled', 'true');
+                    }
+                });
+
+                // 页面加载时检查并恢复自动刷新状态
+                $(document).ready(function () {
+                    if (localStorage.getItem('autoRefreshEnabled') === 'true') {
+                        setTimeout(function(){
+                            if(nmcMap.map){
+				if(nmcMap.typhoonDatas) {
+                                    var keys = Object.keys(nmcMap.typhoonDatas);
+                                    if(keys.length > 0) {
+                                        var firstKey = keys[0];
+                                        var firstValue = nmcMap.typhoonDatas[firstKey][8];
+                                        var lastPoint = firstValue[firstValue.length - 1];
+                                        console.log(lastPoint);
+                                        nmcMap.map.setView([lastPoint[5], lastPoint[4]], 6);
+                                    }
+                                } else {
+                                    nmcMap.map.setView([19.39, 115.0], 6);
+                                }
+                            }
+                        },3000);
+
+                        $('#autoRefresh').removeClass('autoRefreshOff')
+                            .addClass('autoRefreshOn')
+                            .attr('title', '关闭定时间隔自动刷新');
+                        console.log('恢复开启定时间隔自动刷新');
+                        window.autoRefreshTimer = setInterval(function () {
+                            location.reload();
+                        }, 1000 * 60 * 5);
+                    }
+                });
+
+
+            })();
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+{
+  "prefix": "20260801/00z/ifs/0p25/enfo/",
+  "count": 177,
+  "exts": {
+    "grib2": 87,
+    "index": 87,
+    "bufr": 1,
+    "txt": 2
+  },
+  "types": {
+    "ef": 170,
+    "ep": 4,
+    "tf": 1
+  },
+  "bufr_tf": [
+    "20260801/00z/ifs/0p25/enfo/20260801000000-360h-enfo-tf.bufr"
+  ],
+  "tf_candidates": [
+    {
+      "key": "20251010/00z/ifs/0p25/enfo/20251010000000-240h-enfo-tf.bufr",
+      "size": "882761"
+    },
+    {
+      "key": "20251010/00z/ifs/0p25/oper/20251010000000-240h-oper-tf.bufr",
+      "size": "7241"
+    },
+    {
+      "key": "20251010/00z/aifs-single/0p25/oper/20251010000000-240h-oper-tf.bufr",
+      "size": "5588"
+    },
+    {
+      "key": "20250915/00z/ifs/0p25/enfo/20250915000000-240h-enfo-tf.bufr",
+      "size": "871720"
+    },
+    {
+      "key": "20250915/00z/ifs/0p25/oper/20250915000000-240h-oper-tf.bufr",
+      "size": "915"
+    },
+    {
+      "key": "20250915/00z/aifs-single/0p25/oper/20250915000000-240h-oper-tf.bufr",
+      "size": "931"
+    },
+    {
+      "key": "20250801/00z/ifs/0p25/enfo/20250801000000-240h-enfo-tf.bufr",
+      "size": "991876"
+    },
+    {
+      "key": "20250801/00z/ifs/0p25/oper/20250801000000-240h-oper-tf.bufr",
+      "size": "8166"
+    },
+    {
+      "key": "20250801/00z/aifs-single/0p25/oper/20250801000000-240h-oper-tf.bufr",
+      "size": "7636"
+    },
+    {
+      "key": "20240901/00z/ifs/0p25/enfo/20240901000000-240h-enfo-tf.bufr",
+      "size": "713009"
+    },
+    {
+      "key": "20240901/00z/ifs/0p25/oper/20240901000000-240h-oper-tf.bufr",
+      "size": "6462"
+    },
+    {
+      "key": "20241015/00z/ifs/0p25/enfo/20241015000000-240h-enfo-tf.bufr",
+      "size": "526251"
+    }
+  ],
+  "sample_keys": [
+    "20260801/00z/ifs/0p25/enfo/20260801000000-0h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-0h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-102h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-102h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-105h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-105h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-108h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-108h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-111h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-111h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-114h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-114h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-117h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-117h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-120h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-120h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-123h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-123h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-126h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-126h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-129h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-129h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-12h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-12h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-132h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-132h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-135h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-135h-enfo-ef.index",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-138h-enfo-ef.grib2",
+    "20260801/00z/ifs/0p25/enfo/20260801000000-138h-enfo-ef.index"
+  ]
+}

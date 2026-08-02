@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NHC Data Archive</title>
+  <meta charset="utf-8">
+  <script async="" src="/assets/js/uswds-init.min.js"></script>
+  <link rel="preload" as="style" href="/assets/css/uswds-styles-22f6e7a4a2.min.css" />
+  <link rel="stylesheet" href="/assets/css/uswds-styles-22f6e7a4a2.min.css" type="text/css" />
+  
+  </head>
+  <body>
+    <div class="skipheader">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links" src="/css/images/skipgraphic.gif" width="1" border="0"></a>
+    </div>
+    
+    <!-- Top Menu Navigation Section -->
+<div class="altformatcenter">
+  <div class="altformatcontent">
+    <script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script>
+    <div class="altformat">
+      <div class="format-type">
+        <a href="/index.shtml">Home</a>
+      </div>
+      <div class="format-type">
+        <a href="/mobile">Mobile Site</a>
+      </div>
+      <div class="format-type">
+        <a href="?text">Text Version</a>
+      </div>
+      <div class="format-type">
+        <a href="/aboutrss.shtml">RSS</a>
+      </div>
+
+      <div class="local-forecast">
+        <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+    <!--    <label for="inputstring">Local forecast by "City, St" or ZIP code</label> -->
+        <input id="inputstring" name="inputstring" type="text" size="8" value="Enter City,St or ZIP code" onclick="this.value=''">
+        <input name="btnSearch" id="btnSearch" type="submit" value="Go">
+        </form>
+      </div>
+      <div class="forecast-description">
+        <a href="https://www.weather.gov">Local Forecast</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<!-- Header Section -->
+<div class="header">
+  <div class="header-content">
+    <a href="http://www.noaa.gov"><img class="header-noaa-icon" src="/assets/images/NOAA_noText_logo.svg" alt="National Oceanic and Atmospheric Administration logo" role="img" style="height: 68px; margin-top: 5px;"></a>
+    <a href="http://www.weather.gov"><img class="header-nws-icon" src="/assets/images/NWS_logo.svg" alt="National Weather Service logo" role="img" style="height: 68px; margin-top: 5px;"></a>
+    <a href="http://www.commerce.gov" class="header-doc"><img src="/assets/images/DOC_logo.svg" alt="United States Department of Commerce" role="img" style="height: 68px; margin-top: 5px; margin-right: 6px;"></a>
+    <div class="header-center-text"><a class="header-center-text" href="/index.php" style="height:auto;">NATIONAL HURRICANE CENTER and<br>CENTRAL PACIFIC HURRICANE CENTER</a></div>
+    <div class="header-noaa-text"><a class="header-noaa-text">National Oceanic and Atmospheric Administration</a></div>
+  </div>
+</div>
+<div class="header-shadow"><div class="header-shadow-content"></div></div>
+
+    <div class="center">
+      <div class="content">
+    <div class="usa-overlay"></div>
+<header class="usa-header nhc-header">
+  <div class="usa-nav-container">
+    <nav id="nhc-main-nav" aria-label="Primary navigation" class="usa-nav bg-white border-bottom-1px border-base-lighter">      
+      <ul class="usa-nav__primary usa-accordion margin-0 padding-0 display-flex flex-wrap">
+
+        <!-- Forecast Links -->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-forecast-menu"
+          >
+            <span>Analysis & Forecasts</span>
+          </button>
+          <ul id="nav-forecast-menu" class="usa-nav__submenu bg-white" hidden>
+            <li><a class="usa-link" href="/cyclones">Tropical Cyclone Products</a></li>
+            <li><a class="usa-link" href="/gtwo.php">Tropical Weather Outlooks</a></li>
+            <li><a class="usa-link" href="/marine">Marine Products</a></li>
+            <li><a class="usa-link" href="/rip-currents/map.html">Rip Currents Map</a></li>
+            <li><a class="usa-link" href="/aboutrss.shtml">RSS Feeds</a></li>
+            <li><a class="usa-link" href="/gis/">GIS Products</a></li>
+            <li><a class="usa-link" href="/aboutalternate.shtml">Alternate Formats</a></li>
+            <li><a class="usa-link" href="/aboutnhcprod.shtml">Tropical Cyclone Product Descriptions</a></li>
+            <li><a class="usa-link" href="/productexamples/">Tropical Cyclone Product Examples</a></li>
+            <li><a class="usa-link" href="/abouttafbprod.shtml">Marine Product Descriptions</a></li>
+          </ul>
+        </li>
+        
+        <!-- Data & Tools -->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-data-menu"
+          >
+            <span>Data & Tools</span>
+          </button>
+          <ul id="nav-data-menu" class="usa-nav__submenu bg-white" hidden>
+            <li><a class="usa-link" href="/satellite.php">Satellite Imagery</a></li>
+            <li><a class="usa-link" href="/radar.php">Radar Imagery</a></li>
+            <li><a class="usa-link" href="/recon.php">Aircraft Reconnaissance</a></li>
+            <li><a class="usa-link" href="/analysis_tools.php">Tropical Analysis Tools</a></li>
+            <li><a class="usa-link" href="/experimental/">Experimental Products</a></li>
+            <li><a class="usa-link" href="/gccalc.shtml">Lat/Lon Distance Calculator</a></li>
+            <li><a class="usa-link" href="/tracking_charts.shtml">Blank Tracking Maps</a></li>
+          </ul>
+        </li>
+
+        <!-- Outreach & Education-->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-education-menu"
+          >
+            <span>Educational Resources</span>
+          </button>
+          <ul id="nav-education-menu" class="usa-nav__submenu bg-white" hidden>
+            <li>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.weather.gov/wrn/hurricane-preparedness"
+                target="_blank"
+              >
+                Be Prepared!<br>NWS Hurricane Prep Week
+              </a>
+            </li>
+            <li><a class="usa-link" href="/outreach">Outreach Documents</a></li>
+            <li><a class="usa-link" href="/TCvideos.shtml">TC Videos</a></li>
+            <li><a class="usa-link" href="/rip-currents/">Rip Currents</a></li>
+            <li><a class="usa-link" href="/surge/">Storm Surge</a></li>
+            <li><a class="usa-link" href="/breakpoints/">Watch/Warning Breakpoints</a></li>
+            <li><a class="usa-link" href="/climo/">Climatology</a></li>
+            <li><a class="usa-link" href="/aboutnames.shtml">Tropical Cyclone Names</a></li>
+            <li><a class="usa-link" href="/aboutsshws.php">Wind Scale</a></li>
+            <li><a class="usa-link" href="/dcmi.shtml">Records and Facts</a></li>
+            <li><a class="usa-link" href="/outreach/history">Historical Hurricane Summaries</a></li>
+            <li><a class="usa-link" href="/modelsummary.shtml">Forecast Models</a></li>
+            <li><a class="usa-link" href="/aboutpubs.shtml">NHC Publications</a></li>
+            <li><a class="usa-link" href="/aboutgloss.shtml">NHC Glossary</a></li>
+            <li><a class="usa-link" href="/acronyms.shtml">Acronyms</a></li>
+            <li><a class="usa-link" href="/faq.shtml">Frequent Questions</a></li>
+          </ul>
+        </li>
+
+        <!-- Archives -->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-archive-menu"
+          >
+            <span>Archives</span>
+          </button>
+          <ul id="nav-archive-menu" class="usa-nav__submenu bg-white" hidden>
+            <li><a class="usa-link" href="/archive/2026/">Tropical Cyclone Advisories</a></li>
+            <li><a class="usa-link" href="/archive/xgtwo/gtwo_archive.php">Tropical Weather Outlooks</a></li>
+            <li><a class="usa-link" href="/data/tcr/index.php">Tropical Cyclone Reports and Season Summaries</a></li>
+            <li><a class="usa-link" href="/verification/">Tropical Cyclone Forecast Verification</a></li> 
+            <li><a class="usa-link" href="/newsarchive.shtml">NHC News Archive</a></li>
+            <li><a class="usa-link" href="/data/">Other Archives: HURDAT, Track Maps, Marine Products, and more</a></li>
+          </ul>
+        </li>
+
+        <!-- About NHC/CPHC -->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-about-menu"
+          >
+            <span>About</span>
+          </button>
+          <ul id="nav-about-menu" class="usa-nav__submenu bg-white" hidden>
+            <li><a class="usa-link" href="/aboutintro.shtml">National Hurricane Center</a></li>
+            <li><a class="usa-link" href="/aboutcphc.php">Central Pacific Hurricane Center</a></li>
+            <li><a class="usa-link" href="/aboutlibrary.php">Library</a></li>
+            <li><a class="usa-link" href="/contact.shtml">Contact Us</a></li>
+          </ul>
+        </li>
+
+        <!-- Search -->
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="nav-search-menu"
+          >
+            <span>Search</span>
+          </button>
+          <ul id="nav-search-menu" class="usa-nav__submenu bg-white" hidden>
+            <li>
+              <form id="search-form" method="get" action="https://search.usa.gov/search" class="usa-search usa-search--small padding-1" role="search">
+                <fieldset class="usa-fieldset">
+                  <legend class="usa-legend usa-legend">Search for</legend>
+                  <input type="hidden" name="v:project" value="firstgov">
+                  <input type="hidden" name="affiliate" value="nws.noaa.gov">
+                  <label class="usa-sr-only" for="search-field-en-small">Search</label>
+                  <input
+                    class="usa-input width-auto"
+                    id="search-field-en-small"
+                    type="search"
+                    name="query"
+                  />
+                  <button class="usa-button" type="submit">
+                    <img
+                      src="/assets/img/usa-icons-bg/search--white.svg"
+                      class="usa-search__submit-icon"
+                      alt="Search"
+                    />
+                  </button>
+                </fieldset>
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the sub-menu that contains the search form
+  const searchMenuContainer = document.querySelector('#nav-search-menu');
+
+  if (searchMenuContainer) {
+    // Prevent the 'click' event from bubbling up to the document.
+    // This stops the USWDS script from closing the menu when you
+    // interact with the form inside it.
+    searchMenuContainer.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+  }
+});
+</script>
+
+    <!-- BEGIN Google Analytics code -->
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA" id="_fed_an_ua_tag"></script>
+<!-- END Google Analytics code -->
+
+    <a name="contents" id="contents"></a><br>
+    <!-- START OF CONTENT -->
+    <h2 align="center" style="width: 100%;">NHC Data Archive</h2>
+    <hr width="100%" align="left">
+<!-- Content here -->
+
+
+<style type="text/css">
+.currentPage {
+ color: gray;
+}
+</style>
+
+<div class="tiny" style="text-align:center; font-weight:bold;">
+<span class="currentPage">Data Archive</span> | <a href="/data/publications.php">Publications</a><hr noshade align="left" width="100%" /></b></div>
+
+
+
+<script type="text/javascript">
+<!--
+
+function dropdown(mySel)
+{
+var myWin, myVal;
+myVal = mySel.options[mySel.selectedIndex].value;
+if(myVal)
+   {
+   if(mySel.form.target)myWin = parent[mySel.form.target];
+   else myWin = window;
+   if (! myWin) return true;
+   myWin.location = myVal;
+   }
+return false;
+}
+
+//-->
+</script>
+
+<h5>Contents</h5>
+<ul>
+  <li><a href="#tcr">Tropical Cyclone Reports</a></li>
+  <li><a href="#advisories">Tropical Cyclone Advisories</a></li>
+  <li><a href="#gtwo">Graphical Tropical Weather Outlook (GTWO)</a></li>
+  <li><a href="#text">Marine & Advisory Text Products</a></li>
+  <li><a href="#marine">Marine Graphical Products</a></li>
+  <li><a href="#hurdat">Best Track Data (HURDAT2)</a></li>
+  <li><a href="#tracks_all">Past Track Seasonal Maps</a></li>
+  <li><a href="#tracks_us">Past Track Maps of Major U.S. Landfalls</a></li>
+  <li><a href="#gis">Tropical Cyclone GIS Data</a></li>
+  <li><a href="#wallet">Storm Wallet Scanning Project</a></li>
+  <li><a href="#monthly">Tropical Cyclone Monthly Summaries</a></li>
+  <li><a href="#annual">Tropical Cyclone Annual Summaries (Atlantic)</a></li>
+  <li><a href="#outlooks">Tropical Cyclone Seasonal Outlooks</a></li>
+  <li><a href="#climo">Tropical Cyclone Climatology</a></li>
+  <li><a href="#verif">Tropical Cyclone Forecast Verification</a></li>
+  <li><a href="#recarch">Aircraft Reconnaissance Archive</a></li>
+  <li><a href="#extreme">Deadliest, Costliest, Most Intense Atlantic Storms</a></li>
+<!--  <li><a href="#infamous">Infamous Atlantic Storms</a></li> -->
+  <li><a href="#cphc">Central Pacific Hurricane History</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr noshade>
+
+
+<a name="tcr"></a>
+<p class="hdr">Tropical Cyclone Reports
+
+<p class="reg">
+The National Hurricane Center's Tropical Cyclone Reports (formerly called
+Preliminary Reports) contain comprehensive information on each storm,
+including synoptic history, meteorological statistics, casualties and
+damages, and the post-analysis best track (six-hourly positions and
+intensities).
+
+<p class="std">Atlantic, Caribbean, and the Gulf of America
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/data/tcr/index.php?season=2025&basin=atl">2025
+<option value="/data/tcr/index.php?season=2024&basin=atl">2024
+<option value="/data/tcr/index.php?season=2023&basin=atl">2023
+<option value="/data/tcr/index.php?season=2022&basin=atl">2022
+<option value="/data/tcr/index.php?season=2021&basin=atl">2021
+<option value="/data/tcr/index.php?season=2020&basin=atl">2020
+<option value="/data/tcr/index.php?season=2019&basin=atl">2019
+<option value="/data/tcr/index.php?season=2018&basin=atl">2018
+<option value="/data/tcr/index.php?season=2017&basin=atl">2017
+<option value="/data/tcr/index.php?season=2016&basin=atl">2016
+<option value="/data/tcr/index.php?season=2015&basin=atl">2015
+<option value="/data/tcr/index.php?season=2014&basin=atl">2014
+<option value="/data/tcr/index.php?season=2013&basin=atl">2013
+<option value="/data/tcr/index.php?season=2012&basin=atl">2012
+<option value="/data/tcr/index.php?season=2011&basin=atl">2011
+<option value="/data/tcr/index.php?season=2010&basin=atl">2010
+<option value="/data/tcr/index.php?season=2009&basin=atl">2009
+<option value="/data/tcr/index.php?season=2008&basin=atl">2008
+<option value="/data/tcr/index.php?season=2007&basin=atl">2007
+<option value="/data/tcr/index.php?season=2006&basin=atl">2006
+<option value="/data/tcr/index.php?season=2005&basin=atl">2005
+<option value="/data/tcr/index.php?season=2004&basin=atl">2004
+<option value="/data/tcr/index.php?season=2003&basin=atl">2003
+<option value="/data/tcr/index.php?season=2002&basin=atl">2002
+<option value="/data/tcr/index.php?season=2001&basin=atl">2001
+<option value="/data/tcr/index.php?season=2000&basin=atl">2000
+<option value="/data/tcr/index.php?season=1999&basin=atl">1999
+<option value="/data/tcr/index.php?season=1998&basin=atl">1998
+<option value="/data/tcr/index.php?season=1997&basin=atl">1997
+<option value="/data/tcr/index.php?season=1996&basin=atl">1996
+<option value="/data/tcr/index.php?season=1995&basin=atl">1995
+<option value="/archive/storm_wallets/atlantic/">1958-1994*
+</select>
+<input type=submit value="Go">
+</form>
+
+<p class="std">Eastern Pacific (out to 140&deg;W)
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/data/tcr/index.php?season=2025&basin=epac">2025
+<option value="/data/tcr/index.php?season=2024&basin=epac">2024
+<option value="/data/tcr/index.php?season=2023&basin=epac">2023
+<option value="/data/tcr/index.php?season=2022&basin=epac">2022
+<option value="/data/tcr/index.php?season=2021&basin=epac">2021
+<option value="/data/tcr/index.php?season=2020&basin=epac">2020
+<option value="/data/tcr/index.php?season=2019&basin=epac">2019
+<option value="/data/tcr/index.php?season=2018&basin=epac">2018
+<option value="/data/tcr/index.php?season=2017&basin=epac">2017
+<option value="/data/tcr/index.php?season=2016&basin=epac">2016
+<option value="/data/tcr/index.php?season=2015&basin=epac">2015
+<option value="/data/tcr/index.php?season=2014&basin=epac">2014
+<option value="/data/tcr/index.php?season=2013&basin=epac">2013
+<option value="/data/tcr/index.php?season=2012&basin=epac">2012
+<option value="/data/tcr/index.php?season=2011&basin=epac">2011
+<option value="/data/tcr/index.php?season=2010&basin=epac">2010
+<option value="/data/tcr/index.php?season=2009&basin=epac">2009
+<option value="/data/tcr/index.php?season=2008&basin=epac">2008
+<option value="/data/tcr/index.php?season=2007&basin=epac">2007
+<option value="/data/tcr/index.php?season=2006&basin=epac">2006
+<option value="/data/tcr/index.php?season=2005&basin=epac">2005
+<option value="/data/tcr/index.php?season=2004&basin=epac">2004
+<option value="/data/tcr/index.php?season=2003&basin=epac">2003
+<option value="/data/tcr/index.php?season=2002&basin=epac">2002
+<option value="/data/tcr/index.php?season=2001&basin=epac">2001
+<option value="/data/tcr/index.php?season=2000&basin=epac">2000
+<option value="/data/tcr/index.php?season=1999&basin=epac">1999
+<option value="/data/tcr/index.php?season=1998&basin=epac">1998
+<option value="/data/tcr/index.php?season=1997&basin=epac">1997
+<option value="/data/tcr/index.php?season=1996&basin=epac">1996
+<option value="/data/tcr/index.php?season=1995&basin=epac">1995
+<option value="/archive/storm_wallets/epacific/">1988-1994*
+</select>
+<input type=submit value="Go">
+</form>
+
+<p class="std">Central Pacific (west of 140&deg;W)
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option style="min-width: 77px;" value="/data/tcr/index.php?season=2025&basin=cpac">2025
+<option value="/data/tcr/index.php?season=2024&basin=cpac">2024
+<option value="/data/tcr/index.php?season=2023&basin=cpac">2023
+<option value="/data/tcr/index.php?season=2022&basin=cpac">2022
+<option value="/data/tcr/index.php?season=2021&basin=cpac">2021
+<option value="/data/tcr/index.php?season=2020&basin=cpac">2020
+<option value="/data/tcr/index.php?season=2019&basin=cpac">2019
+<option value="/data/tcr/index.php?season=2018&basin=cpac">2018
+<option value="/data/tcr/index.php?season=2017&basin=cpac">2017
+<option value="/data/tcr/index.php?season=2016&basin=cpac">2016
+<option value="/data/tcr/index.php?season=2015&basin=cpac">2015
+<option value="/data/tcr/index.php?season=2014&basin=cpac">2014
+<option value="/data/tcr/index.php?season=2013&basin=cpac">2013
+<option value="/data/tcr/index.php?season=2012&basin=cpac">2012
+<option value="/data/tcr/index.php?season=2011&basin=cpac">2011
+</select>
+<input type=submit value="Go">
+</form>
+
+<p class="reg">
+<b>* Note:</b> 1958-1994 for the Atlantic, Caribbean, and the Gulf of America
+and 1988-1994 for the Eastern Pacific are scanned images of the printed
+reports.
+<br><br>
+<a href="/TCR_StormReportsIndex.xml">An XML index file is also available for all the Tropical Cyclone Reports</a>.
+
+<p><hr noshade>
+
+<a name="advisories"></a>
+<p class="hdr">Tropical Cyclone Advisory Archive
+
+<p class="reg">
+NHC's Tropical Cyclone Advisory Archive is the complete set of tropical cyclone text 
+advisories and graphic images that were issued during the hurricane season.
+
+<p class="reg">
+The tropical cyclone graphics archives are accessed through the <b>Graphics
+Archive</b> link at the top of the individual storm archive pages (graphics
+from the mid-2000 season and later are available).
+
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/archive/2025/">2025
+<option value="/archive/2024/">2024
+<option value="/archive/2023/">2023
+<option value="/archive/2022/">2022
+<option value="/archive/2021/">2021
+<option value="/archive/2020/">2020
+<option value="/archive/2019/">2019
+<option value="/archive/2018/">2018
+<option value="/archive/2017/">2017
+<option value="/archive/2016/">2016
+<option value="/archive/2015/">2015
+<option value="/archive/2014/">2014
+<option value="/archive/2013/">2013
+<option value="/archive/2012/">2012
+<option value="/archive/2011/">2011
+<option value="/archive/2010/">2010
+<option value="/archive/2009/">2009
+<option value="/archive/2008/">2008
+<option value="/archive/2007/">2007
+<option value="/archive/2006/">2006
+<option value="/archive/2005/">2005
+<option value="/archive/2004/">2004
+<option value="/archive/2003/">2003
+<option value="/archive/2002/">2002
+<option value="/archive/2001/">2001
+<option value="/archive/2000/">2000
+<option value="/archive/1999/">1999
+<option value="/archive/storm_wallets/">pre-1999*
+</select>
+<input type=submit value="Go">
+</form>
+
+<p class="reg">
+<b>* Note:</b> Advisories prior to 1999 are largely scanned images of the printed bulletins.  Not all advisories are available
+
+
+<p><hr noshade>
+
+
+<a name="gtwo"></a><p class="hdr">Graphical Tropical Weather Outlook
+<p class="reg">
+The graphical Tropical Weather Outlook (TWO) is a web display intended to be a visual companion product to the text TWO. Archives
+are available for both the Atlantic and East Pacific basins.
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/archive/xgtwo/gtwo_archive.php?current_issuance=latest&basin=atl&fdays=7">Atlantic
+<option value="/archive/xgtwo/gtwo_archive.php?current_issuance=latest&basin=epac&fdays=7">East Pacific
+</select>
+<input type=submit value="Go">
+</form>
+
+
+<p><hr noshade>
+<a name="text"></a>
+</p>
+
+<p class="hdr">Marine & Advisory Text Products</p>
+
+<p class="reg">
+Use the drop-down below to access NHC's past plain-text forecasts and advisories. They are sorted by 
+product header.
+<br>
+<form class="searchinput" action="null" method="post" onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+ <option value="/archive/text/HSFAT2/">HSFAT2 - Marine High Seas (Atlantic)</option>
+ <option value="/archive/text/HSFEP2/">HSFEP2 - Marine High Seas (Northeast Pacific)</option>
+ <option value="/archive/text/HSFEP3/">HSFEP3 - Marine High Seas (Southeast Pacific)</option>
+ <option value="/archive/text/MIMATS/">MIMATS - Marine Weather Discussion (Atlantic)</option>
+ <option value="/archive/text/OFFNT5/">OFFNT5 - Marine Offshore Waters (S.W. North Atlantic)</option>
+ <option value="/archive/text/OFFNT4/">OFFNT4 - Marine Offshore Waters (Gulf of America)</option>
+ <option value="/archive/text/OFFNT3/">OFFNT3 - Marine Offshore Waters (Caribbean/S.W. Tropical Atlantic)</option>
+ <option value="/archive/text/OFFPZ7/">OFFPZ7 - Marine Offshore Waters (Mexico)</option>
+ <option value="/archive/text/OFFPZ8/">OFFPZ8 - Marine Offshore Waters (Central America/Colombia/Ecuador)</option>
+ <option value="/archive/text/TPTPAN/">TPTPAN - Pan American Temperature & Precipitation</option>
+ <option value="/archive/text/TWDAT/">TWDAT - Tropical Weather Discussion (Atlantic)</option>
+ <option value="/archive/text/TWDEP/">TWDEP - Tropical Weather Discussion (East Pacific)</option>
+ <option value="/archive/text/TWOAT/">TWOAT - Tropical Weather Outlook (Atlantic)</option>
+ <option value="/archive/text/TWOEP/">TWOEP - Tropical Weather Outlook (East Pacific)</option>
+ <option value="/archive/text/">...More Local NHC Text Archives...</option>
+</select>
+<input type="submit" value="Go">
+</form>
+
+</p>
+
+
+<p><hr noshade>
+<a name="marine"></a>
+</p>
+
+<p class="hdr">Marine Graphical Products</p>
+<p class="reg">
+
+Unified Surface Analysis:  Depiction of synoptic features every six hours from 20S to 50N between 0W and 165W, which is a combined effort between the National Hurricane Center, the Ocean Prediction Center, the Weather Prediction Center, and the Honolulu Weather Forecast Office.
+<br><br>
+<a href="https://ftp.nhc.ncep.noaa.gov/tafb/surface_analysis/">Unified Surface Analysis Archive</a>
+<br><br>
+
+The National Climatic Data Center (NCDC) archives most of the marine graphical products produced 
+by the Tropical Analysis & Forecast Branch (TAFB).  These charts can be found at the link below, 
+mostly in the 'Ocean Analysis' and 'Ocean Forecast' sections.
+<br><br>
+<a href="https://www.ncei.noaa.gov/data/ncep-charts/access/">NCEI NCEP Graphics Archive</a>
+</p>
+
+<p><hr noshade>
+<a name="hurdat"></a>
+</p>
+
+<p class="hdr">Best Track Data (HURDAT2)
+
+</p>
+<p class="reg"><span style="font-weight:bold;">Atlantic hurricane database (HURDAT2) 1851-2025</span>
+&nbsp; (<a href="/data/hurdat/hurdat2-1851-2025-02272026.txt">6.8MB download</a>)
+<br>
+This dataset was updated on February 27th, 2026 to include in the 2025 hurricane season.
+</p>
+
+<p class="reg">
+This dataset (<a href="/data/hurdat/hurdat2-format-atl-1851-2021.pdf">known as Atlantic HURDAT2</a>) has
+a comma-delimited, text format with six-hourly information on the location,
+maximum winds, central pressure, and (beginning in 2004) size of all known tropical cyclones and subtropical cyclones.
+The original HURDAT database has been retired.</p>
+
+<p class="reg">
+Detailed information regarding the <a href="http://www.aoml.noaa.gov/hrd/data_sub/re_anal.html">
+Atlantic Hurricane Database Re-analysis Project</a> is available from the
+<a href="http://www.aoml.noaa.gov/hrd/">Hurricane Research Division</a>.
+</p>
+
+<p class="reg"><span style="font-weight:bold;">Northeast and North Central Pacific hurricane database (HURDAT2) 1949-2025</span>
+&nbsp;(<a href="/data/hurdat/hurdat2-nepac-1949-2025-02272026.txt">4.0MB download</a>)
+<br>
+This dataset was updated on February 27th, 2026 to include the 2025 hurricane season.
+</p>
+
+<p class="reg">
+This dataset (<a href="/data/hurdat/hurdat2-format-nencpac-1949-2021.pdf">known as NE/NC Pacific HURDAT2</a>) 
+has a comma-delimited, text format with six-hourly information on the 
+location, maximum winds, central pressure, and (beginning in 2004)
+size of all known tropical cyclones and subtropical cyclones. The
+original HURDAT database has been retired.
+</p>
+
+<p class="reg"><span style="font-weight:bold;">HURDAT Reference</span> 
+<br>
+Landsea, C. W. and J. L. Franklin, 2013: Atlantic Hurricane Database Uncertainty and Presentation of a New Database Format. Mon. Wea. Rev., 141, 3576-3592.
+</p>
+
+<p><hr noshade>
+<a name="tracks_all"></a>
+</p>
+
+<p class="hdr">Past Track Seasonal Maps
+</p>
+
+<p class="reg">
+Use the drop-down menus below to access a track map image for the specified
+season.  These images are based on the HURDAT best track database and 
+available in Portable Network Graphics (.png) format.
+<!-- For more information please see the book "Tropical Cyclones of the
+North Atlantic Ocean 1871-1992", published by the Department of Commerce and
+the National Oceanographic and Atmospheric Administration.-->
+
+<p class="reg">
+<table cellspacing="0" cellpadding="0" width="85%" border="0">
+<tr align="left" valign="top">
+<td width="50%">
+<p class="reg">
+<span style="font-weight:bold;">Atlantic Basin</span><br>
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/data/tracks/tracks-at-2024.png">2024 (Atlantic Basin)
+<option value="/data/tracks/tracks-at-2023.png">2023
+<option value="/data/tracks/tracks-at-2022.png">2022
+<option value="/data/tracks/tracks-at-2021.png">2021
+<option value="/data/tracks/tracks-at-2020.png">2020
+<option value="/data/tracks/tracks-at-2019.png">2019
+<option value="/data/tracks/tracks-at-2018.png">2018
+<option value="/data/tracks/tracks-at-2017.png">2017
+<option value="/data/tracks/tracks-at-2016.png">2016
+<option value="/data/tracks/tracks-at-2015.png">2015
+<option value="/data/tracks/tracks-at-2014.png">2014
+<option value="/data/tracks/tracks-at-2013.png">2013
+<option value="/data/tracks/tracks-at-2012.png">2012
+<option value="/data/tracks/tracks-at-2011.png">2011
+<option value="/data/tracks/tracks-at-2010.png">2010
+<option value="/data/tracks/tracks-at-2009.png">2009
+<option value="/data/tracks/tracks-at-2008.png">2008
+<option value="/data/tracks/tracks-at-2007.png">2007
+<option value="/data/tracks/tracks-at-2006.png">2006
+<option value="/data/tracks/tracks-at-2005.png">2005
+<option value="/data/tracks/tracks-at-2004.png">2004
+<option value="/data/tracks/tracks-at-2003.png">2003
+<option value="/data/tracks/tracks-at-2002.png">2002
+<option value="/data/tracks/tracks-at-2001.png">2001
+<option value="/data/tracks/tracks-at-2000.png">2000
+<option value="/data/tracks/tracks-at-1999.png">1999
+<option value="/data/tracks/tracks-at-1998.png">1998
+<option value="/data/tracks/tracks-at-1997.png">1997
+<option value="/data/tracks/tracks-at-1996.png">1996
+<option value="/data/tracks/tracks-at-1995.png">1995
+<option value="/data/tracks/tracks-at-1994.png">1994
+<option value="/data/tracks/tracks-at-1993.png">1993
+<option value="/data/tracks/tracks-at-1992.png">1992
+<option value="/data/tracks/tracks-at-1991.png">1991
+<option value="/data/tracks/tracks-at-1990.png">1990
+<option value="/data/tracks/tracks-at-1989.png">1989
+<option value="/data/tracks/tracks-at-1988.png">1988
+<option value="/data/tracks/tracks-at-1987.png">1987
+<option value="/data/tracks/tracks-at-1986.png">1986
+<option value="/data/tracks/tracks-at-1985.png">1985
+<option value="/data/tracks/tracks-at-1984.png">1984
+<option value="/data/tracks/tracks-at-1983.png">1983
+<option value="/data/tracks/tracks-at-1982.png">1982
+<option value="/data/tracks/tracks-at-1981.png">1981
+<option value="/data/tracks/tracks-at-1980.png">1980
+<option value="/data/tracks/tracks-at-1979.png">1979
+<option value="/data/tracks/tracks-at-1978.png">1978
+<option value="/data/tracks/tracks-at-1977.png">1977
+<option value="/data/tracks/tracks-at-1976.png">1976
+<option value="/data/tracks/tracks-at-1975.png">1975
+<option value="/data/tracks/tracks-at-1974.png">1974
+<option value="/data/tracks/tracks-at-1973.png">1973
+<option value="/data/tracks/tracks-at-1972.png">1972
+<option value="/data/tracks/tracks-at-1971.png">1971
+<option value="/data/tracks/tracks-at-1970.png">1970
+<option value="/data/tracks/tracks-at-1969.png">1969
+<option value="/data/tracks/tracks-at-1968.png">1968
+<option value="/data/tracks/tracks-at-1967.png">1967
+<option value="/data/tracks/tracks-at-1966.png">1966
+<option value="/data/tracks/tracks-at-1965.png">1965
+<option value="/data/tracks/tracks-at-1964.png">1964
+<option value="/data/tracks/tracks-at-1963.png">1963
+<option value="/data/tracks/tracks-at-1962.png">1962
+<option value="/data/tracks/tracks-at-1961.png">1961
+<option value="/data/tracks/tracks-at-1960.png">1960
+<option value="/data/tracks/tracks-at-1959.png">1959
+<option value="/data/tracks/tracks-at-1958.png">1958
+<option value="/data/tracks/tracks-at-1957.png">1957
+<option value="/data/tracks/tracks-at-1956.png">1956
+<option value="/data/tracks/tracks-at-1955.png">1955
+<option value="/data/tracks/tracks-at-1954.png">1954
+<option value="/data/tracks/tracks-at-1953.png">1953
+<option value="/data/tracks/tracks-at-1952.png">1952
+<option value="/data/tracks/tracks-at-1951.png">1951
+<option value="/data/tracks/tracks-at-1950.png">1950
+<option value="/data/tracks/tracks-at-1949.png">1949
+<option value="/data/tracks/tracks-at-1948.png">1948
+<option value="/data/tracks/tracks-at-1947.png">1947
+<option value="/data/tracks/tracks-at-1946.png">1946
+<option value="/data/tracks/tracks-at-1945.png">1945
+<option value="/data/tracks/tracks-at-1944.png">1944
+<option value="/data/tracks/tracks-at-1943.png">1943
+<option value="/data/tracks/tracks-at-1942.png">1942
+<option value="/data/tracks/tracks-at-1941.png">1941
+<option value="/data/tracks/tracks-at-1940.png">1940
+<option value="/data/tracks/tracks-at-1939.png">1939
+<option value="/data/tracks/tracks-at-1938.png">1938
+<option value="/data/tracks/tracks-at-1937.png">1937
+<option value="/data/tracks/tracks-at-1936.png">1936
+<option value="/data/tracks/tracks-at-1935.png">1935
+<option value="/data/tracks/tracks-at-1934.png">1934
+<option value="/data/tracks/tracks-at-1933.png">1933
+<option value="/data/tracks/tracks-at-1932.png">1932
+<option value="/data/tracks/tracks-at-1931.png">1931
+<option value="/data/tracks/tracks-at-1930.png">1930
+<option value="/data/tracks/tracks-at-1929.png">1929
+<option value="/data/tracks/tracks-at-1928.png">1928
+<option value="/data/tracks/tracks-at-1927.png">1927
+<option value="/data/tracks/tracks-at-1926.png">1926
+<option value="/data/tracks/tracks-at-1925.png">1925
+<option value="/data/tracks/tracks-at-1924.png">1924
+<option value="/data/tracks/tracks-at-1923.png">1923
+<option value="/data/tracks/tracks-at-1922.png">1922
+<option value="/data/tracks/tracks-at-1921.png">1921
+<option value="/data/tracks/tracks-at-1920.png">1920
+<option value="/data/tracks/tracks-at-1919.png">1919
+<option value="/data/tracks/tracks-at-1918.png">1918
+<option value="/data/tracks/tracks-at-1917.png">1917
+<option value="/data/tracks/tracks-at-1916.png">1916
+<option value="/data/tracks/tracks-at-1915.png">1915
+<option value="/data/tracks/tracks-at-1914.png">1914
+<option value="/data/tracks/tracks-at-1913.png">1913
+<option value="/data/tracks/tracks-at-1912.png">1912
+<option value="/data/tracks/tracks-at-1911.png">1911
+<option value="/data/tracks/tracks-at-1910.png">1910
+<option value="/data/tracks/tracks-at-1909.png">1909
+<option value="/data/tracks/tracks-at-1908.png">1908
+<option value="/data/tracks/tracks-at-1907.png">1907
+<option value="/data/tracks/tracks-at-1906.png">1906
+<option value="/data/tracks/tracks-at-1905.png">1905
+<option value="/data/tracks/tracks-at-1904.png">1904
+<option value="/data/tracks/tracks-at-1903.png">1903
+<option value="/data/tracks/tracks-at-1902.png">1902
+<option value="/data/tracks/tracks-at-1901.png">1901
+<option value="/data/tracks/tracks-at-1900.png">1900
+<option value="/data/tracks/tracks-at-1899.png">1899
+<option value="/data/tracks/tracks-at-1898.png">1898
+<option value="/data/tracks/tracks-at-1897.png">1897
+<option value="/data/tracks/tracks-at-1896.png">1896
+<option value="/data/tracks/tracks-at-1895.png">1895
+<option value="/data/tracks/tracks-at-1894.png">1894
+<option value="/data/tracks/tracks-at-1893.png">1893
+<option value="/data/tracks/tracks-at-1892.png">1892
+<option value="/data/tracks/tracks-at-1891.png">1891
+<option value="/data/tracks/tracks-at-1890.png">1890
+<option value="/data/tracks/tracks-at-1889.png">1889
+<option value="/data/tracks/tracks-at-1888.png">1888
+<option value="/data/tracks/tracks-at-1887.png">1887
+<option value="/data/tracks/tracks-at-1886.png">1886
+<option value="/data/tracks/tracks-at-1885.png">1885
+<option value="/data/tracks/tracks-at-1884.png">1884
+<option value="/data/tracks/tracks-at-1883.png">1883
+<option value="/data/tracks/tracks-at-1882.png">1882
+<option value="/data/tracks/tracks-at-1881.png">1881
+<option value="/data/tracks/tracks-at-1880.png">1880
+<option value="/data/tracks/tracks-at-1879.png">1879
+<option value="/data/tracks/tracks-at-1878.png">1878
+<option value="/data/tracks/tracks-at-1877.png">1877
+<option value="/data/tracks/tracks-at-1876.png">1876
+<option value="/data/tracks/tracks-at-1875.png">1875
+<option value="/data/tracks/tracks-at-1874.png">1874
+<option value="/data/tracks/tracks-at-1873.png">1873
+<option value="/data/tracks/tracks-at-1872.png">1872
+<option value="/data/tracks/tracks-at-1871.png">1871
+<option value="/data/tracks/tracks-at-1870.png">1870
+<option value="/data/tracks/tracks-at-1869.png">1869
+<option value="/data/tracks/tracks-at-1868.png">1868
+<option value="/data/tracks/tracks-at-1867.png">1867
+<option value="/data/tracks/tracks-at-1866.png">1866
+<option value="/data/tracks/tracks-at-1865.png">1865
+<option value="/data/tracks/tracks-at-1864.png">1864
+<option value="/data/tracks/tracks-at-1863.png">1863
+<option value="/data/tracks/tracks-at-1862.png">1862
+<option value="/data/tracks/tracks-at-1861.png">1861
+<option value="/data/tracks/tracks-at-1860.png">1860
+<option value="/data/tracks/tracks-at-1859.png">1859
+<option value="/data/tracks/tracks-at-1858.png">1858
+<option value="/data/tracks/tracks-at-1857.png">1857
+<option value="/data/tracks/tracks-at-1856.png">1856
+<option value="/data/tracks/tracks-at-1855.png">1855
+<option value="/data/tracks/tracks-at-1854.png">1854
+<option value="/data/tracks/tracks-at-1853.png">1853
+<option value="/data/tracks/tracks-at-1852.png">1852
+<option value="/data/tracks/tracks-at-1851.png">1851
+</select>
+<input type=submit value="Go">
+</form>
+</p>
+</td>
+<td>&nbsp;</td>
+
+<td>
+<p class="reg">
+<span style="font-weight:bold;">East Pacific Basin</span><br>
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/data/tracks/tracks-ep-2024.png">2024 (East Pacific Basin)
+<option value="/data/tracks/tracks-ep-2023a.png">2023_a
+<option value="/data/tracks/tracks-ep-2023b.png">2023_b
+<option value="/data/tracks/tracks-ep-2022a.png">2022_a
+<option value="/data/tracks/tracks-ep-2022b.png">2022_b
+<option value="/data/tracks/tracks-ep-2021a.png">2021_a
+<option value="/data/tracks/tracks-ep-2021b.png">2021_b
+<option value="/data/tracks/tracks-ep-2020a.png">2020_a
+<option value="/data/tracks/tracks-ep-2020b.png">2020_b
+<option value="/data/tracks/tracks-ep-2019a.png">2019_a
+<option value="/data/tracks/tracks-ep-2019b.png">2019_b
+<option value="/data/tracks/tracks-ep-2018a.png">2018_a
+<option value="/data/tracks/tracks-ep-2018b.png">2018_b
+<option value="/data/tracks/tracks-ep-2017a.png">2017_a
+<option value="/data/tracks/tracks-ep-2017b.png">2017_b
+<option value="/data/tracks/tracks-ep-2016a.png">2016_a
+<option value="/data/tracks/tracks-ep-2016b.png">2016_b
+<option value="/data/tracks/tracks-ep-2015a.png">2015_a
+<option value="/data/tracks/tracks-ep-2015b.png">2015_b
+<option value="/data/tracks/tracks-ep-2014a.png">2014_a
+<option value="/data/tracks/tracks-ep-2014b.png">2014_b
+<option value="/data/tracks/tracks-ep-2014c.png">2014_c
+<option value="/data/tracks/tracks-ep-2013a.png">2013_a
+<option value="/data/tracks/tracks-ep-2013b.png">2013_b
+<option value="/data/tracks/tracks-ep-2012a.png">2012_a
+<option value="/data/tracks/tracks-ep-2012b.png">2012_b
+<option value="/data/tracks/tracks-ep-2011a.png">2011_a
+<option value="/data/tracks/tracks-ep-2011b.png">2011_b
+<option value="/data/tracks/tracks-ep-2010.png">2010
+<option value="/data/tracks/tracks-ep-2009a.png">2009
+<option value="/data/tracks/tracks-ep-2009b.png">2009_b
+<option value="/data/tracks/tracks-ep-2008.png">2008
+<option value="/data/tracks/tracks-ep-2008b.png">2008_b
+<option value="/data/tracks/tracks-ep-2007.png">2007
+<option value="/data/tracks/tracks-ep-2006.png">2006
+<option value="/data/tracks/tracks-ep-2006b.png">2006_b
+<option value="/data/tracks/tracks-ep-2005.png">2005
+<option value="/data/tracks/tracks-ep-2005b.png">2005_b
+<option value="/data/tracks/tracks-ep-2004.png">2004
+<option value="/data/tracks/tracks-ep-2003.png">2003
+<option value="/data/tracks/tracks-ep-2003b.png">2003_b
+<option value="/data/tracks/tracks-ep-2002.png">2002
+<option value="/data/tracks/tracks-ep-2001.png">2001
+<option value="/data/tracks/tracks-ep-2001b.png">2001_b
+<option value="/data/tracks/tracks-ep-2000.png">2000
+<option value="/data/tracks/tracks-ep-2000b.png">2000_b
+<option value="/data/tracks/tracks-ep-1999.png">1999
+<option value="/data/tracks/tracks-ep-1998.png">1998
+<option value="/data/tracks/tracks-ep-1998b.png">1998_b
+<option value="/data/tracks/tracks-ep-1997.png">1997
+<option value="/data/tracks/tracks-ep-1997b.png">1997_b
+<option value="/data/tracks/tracks-ep-1996.png">1996
+<option value="/data/tracks/tracks-ep-1995.png">1995
+<option value="/data/tracks/tracks-ep-1994.png">1994
+<option value="/data/tracks/tracks-ep-1994b.png">1994_b
+<option value="/data/tracks/tracks-ep-1993.png">1993
+<option value="/data/tracks/tracks-ep-1993b.png">1993_b
+<option value="/data/tracks/tracks-ep-1992.png">1992
+<option value="/data/tracks/tracks-ep-1992b.png">1992_b
+<option value="/data/tracks/tracks-ep-1992c.png">1992_c
+<option value="/data/tracks/tracks-ep-1991.png">1991
+<option value="/data/tracks/tracks-ep-1991b.png">1991_b
+<option value="/data/tracks/tracks-ep-1990.png">1990
+<option value="/data/tracks/tracks-ep-1990b.png">1990_b
+<option value="/data/tracks/tracks-ep-1990c.png">1990_c
+<option value="/data/tracks/tracks-ep-1989.png">1989
+<option value="/data/tracks/tracks-ep-1989b.png">1989_b
+<option value="/data/tracks/tracks-ep-1988.png">1988
+<option value="/data/tracks/tracks-ep-1988b.png">1988_b
+<option value="/data/tracks/tracks-ep-1987.png">1987
+<option value="/data/tracks/tracks-ep-1987b.png">1987_b
+<option value="/data/tracks/tracks-ep-1986.png">1986
+<option value="/data/tracks/tracks-ep-1986b.png">1986_b
+<option value="/data/tracks/tracks-ep-1985.png">1985
+<option value="/data/tracks/tracks-ep-1985b.png">1985_b
+<option value="/data/tracks/tracks-ep-1984.png">1984
+<option value="/data/tracks/tracks-ep-1984b.png">1984_b
+<option value="/data/tracks/tracks-ep-1984c.png">1984_c
+<option value="/data/tracks/tracks-ep-1983.png">1983
+<option value="/data/tracks/tracks-ep-1983b.png">1983_b
+<option value="/data/tracks/tracks-ep-1983c.png">1983_c
+<option value="/data/tracks/tracks-ep-1982.png">1982
+<option value="/data/tracks/tracks-ep-1982b.png">1982_b
+<option value="/data/tracks/tracks-ep-1981.png">1981
+<option value="/data/tracks/tracks-ep-1981b.png">1981_b
+<option value="/data/tracks/tracks-ep-1980.png">1980
+<option value="/data/tracks/tracks-ep-1980b.png">1980_b
+<option value="/data/tracks/tracks-ep-1979.png">1979
+<option value="/data/tracks/tracks-ep-1978.png">1978
+<option value="/data/tracks/tracks-ep-1978b.png">1978_b
+<option value="/data/tracks/tracks-ep-1977.png">1977
+<option value="/data/tracks/tracks-ep-1976.png">1976
+<option value="/data/tracks/tracks-ep-1976b.png">1976_b
+<option value="/data/tracks/tracks-ep-1975.png">1975
+<option value="/data/tracks/tracks-ep-1975b.png">1975_b
+<option value="/data/tracks/tracks-ep-1974.png">1974
+<option value="/data/tracks/tracks-ep-1974b.png">1974_b
+<option value="/data/tracks/tracks-ep-1973.png">1973
+<option value="/data/tracks/tracks-ep-1972.png">1972
+<option value="/data/tracks/tracks-ep-1972b.png">1972_b
+<option value="/data/tracks/tracks-ep-1971.png">1971
+<option value="/data/tracks/tracks-ep-1971b.png">1971_b
+<option value="/data/tracks/tracks-ep-1970.png">1970
+<option value="/data/tracks/tracks-ep-1970b.png">1970_b
+<option value="/data/tracks/tracks-ep-1969.png">1969
+<option value="/data/tracks/tracks-ep-1968.png">1968
+<option value="/data/tracks/tracks-ep-1968b.png">1968_b
+<option value="/data/tracks/tracks-ep-1967.png">1967
+<option value="/data/tracks/tracks-ep-1967b.png">1967_b
+<option value="/data/tracks/tracks-ep-1966.png">1966
+<option value="/data/tracks/tracks-ep-1965.png">1965
+<option value="/data/tracks/tracks-ep-1964.png">1964
+<option value="/data/tracks/tracks-ep-1963.png">1963
+<option value="/data/tracks/tracks-ep-1962.png">1962
+<option value="/data/tracks/tracks-ep-1961.png">1961
+<option value="/data/tracks/tracks-ep-1960.png">1960
+<option value="/data/tracks/tracks-ep-1959.png">1959
+<option value="/data/tracks/tracks-ep-1958.png">1958
+<option value="/data/tracks/tracks-ep-1957.png">1957
+<option value="/data/tracks/tracks-ep-1956.png">1956
+<option value="/data/tracks/tracks-ep-1955.png">1955
+<option value="/data/tracks/tracks-ep-1954.png">1954
+<option value="/data/tracks/tracks-ep-1953.png">1953
+<option value="/data/tracks/tracks-ep-1952.png">1952
+<option value="/data/tracks/tracks-ep-1951.png">1951
+<option value="/data/tracks/tracks-ep-1950.png">1950
+<option value="/data/tracks/tracks-ep-1949.png">1949
+</select>
+<input type=submit value="Go">
+</form>
+</p>
+</td>
+</tr>
+</table>
+
+<p>Note: Image sizes can vary from 130K to about 3M.</p>
+
+<p><hr noshade>
+
+<a name="tracks_us"></a>
+<p class="hdr">Past Track Maps of U.S. Landfalling Major Hurricanes
+
+<p class="reg">
+The images below are from the NHC's <a href="/dcmi.shtml">Deadliest, Costliest,
+and Most Intense United States Tropical cyclones</a> report.<p>
+<table cellspacing="0" cellpadding="0" width="85%" border="0">
+<tr align="left" valign="top">
+<td>
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/data/images/tracks/majors_2001_2010.jpg">2001-2010 (jpg)
+<option value="/data/images/tracks/majors_1991_2000.jpg">1991-2000
+<option value="/data/images/tracks/majors_1981_1990.jpg">1981-1990
+<option value="/data/images/tracks/majors_1971_1980.jpg">1971-1980
+<option value="/data/images/tracks/majors_1961_1970.jpg">1961-1970
+<option value="/data/images/tracks/majors_1951_1960.jpg">1951-1960
+<option value="/data/images/tracks/majors_1941_1950.jpg">1941-1950
+<option value="/data/images/tracks/majors_1931_1940.jpg">1931-1940
+<option value="/data/images/tracks/majors_1921_1930.jpg">1921-1930
+<option value="/data/images/tracks/majors_1911_1920.jpg">1911-1920
+<option value="/data/images/tracks/majors_1901_1910.jpg">1901-1910
+<option value="/data/images/tracks/majors_1891_1900.jpg">1891-1900
+<option value="/data/images/tracks/majors_1881_1890.jpg">1881-1890
+<option value="/data/images/tracks/majors_1871_1880.jpg">1871-1880
+<option value="/data/images/tracks/majors_1861_1870.jpg">1861-1870
+<option value="/data/images/tracks/majors_1851_1860.jpg">1851-1860
+</select>
+<input type=submit value="Go">
+</form>
+</td>
+</tr>
+</table>
+
+
+<p><hr noshade>
+
+<a name="gis"></a>
+<p class="hdr">Tropical Cyclone GIS Data Format</p>
+<p class="reg">The NHC maintains an <a href="/gis/">archive of GIS data</a> that is produced in-house.
+ To see other National Weather Service data available in GIS formats, please visit <a href="http://www.weather.gov/gis/">www.weather.gov/gis</a>. 
+</p>
+
+<p class="reg">NOAA's <a href="http://www.coast.noaa.gov">Office for Coastal Management</a> maintains a detailed online interactive mapping tool called Historical Hurricane Tracks at <a href="https://www.coast.noaa.gov/hurricanes/">www.coast.noaa.gov/hurricanes</a>. This tool offers users the ability to search and display global tropical cyclone data. The information can also be downloaded in widely-used GIS data formats.</p>
+
+<p class="reg">When using the Historical Hurricane Tracks tool, the left side bar allows you to query storms by their location, name, year, etc. Search options can easily be refineed for the storm (or storms) that are of interest to the user.  Please note that the Historical Hurricane Tracks interface will not contain data for the current season until the storms have had their entire datasets analyzed. For example, the 2013 season should be online by early 2014.</p>
+
+<p><hr noshade>
+
+<a name="wallet"></a>
+<p class="hdr">Tropical Cyclone 'Storm Wallet' Electronic Archive</p>
+
+<p class="reg">After the dissipation of every tropical cyclone occurring in the Atlantic and eastern north Pacific  basins, 
+all of the data and relevant materials related to that cyclone are collected by the NHC staff.  The materials are 
+placed in a "storm wallet" which currently takes the form of an expandable binder, or series of binders. These storm wallets 
+have proven to be extremely useful in the post-analysis of many tropical cyclones, both near-term and in some cases, decades later.</p>
+
+<p class="reg">The procedure for storing this data dates back to well before the routine use of computers in the office 
+environment.   In the Atlantic, the wallet series begins in 1958 and proceeds continuously through the present.  In the eastern 
+north Pacific, wallets begin in 1988, the year in which operational responsibility for that basin was assumed by NHC.</p>
+
+<p class="reg">In an effort to make this material more accessible, the NHC is currently engaged in a project supported by the 
+<a href="http://www.ncdc.noaa.gov/oa/climate/cdmp/cdmp.html">NOAA Climate Database Modernization Program (CDMP)</a> to optically scan 
+the entire wallet archive and post it on-line. As the project is currently underway, scanned material will be posted as it becomes available.</p>
+
+<p class="reg">The scanned documents are available in both JPG and PDF formats.  By selecting the link below, you will be directed to a 
+location that contains a series of text files which index the available storm data.  You will also see separate directories of both JPG and PDF
+files which can be accessed to view the data.</p>
+
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/archive/storm_wallets/">View all years
+</select>
+<input type=submit value="Go">
+</form>
+
+<p><hr noshade>
+
+
+<a name="monthly"></a>
+<p class="hdr">Tropical Cyclone Monthly Summary Archive
+
+<p class="reg">
+At the end of each month during the hurricane season the NHC releases a
+brief summary of the tropical cyclone activity during the month.  These
+summaries are viewed as interim to the Tropical Cyclone Reports, which are
+much more comprehensive. The November summary reviews the
+tropical cyclone activity over the course of the entire season.
+
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/archive/text/TWSAT">2011-present (Atlantic)
+<option value="/archive/text/TWSEP">2011-present (East Pacific)
+<option value="/archive/2010/tws/">2010
+<option value="/archive/2009/tws/">2009
+<option value="/archive/2008/tws/">2008
+<option value="/archive/2007/tws/">2007
+<option value="/archive/2006/tws/">2006
+<option value="/archive/2005/tws/">2005
+<option value="/archive/2004/tws/">2004
+<option value="/archive/2003/tws/">2003
+<option value="/archive/2002/tws/">2002
+<option value="/archive/2001/tws/">2001
+<option value="/archive/2000/tws/">2000
+<option value="/archive/1999/tws/">1999
+</select>
+<input type=submit value="Go">
+</form>
+
+<p><hr noshade>
+
+<a name="annual"></a>
+<p class="hdr">Tropical Cyclone Annual Summaries 1872-2006 (Monthly Weather Review)
+
+<p class="reg">
+<a href="http://www.aoml.noaa.gov/general/lib/lib1/nhclib/mwreviews.html">
+Monthly Weather Summaries of the hurricane seasons for the years 1872 - 2009</a> are available from the
+<a href="http://www.aoml.noaa.gov/general/lib/lib1/nhclib/">NHC Library</a>.
+The Monthly Weather Summaries were published by the U.S. Weather Service
+between 1872-1973. Since 1974 the Monthly Weather Summaries have been
+published by the <a href="/nhcexit.php?outurl=http://www.ametsoc.org">American
+Meteorological Society.</a>
+
+
+<p><hr noshade>
+
+
+<a name="outlooks"></a><p class="hdr">Tropical Cyclone Seasonal Outlook and Summary Archive</p>
+
+The <a href="http://www.cpc.ncep.noaa.gov">Climate Prediction Center</a> (CPC) provides annual hurricane
+season outlooks in May, and an update in August. A seasonal hurricane summary is also provided.<br><br>
+<a href="http://www.cpc.ncep.noaa.gov/products/outlooks/hurricane-archive.shtml">View the CPC archive of 
+hurricane season outlooks</a>.
+<br>
+
+
+<p><hr noshade>
+
+<a name="climo"></a>
+<p class="hdr">Tropical Cyclone Climatology
+
+<p>
+View our graphics and information on the <a href="/climo/">climatology of hurricane season</a> in terms of the total number 
+of tropical systems and hurricanes produced throughout the year in the Atlantic and 
+East Pacific basins.
+</p>
+
+<p>The <a href="http://www.ncdc.noaa.gov/">National Climatic Data Center</a> provides a monthly 
+<a href="http://www.ncdc.noaa.gov/sotc/tropical-cyclones/">State of the Climate focus on Hurricanes & Tropical Storms</a> 
+and other relevant climate data.
+</p>
+
+
+<p><hr noshade>
+
+<a name="verif"></a>
+<p class="hdr">Tropical Cyclone Forecast Verification
+
+<p class="reg">
+The NHC receives frequent inquiries on the accuracy and skill of its
+forecasts and of the computer models available to it. To help answer these
+questions we offer a Verification/Forecast Accuracy section. 
+<a href="/verification/">Here you will find information 
+on current and historical NHC forecast errors</a>.
+
+<p><hr noshade>
+
+<a name="recarch"></a><p class="hdr">Reconnaissance Data Archive
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="/archive/recon/2025/">2025
+<option value="/archive/recon/2024/">2024
+<option value="/archive/recon/2023/">2023
+<option value="/archive/recon/2022/">2022
+<option value="/archive/recon/2021/">2021
+<option value="/archive/recon/2020/">2020
+<option value="/archive/recon/2019/">2019
+<option value="/archive/recon/2018/">2018
+<option value="/archive/recon/2017/">2017
+<option value="/archive/recon/2016/">2016
+<option value="/archive/recon/2015/">2015
+<option value="/archive/recon/2014/">2014
+<option value="/archive/recon/2013/">2013
+<option value="/archive/recon/2012/">2012
+<option value="/archive/recon/2011/">2011
+<option value="/archive/recon/2010/">2010
+<option value="/archive/recon/2009/">2009
+<option value="/archive/recon/2008/">2008
+<option value="/archive/recon/2007/">2007
+<option value="/archive/recon/2006/">2006
+<option value="/archive/recon/2005/">2005
+<option value="/archive/recon/2004/">2004
+<option value="/archive/recon/2003/">2003
+<option value="/archive/recon/2002/">2002
+<option value="/archive/recon/2001/">2001
+<option value="/archive/recon/2000/">2000
+<option value="/archive/recon/1999/">1999
+<option value="/archive/recon/1998/">1998
+<option value="/archive/recon/1997/">1997
+<option value="/archive/recon/1996/">1996
+<option value="/archive/recon/1995/">1995
+<option value="/archive/recon/1994/">1994
+<option value="/archive/recon/1993/">1993
+<option value="/archive/recon/1992/">1992
+<option value="/archive/recon/1991/">1991
+<option value="/archive/recon/1990/">1990
+<option value="/archive/recon/1989/">1989
+</select>
+<input type=submit value="Go">
+</form>
+
+<p>Additional reconnaissance data archives are available in the <a href=#wallet>storm wallet electronic archive</a> above.</p>
+
+<p><hr noshade>
+
+<a name="extreme"></a>
+<p class="hdr">Deadliest, Costliest, Most Intense Atlantic Tropical Cyclones
+
+<ul>
+<li><a href="/dcmi.shtml">The Deadliest, Costliest, and Most Intense Reports</a></li>
+</ul>
+
+<!--
+<p><hr noshade>
+
+<a name="infamous"></a>
+<p class="hdr">Infamous Atlantic Storms
+
+<p class="reg">
+<ul>
+<li><a href="/archive/2005/KATRINA.shtml">Hurricane Katrina (2005)</a> &ndash; <a href="/pdf/TCR-AL122005_Katrina.pdf">PDF</a> &ndash; <a href="/ms-word/TCR-AL122005_Katrina.doc">MS-Word</a></li>
+<li><a href="1994gordon.html">Hurricane Gordon (1994)</a></li>
+<li><a href="1992andrew.html">Hurricane Andrew (1992)</a></li>
+<li><a href="1989hugo.html">Hurricane Hugo (1989)</a></li>
+<li><a href="1988gilbert.html">Hurricane Gilbert (1988)</a></li>
+<li><a href="/pdf/TCR-1969Camille.pdf">Hurricane Camille (1969)</a></li>
+</ul>
+-->
+
+<p><hr noshade>
+
+<a name="cphc"></a>
+<p class="hdr"><a href="https://www.nhc.noaa.gov/cphc">Central North Pacific Hurricane History (1800s - present)</a>
+
+<p class="reg">(Compiled by the <a href="https://www.nhc.noaa.gov/cphc">
+Central Pacific Hurricane Center,</a> Honolulu).
+
+<!-- End content -->
+
+            <br><br>
+        <div class="footer">
+          <div class="footer-content">
+            <div class='footer-header'>
+               Quick Links and Additional Resources<br>
+            </div>
+            <div class='footer-column'>
+              <a class='footer-column-head' href='/cyclones/'>Tropical Cyclone Forecasts</a><br>
+              <a class="usa-link" href='/cyclones'>Tropical Cyclone Advisories</a><br>
+              <a class="usa-link" href='/gtwo.php'>Tropical Weather Outlook</a><br>
+              <a class="usa-link" href='/audio'>Audio/Podcasts</a><br>
+              <a class="usa-link" href='/aboutnhcprod.shtml'>About Advisories</a><br>
+              <br>
+              <a class='footer-column-head' href='/marine'>Marine Forecasts</a><br>
+              <a class="usa-link" href='/marine/offshores.php'>Offshore Waters Forecasts</a><br>
+              <a class="usa-link" href='/marine/grids.php'>Gridded Forecasts</a><br>
+              <a class="usa-link" href='/marine/graphicast.php'>Graphicast</a><br>
+              <a class="usa-link" href='/abouttafbprod.shtml'>About Marine</a><br>
+            </div>
+            <div class='footer-column'>
+              <a class='footer-column-head' href='/socialmedia'>Social Media</a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://www.facebook.com/NWSNHC"
+              >
+                <img src="/css/images/f_logo.png" alt="Follow the National Hurricane Center on Facebook" width="15" height="15"> &nbsp; NHC on Facebook
+              </a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/x.php"
+              >
+                <img src="/css/images/x-logo.png" alt="Follow the National Hurricane Center on X" height="13" width="15"> &nbsp; NHC on X
+              </a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://www.youtube.com/user/NWSNHC"
+              >
+                <img src="/css/images/youtube_logo.png" alt="Subscribe the National Hurricane Center on YouTube" height="12" width="15"> &nbsp; NHC on YouTube
+              </a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://noaanhc.wordpress.com/"
+              >
+                <img src="/css/images/w_logo.png" alt="Read the National Hurricane Center Inside the Eye blog on WordPress" height="15" width="15"> &nbsp; NHC Blog:<br>&nbsp; &nbsp; &nbsp; "Inside the Eye"
+              </a><br>
+              <br>
+              <a class='footer-column-head' href="/prepare">Hurricane Preparedness</a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="https://www.weather.gov/safety/hurricane-plan"
+              >
+                Preparedness Guide
+              </a><br>
+              <a class="usa-link" href="/prepare/hazards.php">Hurricane Hazards</a><br>
+              <a
+                class="usa-link usa-link--external" 
+                rel="noreferrer"
+                href="https://www.weather.gov/safety/hurricane-ww"
+              >
+                Watches and Warnings
+              </a><br>
+              <a class="usa-link" href="/prepare/marine.php">Marine Safety</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.ready.gov/hurricanes"
+              >
+                Ready.gov Hurricanes
+              </a><br>
+              <a class="usa-link" href="https://www.weather.gov/wrn/force">Weather-Ready Nation</a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.fema.gov/emergency-management-agencies"
+              >
+                Emergency Management Offices
+              </a><br>
+            </div>
+            <div class='footer-column'>
+              <a class='footer-column-head' href='/aboutresearch.shtml'>Research and Development</a><br>
+              <a 
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.aoml.noaa.gov/hrd/"
+              >
+                NOAA Hurricane Research Division
+              </a><br>
+              <a class="usa-link" href="/hot/">Hurricane and Ocean Testbed</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://www.hfip.org"
+              >
+                Hurricane Forecast Improvement Program
+              </a><br>
+              <br>
+              <a class='footer-column-head' href='/aboutintro.shtml'>Other Resources</a><br>
+              <a class="usa-link" href="/qa/">Q & A with NHC</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.aoml.noaa.gov/general/lib/lib1/nhclib/"
+              >
+                NHC/AOML Library Branch
+              </a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.aoml.noaa.gov/hrd/tcfaq/tcfaqHED.html"
+              >
+                NOAA: Hurricane FAQs
+              </a><br>
+              <a class="usa-link" href="/nhop">National Hurricane Operations Plan</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://www.wx4nhc.org"
+              >
+                WX4NHC Amateur Radio
+              </a><br>
+            </div>
+            <div class='footer-column'>
+              <a class='footer-column-head' href="http://www.ncep.noaa.gov">NWS Forecast Offices</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.wpc.ncep.noaa.gov"
+              >
+                Weather Prediction Center
+              </a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.spc.noaa.gov"
+              >
+                Storm Prediction Center
+              </a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="https://ocean.weather.gov"
+              >
+                Ocean Prediction Center
+              </a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="http://www.weather.gov"
+              >
+                Local Forecast Offices
+              </a><br>
+              <br>
+              <a class='footer-column-head' href="/aboutrsmc.shtml">Worldwide Tropical Cyclone Centers</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=https://www.canada.ca/hurricanes"
+              >
+                Canadian Hurricane Centre
+              </a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=https://www.metoc.navy.mil/jtwc/jtwc.html"
+              >
+                Joint Typhoon Warning Center
+              </a><br>
+              <a class="usa-link" href="/aboutrsmc.shtml">Other Tropical Cyclone Centers</a><br>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                href="/nhcexit.php?outurl=http://severe.worldweather.org"
+              >
+                WMO Severe Weather Info Centre
+              </a>
+            </div>
+          </div>
+        </div>
+        
+
+    <!-- legal footer area -->
+<div class="footer-legal">
+  <div class="footer-legal-content">
+    <div class="footer-legal-gov">
+      <a href="http://www.usa.gov"><img src="/css/images/usa_gov.png" alt="usa.gov" width="110" height="30"></a>
+    </div> 
+    <div class="footer-legal-column" style="width:200px;">
+      <p> 
+          <a 
+            class="usa-link usa-link--external"
+            rel="noreferrer"
+            href="http://www.commerce.gov"
+          >
+            US Dept of Commerce
+          </a><br>
+          <a 
+            class="usa-link usa-link--external"
+            rel="noreferrer"
+            href="http://www.noaa.gov"
+          >
+            National Oceanic and Atmospheric Administration
+          </a><br>
+          National Hurricane Center<br>
+          11691 SW 17th Street<br>
+          Miami, FL, 33165<br>
+          <a href='mailto:nhcwebmaster@noaa.gov'>nhcwebmaster@noaa.gov</a>
+      </p>
+    </div>
+
+    <div class="footer-legal-column" style="width:200px;">
+      <p>
+          Central Pacific Hurricane Center<br>
+          2525 Correa Rd<br>
+          Suite 250<br>
+          Honolulu, HI 96822<br>
+          <a href='mailto:W-HFO.webmaster@noaa.gov'>W-HFO.webmaster@noaa.gov</a>
+      </p>
+    </div>
+
+    <div class="footer-legal-column2">
+      <p>
+        <a href="http://www.weather.gov/disclaimer">Disclaimer</a><br>
+        <a href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html">Information Quality</a><br>
+        <a href="http://www.weather.gov/help">Help</a><br>
+        <a href="http://www.weather.gov/glossary">Glossary</a>
+      </p>
+    </div>
+
+    <div class="footer-legal-column3">
+      <p>
+        <a href="http://www.weather.gov/privacy">Privacy Policy</a><br>
+        <a href="http://www.rdc.noaa.gov/~foia">Freedom of Information Act (FOIA)</a><br>
+        <a href="http://www.weather.gov/about">About Us</a><br>
+        <a href="http://www.weather.gov/careers">Career Opportunities</a>
+      </p>
+    </div>
+  </div>
+</div><!-- end of <div class="footer-legal"> -->
+      </div><!-- End of content div -->
+    </div><!-- End of center div -->
+    <div id="wrap"> </div>
+        <script async src="/assets/js/uswds.min.js"></script>
+    
+  </body>
+</html>

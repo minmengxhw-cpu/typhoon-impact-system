@@ -1,0 +1,12 @@
+{
+  "source": "cma_nmc",
+  "filename": "view_3279904_DOLPHIN.jsonp",
+  "archived_at_utc": "2026-08-02T13:52:16.828314+00:00",
+  "size_bytes": 34138,
+  "meta": {
+    "url": "http://typhoon.nmc.cn/weatherservice/typhoon/jsons/view_3279904",
+    "storm_id": 3279904,
+    "name": "DOLPHIN",
+    "wind_averaging": "cma_2min_typical"
+  }
+}

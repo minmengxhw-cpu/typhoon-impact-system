@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>台风影响研判 · 内部</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a2332;
+      --text: #e7ecf3;
+      --muted: #94a3b8;
+      --border: #2d3a4f;
+      --none: #6b7280;
+      --watch: #0d9488;
+      --alert: #7c3aed;
+      --action: #be185d;
+      --banner: #422006;
+      --banner-text: #fde68a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "SF Pro Text", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 { font-size: 1.1rem; margin: 0; font-weight: 600; }
+    .banner {
+      background: var(--banner);
+      color: var(--banner-text);
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .disclaimer {
+      background: #1c1917;
+      color: #a8a29e;
+      padding: 6px 20px;
+      font-size: 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+    nav.tabs {
+      display: flex;
+      gap: 4px;
+      padding: 10px 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav.tabs button {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 8px 8px 0 0;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    nav.tabs button.active {
+      color: var(--text);
+      background: var(--panel);
+      border-color: var(--border);
+      border-bottom-color: var(--panel);
+    }
+    main { padding: 16px 20px 40px; max-width: 1200px; margin: 0 auto; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .level-lamp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .lamp {
+      width: 18px; height: 18px; border-radius: 50%;
+      box-shadow: 0 0 12px currentColor;
+    }
+    .level-none { color: var(--none); }
+    .level-watch { color: var(--watch); }
+    .level-alert { color: var(--alert); }
+    .level-action { color: var(--action); }
+    .one-liner { font-size: 1.05rem; margin: 12px 0; }
+    .meta { color: var(--muted); font-size: 0.85rem; }
+    table.timeline {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+    table.timeline th, table.timeline td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    table.timeline tr.highlight td {
+      background: rgba(13, 148, 136, 0.12);
+    }
+    #map {
+      height: 480px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .impact-card {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .impact-card h3 { margin: 0 0 6px; font-size: 0.95rem; color: var(--muted); font-weight: 500; }
+    .impact-card .val { font-size: 1.2rem; font-weight: 600; }
+    ul.rationale { margin: 8px 0 0; padding-left: 1.2rem; color: var(--muted); font-size: 0.9rem; }
+    .hidden { display: none; }
+    .storm-select { margin-bottom: 12px; }
+    select {
+      background: #0f172a;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    .err { color: #fca5a5; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div class="banner" id="ui-banner">未校准 · 概率切点为初始猜测 · 仅供内部参考</div>
+  <div class="disclaimer">
+    内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。
+    禁用蓝黄橙红预警色；等级用语：无影响 / 关注 / 警戒 / 行动。
+  </div>
+  <header>
+    <h1>台风影响研判系统 · Layer A</h1>
+    <div class="meta" id="gen-time">加载中…</div>
+  </header>
+  <nav class="tabs">
+    <button type="button" class="active" data-tab="decision">第一屏 · 决策</button>
+    <button type="button" data-tab="track">第二屏 · 路径</button>
+    <button type="button" data-tab="impact">第三屏 · 影响</button>
+  </nav>
+  <main>
+    <section id="tab-decision">
+      <div class="panel">
+        <div id="level-block" class="level-lamp level-none">
+          <span class="lamp" style="background: currentColor"></span>
+          <span id="level-label">—</span>
+        </div>
+        <p class="one-liner" id="one-liner">加载产品中…</p>
+        <p class="meta" id="uncertainty-note">
+          离散度不得单独作为确定性指标；须叠加历史误差圈（尚未校准）。低离散度 ≠ 高确定性。
+        </p>
+        <p class="meta" id="data-health"></p>
+      </div>
+      <div class="panel">
+        <h2 style="margin:0 0 8px; font-size:1rem;">决策时间轴</h2>
+        <table class="timeline" id="timeline-table">
+          <thead>
+            <tr><th>时效</th><th>信息性质</th><th>建议动作</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-track" class="hidden">
+      <div class="panel">
+        <div class="storm-select">
+          <label>过程：</label>
+          <select id="storm-select"></select>
+          <span class="meta" style="margin-left:12px;">D-5 以外不绘制确定性机构路径线（任务书硬约束）；当前展示集合共识与成员散布。</span>
+        </div>
+        <div id="map"></div>
+        <p class="meta" id="track-meta" style="margin-top:10px;"></p>
+      </div>
+    </section>
+
+    <section id="tab-impact" class="hidden">
+      <div class="panel">
+        <div class="impact-grid" id="impact-grid"></div>
+        <h3 style="margin:16px 0 4px; font-size:0.95rem;">规则层依据（未校准）</h3>
+        <ul class="rationale" id="rationale-list"></ul>
+        <p class="meta" style="margin-top:16px;">
+          风 / 雨 / 潮 / 洪 四碰头量级区间：潮位与天文潮叠加、本地预警接口尚未接入（见 docs/phase0-remaining.md）。
+          本屏仅展示路径几何与强度规则特征。
+        </p>
+      </div>
+    </section>
+
+    <p class="err hidden" id="load-error"></p>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script>
+    const COLORS = {
+      none: "#6B7280",
+      watch: "#0D9488",
+      alert: "#7C3AED",
+      action: "#BE185D",
+      consensus: "#0F766E",
+      ensemble: "#64748B",
+      shanghai: "#f8fafc",
+    };
+
+    const state = {
+      summary: null,
+      assessment: null,
+      consensus: null,
+      tracks: null,
+      map: null,
+      layers: [],
+    };
+
+    function $(id) { return document.getElementById(id); }
+
+    document.querySelectorAll("nav.tabs button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("nav.tabs button").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        ["decision", "track", "impact"].forEach((t) => {
+          $("tab-" + t).classList.toggle("hidden", t !== btn.dataset.tab);
+        });
+        if (btn.dataset.tab === "track") {
+          setTimeout(() => { if (state.map) state.map.invalidateSize(); }, 50);
+        }
+      });
+    });
+
+    async function loadJSON(url) {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(url + " → " + r.status);
+      return r.json();
+    }
+
+    function renderDecision() {
+      const h = state.summary.headline || {};
+      const level = h.level || "none";
+      const block = $("level-block");
+      block.className = "level-lamp level-" + level;
+      $("level-label").textContent = h.level_zh || level;
+      $("one-liner").textContent = h.one_liner || "";
+      $("gen-time").textContent =
+        "更新 " + (state.summary.generated_at_utc || "—") +
+        " · 源 " + ((state.summary.sources || []).join(", ") || "—") +
+        " · tracks " + (state.summary.n_tracks || 0);
+      if (state.summary.ui_banner) $("ui-banner").textContent = state.summary.ui_banner;
+
+      const storms = (state.assessment && state.assessment.storms) || [];
+      const top = storms[0];
+      const tbody = $("timeline-table").querySelector("tbody");
+      tbody.innerHTML = "";
+      const rows = (top && top.decision_timeline) || [
+        { horizon: "D-7~D-6", nature: "生成潜势与集合趋势，仅概率", action: "扫描活动排期，标记风险场次" },
+        { horizon: "D-5", nature: "官方路径开始有效，分歧较大", action: "通知相关条线，备选方案成型" },
+        { horizon: "D-4~D-3", nature: "多来源收敛度可判", action: "准备对外沟通口径" },
+        { horizon: "D-2", nature: "风雨潮量级可估", action: "预备决策（核对合同免费取消时限）" },
+        { horizon: "D-1", nature: "误差大幅收敛", action: "正式决策发布" },
+        { horizon: "D-0", nature: "实况监测", action: "执行与现场安全" },
+      ];
+      rows.forEach((r) => {
+        const tr = document.createElement("tr");
+        if (r.highlight) tr.className = "highlight";
+        tr.innerHTML = `<td>${r.horizon}</td><td>${r.nature}</td><td>${r.action}</td>`;
+        tbody.appendChild(tr);
+      });
+      $("data-health").textContent =
+        "校准状态: " + (state.summary.calibration_status || "uncalibrated") +
+        " · 评估过程数: " + (state.summary.n_storms_assessed || 0);
+    }
+
+    function renderImpact(stormKey) {
+      const storms = (state.assessment && state.assessment.storms) || [];
+      const s = storms.find((x) => x.storm_key === stormKey) || storms[0];
+      const grid = $("impact-grid");
+      grid.innerHTML = "";
+      if (!s) {
+        grid.innerHTML = "<p class='meta'>暂无评估</p>";
+        return;
+      }
+      const cards = [
+        ["研判等级", s.level_zh + ` (p≈${s.p_main})`],
+        ["最近点 DCA", s.dca_km != null ? s.dca_km + " km" : "—"],
+        ["到达时效", s.dca_lead_hours != null ? s.dca_lead_hours + " h" : "—"],
+        ["最近点风速", s.wind_at_closest_ms != null ? s.wind_at_closest_ms + " m/s（口径见源）" : "—"],
+        ["象限", s.quadrant || "—"],
+        ["移速", s.motion_kmh != null ? s.motion_kmh + " km/h" : "—"],
+      ];
+      cards.forEach(([k, v]) => {
+        const d = document.createElement("div");
+        d.className = "impact-card";
+        d.innerHTML = `<h3>${k}</h3><div class="val">${v}</div>`;
+        grid.appendChild(d);
+      });
+      const ul = $("rationale-list");
+      ul.innerHTML = "";
+      (s.rationale || []).forEach((line) => {
+        const li = document.createElement("li");
+        li.textContent = line;
+        ul.appendChild(li);
+      });
+    }
+
+    function initMap() {
+      if (state.map) return;
+      state.map = L.map("map", { worldCopyJump: true }).setView([25, 130], 4);
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: "&copy; OSM &copy; CARTO",
+        maxZoom: 18,
+      }).addTo(state.map);
+      L.circleMarker([31.23, 121.47], {
+        radius: 6,
+        color: COLORS.shanghai,
+        fillColor: COLORS.shanghai,
+        fillOpacity: 0.9,
+      }).addTo(state.map).bindPopup("上海");
+    }
+
+    function clearMapLayers() {
+      state.layers.forEach((l) => state.map.removeLayer(l));
+      state.layers = [];
+    }
+
+    function renderTrack(stormKey) {
+      initMap();
+      clearMapLayers();
+      const storms = (state.consensus && state.consensus.storms) || [];
+      const cons = storms.find((x) => x.storm_key === stormKey) || storms[0];
+      if (!cons) {
+        $("track-meta").textContent = "无共识路径";
+        return;
+      }
+
+      // Ensemble members for this storm (sample to avoid overload)
+      const allTracks = ((state.tracks && state.tracks.tracks) || []).filter((t) => {
+        const name = (t.storm_name || "").toUpperCase();
+        const id = (t.storm_id || "").toUpperCase();
+        return name === stormKey || id === stormKey || (cons.storm_name && name === cons.storm_name.toUpperCase());
+      });
+      const members = allTracks.filter((t) => t.member != null).slice(0, 51);
+      members.forEach((t) => {
+        const latlngs = (t.points || [])
+          .filter((p) => p.lead_hours <= 120)
+          .map((p) => [p.lat, p.lon]);
+        if (latlngs.length < 2) return;
+        const line = L.polyline(latlngs, {
+          color: COLORS.ensemble,
+          weight: 1,
+          opacity: 0.25,
+        }).addTo(state.map);
+        state.layers.push(line);
+      });
+
+      // Consensus
+      const cpts = (cons.points || []).filter((p) => p.lead_hours <= 168);
+      const clatlngs = cpts.map((p) => [p.lat, p.lon]);
+      if (clatlngs.length >= 2) {
+        const line = L.polyline(clatlngs, {
+          color: COLORS.consensus,
+          weight: 3,
+          opacity: 0.95,
+        }).addTo(state.map);
+        state.layers.push(line);
+        state.map.fitBounds(line.getBounds().pad(0.3));
+      }
+      // Spread rings at selected leads (not historical error cones)
+      [24, 48, 72, 120].forEach((lead) => {
+        const p = cpts.find((x) => Math.abs(x.lead_hours - lead) < 0.1);
+        if (!p || !p.spread_km) return;
+        const circle = L.circle([p.lat, p.lon], {
+          radius: p.spread_km * 1000,
+          color: COLORS.watch,
+          weight: 1,
+          fillOpacity: 0.05,
+          dashArray: "4 6",
+        }).addTo(state.map).bindPopup(
+          `lead ${lead}h · 集合平均离散 ${p.spread_km} km<br/>未叠加历史误差圈 · 非确定性`
+        );
+        state.layers.push(circle);
+      });
+
+      // CMA BABJ deterministic only if closest approach within ~5 days
+      const ass = ((state.assessment && state.assessment.storms) || [])
+        .find((x) => x.storm_key === stormKey);
+      const dcaLead = ass && ass.dca_lead_hours;
+      if (dcaLead != null && dcaLead <= 120) {
+        const det = allTracks.filter(
+          (t) => t.member == null && (t.source || "").includes("cma_")
+        );
+        det.forEach((t) => {
+          const latlngs = (t.points || []).map((p) => [p.lat, p.lon]);
+          if (latlngs.length < 2) return;
+          const line = L.polyline(latlngs, {
+            color: "#f59e0b",
+            weight: 2,
+            opacity: 0.8,
+            dashArray: "6 4",
+          }).addTo(state.map);
+          state.layers.push(line);
+        });
+      }
+
+      $("track-meta").textContent =
+        `${cons.storm_name} · 方法 ${cons.method} · ${cons.n_tracks} 条路径 · 源 ${ (cons.sources_used || []).join(", ") }` +
+        " · 青线=等权共识 · 灰线=集合成员 · 虚圈=集合离散(非历史误差)";
+    }
+
+    function fillStormSelect() {
+      const sel = $("storm-select");
+      sel.innerHTML = "";
+      const storms = (state.consensus && state.consensus.storms) || [];
+      storms.forEach((s, i) => {
+        const opt = document.createElement("option");
+        opt.value = s.storm_key;
+        opt.textContent = `${s.storm_name || s.storm_key} (${s.n_tracks})`;
+        if (i === 0) opt.selected = true;
+        sel.appendChild(opt);
+      });
+      sel.onchange = () => {
+        renderTrack(sel.value);
+        renderImpact(sel.value);
+      };
+      if (storms[0]) {
+        renderTrack(storms[0].storm_key);
+        renderImpact(storms[0].storm_key);
+      }
+    }
+
+    async function main() {
+      try {
+        // GitHub Pages ships web/data/; local dev can also use products/latest
+        const bases = ["./data", "../products/latest", "/products/latest"];
+        let loaded = false;
+        let lastErr;
+        let usedBase = "";
+        for (const base of bases) {
+          try {
+            state.summary = await loadJSON(base + "/summary.json");
+            state.assessment = await loadJSON(base + "/assessment.json");
+            state.consensus = await loadJSON(base + "/consensus.json");
+            try {
+              state.tracks = await loadJSON(base + "/tracks.json");
+            } catch (_) {
+              state.tracks = { tracks: [] };
+            }
+            loaded = true;
+            usedBase = base;
+            break;
+          } catch (e) {
+            lastErr = e;
+          }
+        }
+        if (!loaded) throw lastErr || new Error("no products");
+        state.summary.data_base = usedBase;
+        renderDecision();
+        fillStormSelect();
+      } catch (e) {
+        $("load-error").classList.remove("hidden");
+        $("load-error").textContent =
+          "无法加载数据 JSON。Pages 需 web/data/；本地可先: python3 -m src.model.run_layer_a && python3 scripts/export_web_data.py  (" + e + ")";
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

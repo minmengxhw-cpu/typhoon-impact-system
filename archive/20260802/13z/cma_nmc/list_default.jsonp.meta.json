@@ -1,0 +1,10 @@
+{
+  "source": "cma_nmc",
+  "filename": "list_default.jsonp",
+  "archived_at_utc": "2026-08-02T13:52:16.537997+00:00",
+  "size_bytes": 1360,
+  "meta": {
+    "url": "http://typhoon.nmc.cn/weatherservice/typhoon/jsons/list_default",
+    "content_type": "application/octet-stream"
+  }
+}

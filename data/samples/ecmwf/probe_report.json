@@ -1,0 +1,225 @@
+{
+  "probe_time_utc": "20260802T133242Z",
+  "network_env": "local-macos-shanghai",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "package": "ecmwf-opendata",
+  "results": [
+    {
+      "label": "ens_tf_enfo:ecmwf",
+      "source": "ecmwf",
+      "request": {
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}\n"
+    },
+    {
+      "label": "ens_tf_enfo:aws",
+      "source": "aws",
+      "request": {
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}\n"
+    },
+    {
+      "label": "ens_tf_enfo:azure",
+      "source": "azure",
+      "request": {
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}\n"
+    },
+    {
+      "label": "oper_tf:ecmwf",
+      "source": "ecmwf",
+      "request": {
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}\n"
+    },
+    {
+      "label": "oper_tf:aws",
+      "source": "aws",
+      "request": {
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}\n"
+    },
+    {
+      "label": "oper_tf:azure",
+      "source": "azure",
+      "request": {
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}\n"
+    },
+    {
+      "label": "aifs_single_tf:ecmwf",
+      "source": "ecmwf",
+      "request": {
+        "model": "aifs-single",
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}\n"
+    },
+    {
+      "label": "aifs_single_tf:aws",
+      "source": "aws",
+      "request": {
+        "model": "aifs-single",
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}\n"
+    },
+    {
+      "label": "aifs_single_tf:azure",
+      "source": "azure",
+      "request": {
+        "model": "aifs-single",
+        "time": 0,
+        "stream": "oper",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-single'], 'resol': ['0p25'], 'stream': ['oper'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}\n"
+    },
+    {
+      "label": "aifs_ens_tf:ecmwf",
+      "source": "ecmwf",
+      "request": {
+        "model": "aifs-ens",
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://data.ecmwf.int/forecasts']}\n"
+    },
+    {
+      "label": "aifs_ens_tf:aws",
+      "source": "aws",
+      "request": {
+        "model": "aifs-ens",
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}\n"
+    },
+    {
+      "label": "aifs_ens_tf:azure",
+      "source": "azure",
+      "request": {
+        "model": "aifs-ens",
+        "time": 0,
+        "stream": "enfo",
+        "type": "tf",
+        "step": 240
+      },
+      "ok": false,
+      "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}",
+      "path": null,
+      "size_bytes": null,
+      "preview": null,
+      "hex_head": null,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 61, in try_retrieve\n    client.retrieve(**kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 161, in retrieve\n    result = self._get_urls(request, target=target, use_index=True, **kwargs)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 216, in _get_urls\n    params[\"date\"] = self.latest(params)\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['aifs-ens'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ai4edataeuwest.blob.core.windows.net/ecmwf']}\n"
+    }
+  ],
+  "latest": {
+    "label": "index_list_latest",
+    "ok": false,
+    "error": "ValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}",
+    "sample": null,
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/cheer/typhoon-impact-system/scripts/audit/01_ecmwf_opendata.py\", line 149, in main\n    latest = client.latest(\n  File \"/Users/cheer/Library/Python/3.9/lib/python/site-packages/ecmwf/opendata/client.py\", line 200, in latest\n    raise ValueError(\"Cannot establish latest date for %r\" % (result.for_urls,))\nValueError: Cannot establish latest date for {'date': ['2026-08-01 00:00:00'], 'time': ['0'], 'model': ['ifs'], 'resol': ['0p25'], 'stream': ['enfo'], 'type': ['tf'], 'step': ['240'], '_url': ['https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com']}\n"
+  }
+}

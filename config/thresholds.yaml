@@ -1,0 +1,77 @@
+# 上海影响判据与概率切点 — 全部为初始猜测值
+# status 在回算校准完成前必须保持 initial_guess
+# 页面必须显示「系统未校准」
+
+meta:
+  targets_version: 1
+  status: initial_guess
+  calibrated: false
+  sample_size: 0
+  notes: "Do not treat numeric cutoffs as operational truth until backtest.md is produced."
+
+# 主目标 p = P(Y_main=1) → 研判等级
+# 禁止使用蓝黄橙红命名
+levels:
+  none:
+    label_zh: 无影响
+    p_min: 0.0
+    p_max: 0.10
+  watch:
+    label_zh: 关注
+    p_min: 0.10
+    p_max: 0.35
+  alert:
+    label_zh: 警戒
+    p_min: 0.35
+    p_max: 0.65
+  action:
+    label_zh: 行动
+    p_min: 0.65
+    p_max: 1.01
+
+# UI 配色 — 刻意避开法定预警蓝黄橙红
+colors:
+  none: "#6B7280"      # gray
+  watch: "#0D9488"     # teal
+  alert: "#7C3AED"     # violet
+  action: "#BE185D"    # rose/magenta
+  map_ensemble: "#64748B"
+  map_consensus: "#0F766E"
+
+wind_averaging:
+  # 统一到 10 分钟平均风时的近似系数: V_1min ≈ V_10min * k
+  k_1min_over_10min: 1.14
+  # 2 分钟 → 10 分钟：文献与业务常近似接近 1.0–1.05，此处标为猜测
+  k_2min_over_10min: 1.03
+  display_unit: m_s
+  always_show_original: true
+
+# 上海影响特征阈值（规则层 A，未校准）
+shanghai_impact:
+  shanghai_lat: 31.23
+  shanghai_lon: 121.47
+  # 最近点距离 DCA (km)
+  dca_watch_km: 800
+  dca_alert_km: 400
+  dca_action_km: 200
+  # 最近时刻强度（已归一到 10-min 相当 m/s 后）
+  wind_ts_ms: 17.2      # ~8级
+  wind_ty_ms: 32.7      # ~12级
+  # 移速 (km/h)：慢于该值加重累计雨量风险
+  slow_motion_kmh: 15
+  # 7/10 级风圈是否覆盖上海：由半径字段判断，无半径则跳过
+  wind_radii_required: false
+
+# 辅目标
+aux_targets:
+  rain_process_mm: 100
+  tide_stations:
+    - name: 吴淞
+      warning_level_m: null   # 取得权威值后填入
+      status: initial_guess
+    - name: 黄浦公园
+      warning_level_m: null
+      status: initial_guess
+
+disclaimer: |
+  内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。

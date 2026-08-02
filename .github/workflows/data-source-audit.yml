@@ -1,0 +1,40 @@
+# Dual-environment audit: runs on GitHub-hosted (offshore) runners.
+# Compare results with local Shanghai runs in docs/data-sources-audit.md.
+name: data-source-audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"  # daily 06:00 UTC
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install system eccodes
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libeccodes0 libeccodes-dev
+      - name: Install Python deps
+        run: |
+          pip install -r requirements.txt
+      - name: ECMWF probe
+        env:
+          AUDIT_NETWORK_ENV: github-actions-ubuntu
+        run: python scripts/audit/01_ecmwf_opendata.py || true
+      - name: Agency probe
+        env:
+          AUDIT_NETWORK_ENV: github-actions-ubuntu
+        run: python scripts/audit/02_agency_sources.py || true
+      - name: Upload samples
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-samples
+          path: |
+            data/samples/
+          if-no-files-found: warn

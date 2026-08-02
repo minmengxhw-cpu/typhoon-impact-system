@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>気象庁｜過去の台風資料</title>
+<meta name="Author" content="気象庁 Japan Meteorological Agency" />
+<meta name="keywords" content="気象庁 Japan Meteorological Agency" />
+<meta name="description" content="台風経路図（1951年以降）、台風位置表（2001年以降）、統計資料（1951年以降）を掲載しています。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="//www.jma.go.jp/jma/com/css/define.css" media="all" />
+
+<style type="text/css" media="all"><!-- @import url(//www.jma.go.jp/jma/com/default.css); --></style>
+</head>
+
+<body>
+<noscript><div>すべての機能をご利用いただくにはJavascriptを有効にしてください。</div></noscript>
+<!--header start -->
+<div id="header_area">
+	<div id="nheader">
+		<div id="logo"><a href="//www.jma.go.jp/jma/index.html"><img src="//www.jma.go.jp/jma/com/images/logo.gif" alt="気象庁" width="120" height="67" /></a></div>
+		<div id="header2_right">
+			<div id="header2_link">
+				<ul>
+					<li xml:lang="en" lang="en"><a href="//www.jma.go.jp/jma/indexe.html">ENGLISH</a></li>
+				</ul>
+			</div>
+			<!-- search -->
+			<div id="gsearch">
+				<form id="cse-search-box" action="//google.com/cse">
+					<input type="hidden" name="cx" value="009950868052057056798:0yrbmp7chwi" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="text" name="q" />
+					<input type="image" name="sa" src="//www.jma.go.jp/jma/com/images/btn_search6.png" alt="検索"/>
+				</form>
+				<script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=ja"></script>
+			</div>
+			<!-- search end-->
+		</div>
+		<ul id="gnavi">
+			<li><a href="//www.jma.go.jp/">ホーム</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuflash.html">防災情報</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menureport.html" class="on">各種データ・資料</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/areas.html">地域の情報</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuknowledge.html">知識・解説</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuappli.html">各種申請・ご案内</a></li>
+		</ul>
+	</div>
+</div>
+<!--header end -->
+
+<div id="contents_area2">
+	<div id="ncontents2">
+	<!-- pankuzu menu -->
+		<ul class="breadcrumb2">
+			<li><a href="//www.jma.go.jp/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="//www.jma.go.jp/jma/menu/menureport.html">各種データ・資料</a>&nbsp;&gt;&nbsp;</li>
+			<li>過去の台風資料</li>
+		</ul>
+		<!-- //pankuzu menu -->
+
+		<!-- contents -->
+		<div id="main">
+			<h1>過去の台風資料</h1>
+			<ul class="contentslink mtx">
+				<li><a href="./route_map/index.html">台風経路図</a>
+					<div>昭和26年（1951年）以降に発生した台風の経路図を掲載しています。</div>
+				</li>
+				<li><a href="./position_table/index.html">台風位置表</a>
+					<div>平成13年（2001年）以降に発生した台風の中心位置、中心気圧、最大風速等を時刻ごとに掲載しています。</div>
+				</li>
+				<li><a href="//www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/besttrack.html">台風のベストトラックデータ</a>（気象庁英語版HPへリンク）
+					<div>昭和26年（1951年）以降に発生した台風のベストトラックデータを掲載しています。</div>
+				</li>
+				<li><a href="//www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/annualreport.html">台風の英文概況</a>（気象庁英語版HPへリンク）
+					<div>平成12年（2000年）以降に発生した台風について各年の年次報告書の付録（Appendix）に掲載しています。</div>
+				</li>
+				<li><a href="./statistics/index.html">台風の統計資料</a>
+					<div>昭和26年（1951年）以降に発生した台風の統計資料を掲載しています。</div>
+				</li>  
+			</ul>
+
+			<h2>新着情報</h2>
+			<div>
+				<ul>
+					<li>令和8年台風第4号の確定値を掲載しました。（令和8年7月23日）</li>
+					<li>「九州南部への接近数」ページの2022年のデータに誤りがありましたので訂正しました。訂正内容の詳細は<a href="./statistics/accession/southern_kyushu.html#caution">こちら</a>。（令和8年6月24日）</li>
+					<li>令和8年台風第3号の確定値を掲載しました。（令和8年6月12日）</li>
+					<li>令和8年台風第1号および第2号の確定値を掲載しました。（令和8年5月14日）</li>
+				</div>
+		
+			<div align="left">
+				<ul class="pagelink mtx">
+					<li><a href="./kako.html">過去のお知らせ</a></li>
+				</ul>
+			</div><br />
+		
+			<div align="left">
+				※ 台風の事後解析により速報値から確定値とした際に新着情報でお知らせします。ご利用の際には、最新の掲載データをご確認ください。<br />
+			</div>
+
+			<h3>「速報解析による速報値」と「事後解析による確定値」について</h3>
+			<div>
+				　気象庁が公表する台風の中心位置や中心気圧などには、「速報解析による速報値」と「事後解析による確定値」があります。<br />
+				　「速報解析による速報値」は、限られた時間内に収集できたデータを用いて、速報的に解析したものです。その結果は、速報値として、リアルタイムに発表する台風情報に用いています。<br />
+				　「事後解析による確定値」は、台風消滅後、速報解析時点及びそれ以降に収集した資料も用いて､台風の発生から消滅までの時間的な推移を考慮しながら台風の位置や強度を再度詳細に解析し､最終的に定めたものです。
+				その結果は確定値として、今後の台風予報の精度向上のための基礎資料や、台風の統計資料に用いています。<br />
+			</div>
+		</div>
+		<!-- //contents -->
+
+
+
+		<p class="totop"><a href="#nheader">このページのトップへ</a></p>
+	</div>
+</div>
+
+<div id="footer_area">
+	<div id="nfooter">
+		<!-- <p>気象庁：〒105-8431 東京都港区虎ノ門3-6-9　代表電話：03-6758-3900</p> -->
+		<ul>
+			<li><a href="//www.jma.go.jp/jma/kishou/info/coment.html">気象庁ホームページについて</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head prefix="og: https://ogp.me/ns#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Digital Typhoon: Typhoon List for the 2025 Season</title>
+<meta name="copyright" content="Copyright (C) 2001-2025 KITAMOTO Asanobu. All Rights Reserved.">
+<link rel="stylesheet" type="text/css" href="/digital-typhoon/base.css">
+<link rel="alternate" hreflang="ja" title="Japanese" href="/digital-typhoon/year/wnp/2025.html.ja">
+</head>
+<body>
+<table class="NAVBAR">
+<tr><td class="TDNULL"><table class="CONTAINER"><tr>
+<td class="IDBARXSML"><nobr><a href="/~kitamoto/">KITAMOTO Asanobu</a>
+@
+<a href="/~kitamoto/contact/#NII">National Institute of Informatics (NII)</a></nobr></td>
+<td class="PADDING"></td>
+<td class="DELIMS">&gt;</td>
+<td class="IDBARBOX"><nobr><form action="/cgi-bin/search/geta_search.pl" method="get" enctype="application/x-www-form-urlencoded" class="IDBAR"><div class="FORM">
+<input type="text" name="input" size="15"><input type="hidden" name="sn" value="all"><input type="hidden" name="lang" value="en">
+</div></form></nobr></td>
+<td class="IDBAR"><nobr><a href="/search/">Search</a></nobr></td>
+<td class="DELIM">|</td>
+<td class="IDBAR"><nobr><a href="/sitemap/">Site Map</a></nobr></td>
+</tr></table></td></tr>
+<tr><td class="TDNULL"><table class="LOGO"><tr class="NAVBAR"><td class="LOGO"><h1 class="LOGO">Digital Typhoon: Typhoon List for the 2025 Season</h1></td></tr></table></td></tr>
+<tr><td class="TDNULL"><table class="CONTAINER"><tr class="NAVIGATION">
+<td class="NAVIGATION"><nobr><a href="/~kitamoto/">Home</a></nobr></td>
+<td class="DELIM">&gt;</td>
+<td class="NAVIGATION"><nobr><a href="https://earth.nii.ac.jp/">Earth</a></nobr></td>
+<td class="DELIM">&gt;</td>
+<td class="NAVIGATION"><nobr><a href="/digital-typhoon/">Digital Typhoon</a></nobr></td>
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-EEFB823SP7"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-EEFB823SP7');
+    </script><td class="DELIM">&gt;</td>
+<td class="NAVIGATION"><nobr><a href="/digital-typhoon/year/">Past Typhoons / Cyclones</a></nobr></td>
+<td class="PADDING"></td>
+<td class="DELIM">&gt;</td>
+<td class="NAVIGATION"><nobr><a href="/digital-typhoon/year/wnp/2025.html.ja">Japanese</a></nobr></td>
+</tr></table></td></tr>
+</table>
+<div class="TYNAV"><table class="TYNAV" cellspacing="1"><tr>
+<td class="TYPN"><a href="/digital-typhoon/year/wnp/2024.html.en">&lt; 2024 Season</a></td>
+<td class="TYYEAR"><a href="/digital-typhoon/search_date.html.en#id2">Past Typhoon Lists by Season</a></td>
+<td class="TYPN"><a href="/digital-typhoon/year/wnp/2026.html.en">2026 Season &gt;</a></td>
+</tr></table></div>
+<div class="CONTAINER"><table class="TABLELIST" cellspacing="1">
+<thead><tr class="TABLELIST">
+<th></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=name&amp;order=dec&amp;stype=char&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Number</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=ename&amp;order=asc&amp;stype=char&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Name</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=basin&amp;order=asc&amp;stype=char&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Basin</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=slife&amp;order=asc&amp;stype=char&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Birth (UTC)</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=elife&amp;order=asc&amp;stype=char&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Death (UTC)</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=lifetime&amp;order=dec&amp;stype=number&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Duration</a></th>
+<th><a href="/cgi-bin/dt/search_name2.pl?lang=en&amp;sort=minp&amp;order=asc&amp;stype=number&amp;name=2025%25&amp;mtype=se&amp;basin=wnp">Min. Pres.</a></th>
+</tr></thead>
+<tbody>
+<tr class="ROW1">
+<td>1</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202501.html.en">202501</a></td>
+<td>WUTIP</td>
+<td>W. N. Pacific</td>
+<td>2025-06-11 12:00</td>
+<td>2025-06-14 18:00</td>
+<td>3 Days 6 Hours</td>
+<td>980</td>
+</tr>
+<tr class="ROW0">
+<td>2</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202502.html.en">202502</a></td>
+<td>SEPAT</td>
+<td>W. N. Pacific</td>
+<td>2025-06-23 06:00</td>
+<td>2025-06-24 12:00</td>
+<td>1 Days 6 Hours</td>
+<td>1004</td>
+</tr>
+<tr class="ROW1">
+<td>3</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202503.html.en">202503</a></td>
+<td>MUN</td>
+<td>W. N. Pacific</td>
+<td>2025-07-02 06:00</td>
+<td>2025-07-08 00:00</td>
+<td>5 Days 18 Hours</td>
+<td>990</td>
+</tr>
+<tr class="ROW0">
+<td>4</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202504.html.en">202504</a></td>
+<td>DANAS</td>
+<td>W. N. Pacific</td>
+<td>2025-07-04 12:00</td>
+<td>2025-07-09 00:00</td>
+<td>4 Days 12 Hours</td>
+<td>965</td>
+</tr>
+<tr class="ROW1">
+<td>5</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202505.html.en">202505</a></td>
+<td>NARI</td>
+<td>W. N. Pacific</td>
+<td>2025-07-12 18:00</td>
+<td>2025-07-15 00:00</td>
+<td>2 Days 6 Hours</td>
+<td>990</td>
+</tr>
+<tr class="ROW0">
+<td>6</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202506.html.en">202506</a></td>
+<td>WIPHA</td>
+<td>W. N. Pacific</td>
+<td>2025-07-18 00:00</td>
+<td>2025-07-22 12:00</td>
+<td>4 Days 12 Hours</td>
+<td>975</td>
+</tr>
+<tr class="ROW1">
+<td>7</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202507.html.en">202507</a></td>
+<td>FRANCISCO</td>
+<td>W. N. Pacific</td>
+<td>2025-07-23 00:00</td>
+<td>2025-07-25 06:00</td>
+<td>2 Days 6 Hours</td>
+<td>990</td>
+</tr>
+<tr class="ROW0">
+<td>8</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202508.html.en">202508</a></td>
+<td>CO-MAY</td>
+<td>W. N. Pacific</td>
+<td>2025-07-23 12:00</td>
+<td>2025-07-31 00:00</td>
+<td>6 Days 0 Hours</td>
+<td>975</td>
+</tr>
+<tr class="ROW1">
+<td>9</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202509.html.en">202509</a></td>
+<td>KROSA</td>
+<td>W. N. Pacific</td>
+<td>2025-07-24 00:00</td>
+<td>2025-08-04 06:00</td>
+<td>11 Days 6 Hours</td>
+<td>965</td>
+</tr>
+<tr class="ROW0">
+<td>10</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202510.html.en">202510</a></td>
+<td>BAILU</td>
+<td>W. N. Pacific</td>
+<td>2025-08-02 18:00</td>
+<td>2025-08-05 12:00</td>
+<td>2 Days 18 Hours</td>
+<td>994</td>
+</tr>
+<tr class="ROW1">
+<td>11</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202511.html.en">202511</a></td>
+<td>PODUL</td>
+<td>W. N. Pacific</td>
+<td>2025-08-07 12:00</td>
+<td>2025-08-14 00:00</td>
+<td>6 Days 12 Hours</td>
+<td>960</td>
+</tr>
+<tr class="ROW0">
+<td>12</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202512.html.en">202512</a></td>
+<td>LINGLING</td>
+<td>W. N. Pacific</td>
+<td>2025-08-20 12:00</td>
+<td>2025-08-21 12:00</td>
+<td>1 Days 0 Hours</td>
+<td>994</td>
+</tr>
+<tr class="ROW1">
+<td>13</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202513.html.en">202513</a></td>
+<td>KAJIKI</td>
+<td>W. N. Pacific</td>
+<td>2025-08-22 18:00</td>
+<td>2025-08-26 06:00</td>
+<td>3 Days 12 Hours</td>
+<td>950</td>
+</tr>
+<tr class="ROW0">
+<td>14</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202514.html.en">202514</a></td>
+<td>NONGFA</td>
+<td>W. N. Pacific</td>
+<td>2025-08-29 06:00</td>
+<td>2025-08-30 18:00</td>
+<td>1 Days 12 Hours</td>
+<td>996</td>
+</tr>
+<tr class="ROW1">
+<td>15</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202515.html.en">202515</a></td>
+<td>PEIPAH</td>
+<td>W. N. Pacific</td>
+<td>2025-09-03 18:00</td>
+<td>2025-09-05 18:00</td>
+<td>2 Days 0 Hours</td>
+<td>992</td>
+</tr>
+<tr class="ROW0">
+<td>16</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202516.html.en">202516</a></td>
+<td>TAPAH</td>
+<td>W. N. Pacific</td>
+<td>2025-09-06 12:00</td>
+<td>2025-09-08 12:00</td>
+<td>2 Days 0 Hours</td>
+<td>980</td>
+</tr>
+<tr class="ROW1">
+<td>17</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202517.html.en">202517</a></td>
+<td>MITAG</td>
+<td>W. N. Pacific</td>
+<td>2025-09-16 18:00</td>
+<td>2025-09-19 18:00</td>
+<td>2 Days 0 Hours</td>
+<td>992</td>
+</tr>
+<tr class="ROW0">
+<td>18</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202518.html.en">202518</a></td>
+<td>RAGASA</td>
+<td>W. N. Pacific</td>
+<td>2025-09-18 18:00</td>
+<td>2025-09-25 06:00</td>
+<td>6 Days 12 Hours</td>
+<td>905</td>
+</tr>
+<tr class="ROW1">
+<td>19</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202519.html.en">202519</a></td>
+<td>NEOGURI</td>
+<td>W. N. Pacific</td>
+<td>2025-09-18 06:00</td>
+<td>2025-09-29 00:00</td>
+<td>10 Days 18 Hours</td>
+<td>925</td>
+</tr>
+<tr class="ROW0">
+<td>20</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202520.html.en">202520</a></td>
+<td>BUALOI</td>
+<td>W. N. Pacific</td>
+<td>2025-09-23 12:00</td>
+<td>2025-09-29 12:00</td>
+<td>6 Days 0 Hours</td>
+<td>975</td>
+</tr>
+<tr class="ROW1">
+<td>21</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202521.html.en">202521</a></td>
+<td>MATMO</td>
+<td>W. N. Pacific</td>
+<td>2025-10-02 12:00</td>
+<td>2025-10-06 06:00</td>
+<td>3 Days 18 Hours</td>
+<td>975</td>
+</tr>
+<tr class="ROW0">
+<td>22</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202522.html.en">202522</a></td>
+<td>HALONG</td>
+<td>W. N. Pacific</td>
+<td>2025-10-04 06:00</td>
+<td>2025-10-11 00:00</td>
+<td>6 Days 18 Hours</td>
+<td>935</td>
+</tr>
+<tr class="ROW1">
+<td>23</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202523.html.en">202523</a></td>
+<td>NAKRI</td>
+<td>W. N. Pacific</td>
+<td>2025-10-08 00:00</td>
+<td>2025-10-14 18:00</td>
+<td>6 Days 18 Hours</td>
+<td>970</td>
+</tr>
+<tr class="ROW0">
+<td>24</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202524.html.en">202524</a></td>
+<td>FENGSHEN</td>
+<td>W. N. Pacific</td>
+<td>2025-10-17 18:00</td>
+<td>2025-10-23 00:00</td>
+<td>5 Days 6 Hours</td>
+<td>990</td>
+</tr>
+<tr class="ROW1">
+<td>25</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202525.html.en">202525</a></td>
+<td>KALMAEGI</td>
+<td>W. N. Pacific</td>
+<td>2025-11-01 12:00</td>
+<td>2025-11-07 00:00</td>
+<td>5 Days 12 Hours</td>
+<td>950</td>
+</tr>
+<tr class="ROW0">
+<td>26</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202526.html.en">202526</a></td>
+<td>FUNG-WONG</td>
+<td>W. N. Pacific</td>
+<td>2025-11-06 00:00</td>
+<td>2025-11-13 00:00</td>
+<td>7 Days 0 Hours</td>
+<td>935</td>
+</tr>
+<tr class="ROW1">
+<td>27</td>
+<td><a href="/digital-typhoon/summary/wnp/s/202527.html.en">202527</a></td>
+<td>KOTO</td>
+<td>W. N. Pacific</td>
+<td>2025-11-25 12:00</td>
+<td>2025-12-01 00:00</td>
+<td>5 Days 12 Hours</td>
+<td>970</td>
+</tr>
+</tbody>
+</table></div>
+<div class="TYNAV"><table class="TYNAV" cellspacing="1"><tr>
+<td class="TYPN"><a href="/digital-typhoon/year/wnp/2024.html.en">&lt; 2024 Season</a></td>
+<td class="TYYEAR"><a href="/digital-typhoon/search_date.html.en#id2">Past Typhoon Lists by Season</a></td>
+<td class="TYPN"><a href="/digital-typhoon/year/wnp/2026.html.en">2026 Season &gt;</a></td>
+</tr></table></div>
+<h1>Next Operations</h1>
+<ul class="NEXTOP">
+<li><form action="/cgi-bin/dt/search_name2.pl" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="ids" value="202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527"><input type="hidden" name="lang" value="en"><input type="hidden" name="basin" value="wnp"><input type="hidden" name="sort" value="name"><input type="hidden" name="order" value="asc"><input type="hidden" name="stype" value="char"><div class="WINNOW">Select by order from the list :   Start <input type="text" name="start" value="1" size="5" class="WINNOW"> End <input type="text" name="end" value="27" size="5" class="WINNOW"> <input type="submit" value="Select" class="WINNOWSUBMIT">
+</div>
+</form></li>
+<li><a href="/cgi-bin/dt/track_view.pl?basin=wnp&amp;lang=en&amp;tnum=27&amp;max=99&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527">Draw typhoon tracks on the map</a></li>
+<li><a href="/cgi-bin/dt/track_view.pl?basin=wnp&amp;lang=en&amp;tnum=27&amp;max=99&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;cmd=peak">Draw typhoon tracks on the map for peak periods</a></li>
+<li><a href="/cgi-bin/dt/gen_kml.pl?lang=en&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527">Draw typhoon tracks on the map (KML)</a></li>
+<li><form action="/cgi-bin/dt/track_view.pl" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="ids" value="202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527"><input type="hidden" name="lang" value="en"><input type="hidden" name="basin" value="wnp"><input type="hidden" name="max" value="99"><input type="hidden" name="tnum" value="27"><input type="hidden" name="cmd" value="pressure"><div class="WINNOW">Draw typhoon tracks on the map for the central pressure below...   Threshold <input type="text" name="th" value="950" size="5" class="WINNOW"> <input type="submit" value="Select" class="WINNOWSUBMIT">
+</div>
+</form></li>
+<li><form action="/cgi-bin/dt/track_view.pl" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="ids" value="202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527"><input type="hidden" name="lang" value="en"><input type="hidden" name="basin" value="wnp"><input type="hidden" name="max" value="99"><input type="hidden" name="tnum" value="27"><input type="hidden" name="cmd" value="wind"><div class="WINNOW">Draw typhoon tracks on the map for the maximum wind above...   Threshold <input type="text" name="th" value="85" size="5" class="WINNOW"> <input type="submit" value="Select" class="WINNOWSUBMIT">
+</div>
+</form></li>
+<li><a href="/digital-typhoon/kml/typhoon/wnp/2025.en.kmz">Typhoon tracks of 2025 (Google Earth KMZ)</a></li>
+<li><a href="/digital-typhoon/kml/typhoon/wnp/2025-t.en.kmz">Typhoon tracks of 2025 (Google Earth KMZ Animation)</a></li>
+<li><a href="/cgi-bin/dt/calendar.pl?start=27030&amp;end=27395&amp;lang=en&amp;basin=wnp">Typhoon timeline of 2025</a></li>
+<li><a href="/digital-typhoon/activity-calendar/2025/">Tropical Cyclone Formation and Activity Calendar of 2025</a></li>
+<li><a href="/cgi-bin/dt/birth_view.pl?basin=wnp&amp;lang=en&amp;lat1=0&amp;lat2=60&amp;lon1=100&amp;lon2=180&amp;max=99&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527">Draw typhoon birthplaces on the map</a></li>
+<li><form action="/cgi-bin/dt/search_name2.pl" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="ids" value="202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527"><input type="hidden" name="lang" value="en"><input type="hidden" name="basin" value="wnp"><input type="hidden" name="sort" value="name"><input type="hidden" name="order" value="asc"><input type="hidden" name="stype" value="char"><div class="WINNOW">Set the target area :  South <input type="text" name="as" size="5" class="WINNOW"> North <input type="text" name="an" size="5" class="WINNOW"> West <input type="text" name="aw" size="5" class="WINNOW"> East <input type="text" name="ae" size="5" class="WINNOW"> <input type="submit" value="Select" class="WINNOWSUBMIT">
+</div>
+</form></li>
+<li><form action="/cgi-bin/dt/search_name2.pl" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="ids" value="202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527"><input type="hidden" name="lang" value="en"><input type="hidden" name="basin" value="wnp"><input type="hidden" name="sort" value="name"><input type="hidden" name="order" value="asc"><input type="hidden" name="stype" value="char"><div class="WINNOW">Set the target time :  After Birth min <input type="text" name="lss" size="5" class="WINNOW"> max <input type="text" name="lse" size="5" class="WINNOW"> Before Death min <input type="text" name="les" size="5" class="WINNOW"> max <input type="text" name="lee" size="5" class="WINNOW"> <input type="submit" value="Select" class="WINNOWSUBMIT">
+</div>
+</form></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=pressure&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;min=870&amp;quant=10">View the histogram for minimum pressure</a></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=wind&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527">View the histogram for maximum wind</a></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=date&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;mtype=s&amp;target=year">View the histogram for the year of birth</a></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=date&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;mtype=s&amp;target=month">View the histogram for the month of birth</a></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=date&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;mtype=s&amp;target=td">View the histogram for the month (the period of ten days) of birth </a></li>
+<li><a href="/cgi-bin/dt/view_hist.pl?lang=en&amp;cmd=lifetime&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527">View the histogram for lifetime</a></li>
+<li><a href="/cgi-bin/dt/view_hist_track.pl?lang=en&amp;cmd=lat&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the histogram for the latitude of typhoon tracks</a></li>
+<li><a href="/cgi-bin/dt/view_hist_track.pl?lang=en&amp;cmd=lon&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the histogram for the longitude of typhoon tracks</a></li>
+<li><a href="/cgi-bin/dt/view_hist_track.pl?lang=en&amp;cmd=latlon&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the 2-D histogram for the latitude and longitude of typhoon tracks</a></li>
+<li><a href="/cgi-bin/dt/view_hist_birth.pl?lang=en&amp;cmd=lat&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the histogram for the latitude of typhoon birthplaces</a></li>
+<li><a href="/cgi-bin/dt/view_hist_birth.pl?lang=en&amp;cmd=lon&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the histogram for the longitude of typhoon birthplaces</a></li>
+<li><a href="/cgi-bin/dt/view_hist_birth.pl?lang=en&amp;cmd=latlon&amp;basin=wnp&amp;ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;quant=5">View the 2-D histogram for the latitude and longitude of typhoon birthplaces</a></li>
+<li><a href="/cgi-bin/dt/report_search.pl?ids=202501:202502:202503:202504:202505:202506:202507:202508:202509:202510:202511:202512:202513:202514:202515:202516:202517:202518:202519:202520:202521:202522:202523:202524:202525:202526:202527&amp;basin=wnp&amp;lang=en">Search in the Weather Disaster Database</a></li>
+</ul>
+<table class="NAVBAR"><tr><td class="TDNULL"><table class="CONTAINER"><tr class="NAVIGATION">
+<td class="PADDING"></td>
+<td class="NAVIGATION"><nobr><a href="/~kitamoto/contact/">Contact</a></nobr></td>
+<td class="DELIM">|</td>
+<td class="NAVIGATION"><nobr><a href="/site/">About This Site</a></nobr></td>
+<td class="DELIM">|</td>
+<td class="NAVIGATION"><nobr><a href="/whatsnew/">What's New</a></nobr></td>
+</tr></table></td></tr></table>
+</body>
+</html>

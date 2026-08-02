@@ -1,0 +1,152 @@
+[
+  {
+    "label": "cma_list",
+    "url": "http://typhoon.nmc.cn/weatherservice/typhoon/jsons/list_default",
+    "status": 200,
+    "ct": "application/octet-stream",
+    "bytes": 1360,
+    "head": "typhoon_jsons_list_default(({\"typhoonList\":[[3285913,\"nameless\",\"热带低压\",\"20260015\",\"20260015\",20260015,null,\"start\"],[3279904,\"DOLPHIN\",\"白海豚\",\"2613\",\"2613\",null,\"生活在香港水域的中华白海豚，亦是香港的吉祥物\",\"start\"],[3277083,\"NOUL\",\"红霞\",\"2612\",\"2612\",20260013,\"红色的天空\",\"stop\"],[3272323,\"HAISHEN\",\"海神\",\"2611\",\"2611\",null,\"神话中的大海之神\",\"stop\"],[3257847,\"MAYSAK\",\"美莎克\",\"2610\",\"2610\",20260010,\"一种树\",\"stop\"],[3257931,\"BAVI\",\"巴威\",\"2609\",\"2609\",null,\"位于越南北部的山脉\",\"stop\"],[3252248,\"HIGOS\",\"海高斯\",\"2608\",\"",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_cma_list.sample"
+  },
+  {
+    "label": "atcf_index",
+    "url": "https://ftp.nhc.noaa.gov/atcf/aid_public/",
+    "status": 200,
+    "ct": "text/html;charset=ISO-8859-1",
+    "bytes": 2230,
+    "head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<html>\n <head>\n  <title>Index of /atcf/aid_public</title>\n </head>\n <body>\n<h1>Index of /atcf/aid_public</h1>\n<pre><a href=\"?C=N;O=D\">Name</a>                    <a href=\"?C=M;O=A\">Last modified</a>      <a href=\"?C=S;O=A\">Size</a>  <hr><a href=\"/atcf/\">Parent Directory</a>                             -   \n<a href=\"aal012026.dat.gz\">aal012026.dat.gz</a>        2026-06-18 02:48   67K  \n<a href=\"aal022026.dat.gz\">aal022026.dat.gz</a>        2026-07-24 02:34  231K  \n<a href=\"aal902026.dat.gz\">aal902026.dat.gz</a>        2026-06-16 13:44   27",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_atcf_index.sample"
+  },
+  {
+    "label": "ibtracs_last3years",
+    "url": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.last3years.list.v04r01.csv",
+    "status": 200,
+    "ct": "text/csv",
+    "bytes": 9589343,
+    "head": "SID,SEASON,NUMBER,BASIN,SUBBASIN,NAME,ISO_TIME,NATURE,LAT,LON,WMO_WIND,WMO_PRES,WMO_AGENCY,TRACK_TYPE,DIST2LAND,LANDFALL,IFLAG,USA_AGENCY,USA_ATCF_ID,USA_LAT,USA_LON,USA_RECORD,USA_STATUS,USA_WIND,USA_PRES,USA_SSHS,USA_R34_NE,USA_R34_SE,USA_R34_SW,USA_R34_NW,USA_R50_NE,USA_R50_SE,USA_R50_SW,USA_R50_NW,USA_R64_NE,USA_R64_SE,USA_R64_SW,USA_R64_NW,USA_POCI,USA_ROCI,USA_RMW,USA_EYE,TOKYO_LAT,TOKYO_LON,TOKYO_GRADE,TOKYO_WIND,TOKYO_PRES,TOKYO_R50_DIR,TOKYO_R50_LONG,TOKYO_R50_SHORT,TOKYO_R30_DIR,TOKYO_R30_LONG,TOKYO_R30_SHORT,TOKYO_LAND,CMA_LAT,CMA_LON,CMA_CAT,CMA_WIND,CMA_PRES,HKO_LAT,HKO_LON,HKO_CA",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_ibtracs_last3years.sample"
+  },
+  {
+    "label": "jma_forecast_json",
+    "url": "https://www.jma.go.jp/bosai/typhoon/data/forecast.json",
+    "status": 404,
+    "ct": "text/html",
+    "bytes": 2203,
+    "head": "<!DOCTYPE html>\r\n<html lang=\"ja\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"robots\" content=\"noindex\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\">\r\n    <meta name=\"Author\" content=\"気象庁 Japan Meteorological Agency\"/>\r\n    <style type=\"text/css\">\r\n      body {background-color: #FFFFFF;}\r\n      \r\n      :host,html {\r\n          line-height: 1.5;\r\n          font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;\r\n          font-f",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_jma_forecast_json.sample"
+  },
+  {
+    "label": "jma_forecast_area",
+    "url": "https://www.jma.go.jp/bosai/forecast/data/forecast/010000.json",
+    "status": 200,
+    "ct": "application/json",
+    "bytes": 52244,
+    "head": "[{\"officeCode\":\"014100\",\"name\":\"釧路\",\"srf\":{\"publishingOffice\":\"釧路地方気象台\",\"reportDatetime\":\"2026-08-02T17:00:00+09:00\",\"timeSeries\":[{\"timeDefines\":[\"2026-08-02T17:00:00+09:00\",\"2026-08-03T00:00:00+09:00\",\"2026-08-04T00:00:00+09:00\"],\"areas\":{\"area\":{\"name\":\"釧路地方\",\"code\":\"014020\"},\"weatherCodes\":[\"111\",\"101\",\"201\"],\"weathers\":[\"晴れ　夜遅く　くもり　所により　夜遅く　霧\",\"晴れ　朝晩　くもり　所により　昼前　まで　霧\",\"くもり　時々　晴れ\"],\"winds\":[\"南東の風\",\"南東の風\",\"南の風\"],\"waves\":[\"１メートル　�",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_jma_forecast_area.sample"
+  },
+  {
+    "label": "jma_common",
+    "url": "https://www.jma.go.jp/bosai/typhoon/const/typhoon_common.json",
+    "status": 404,
+    "ct": "text/html",
+    "bytes": 2203,
+    "head": "<!DOCTYPE html>\r\n<html lang=\"ja\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"robots\" content=\"noindex\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\">\r\n    <meta name=\"Author\" content=\"気象庁 Japan Meteorological Agency\"/>\r\n    <style type=\"text/css\">\r\n      body {background-color: #FFFFFF;}\r\n      \r\n      :host,html {\r\n          line-height: 1.5;\r\n          font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;\r\n          font-f",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_jma_common.sample"
+  },
+  {
+    "label": "jma_multi_ty",
+    "url": "https://www.data.jma.go.jp/multi/data/TY/TY_en.json",
+    "status": 404,
+    "ct": "text/html",
+    "bytes": 2203,
+    "head": "<!DOCTYPE html>\r\n<html lang=\"ja\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"robots\" content=\"noindex\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\">\r\n    <meta name=\"Author\" content=\"気象庁 Japan Meteorological Agency\"/>\r\n    <style type=\"text/css\">\r\n      body {background-color: #FFFFFF;}\r\n      \r\n      :host,html {\r\n          line-height: 1.5;\r\n          font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;\r\n          font-f",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_jma_multi_ty.sample"
+  },
+  {
+    "label": "jma_text_list",
+    "url": "https://www.data.jma.go.jp/yoho/typhoon/typhoon_text_list.html",
+    "status": 200,
+    "ct": "text/html",
+    "bytes": 6733,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>気象庁｜過去の台風資料</title>\n<meta name=\"Author\" content=\"気象庁 Japan Meteorological Agency\" />\n<meta name=\"keywords\" content=\"気象庁 Japan Meteorological Agency\" />\n<meta name=\"description\" content=\"台風経路図（1951年以降）、台風位置表（2001年以降）、統計資料（1951年以降）�",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_jma_text_list.sample"
+  },
+  {
+    "label": "hko_flw",
+    "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=flw&lang=en",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "bytes": 944,
+    "head": "{\"generalSituation\":\"A broad trough of low pressure continues to bring thundery showers to the coast of Guangdong and the northern part of the South China Sea.\",\"tcInfo\":\"At 8 p.m., the tropical depression over the seas east of the Philippines was centred about 290 kilometres east-northeast of Manila. It is forecast to move north-northwest slowly towards the vicinity of Luzon, then linger over the region.\",\"fireDangerWarning\":\"\",\"forecastPeriod\":\"Weather forecast for tonight and tomorrow\",\"forecastDesc\":\"Mainly cloudy with occasional showers and thunderstorms. Showers will be heavy at times at",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_hko_flw.sample"
+  },
+  {
+    "label": "hko_tc_gis2",
+    "url": "https://www.hko.gov.hk/wxinfo/currwx/tc_gis.xml",
+    "status": 404,
+    "ct": "text/html; charset=utf-8",
+    "bytes": 180902,
+    "head": "<html  lang= \"en\" >\n<head>\n<meta name= \"Comments\" content= \"WCAG2.0_Non_Conforming:wcag_url=#;\" />\n<meta http-equiv= \"Content-Type\" content= \"text/html; CHARSET=UTF-8\">\n<script type= \"text/javascript\" src= \"/js/jquery.min.js\"></script>\n<script type= \"text/javascript\" src= \"/js/jquery-ui.min.js\"></script>\n<title>Hong Kong Observatory</title>\n</head>\n<style>\n\tdiv.content_holder {\n\t\tpadding: 25px;\n\t}\n</style>\n<script>\n\nvar redirecturl = new Array();\nvar fast_redirecturl = new Array();\nvar para_redirecturl = new Array();\n\n//No wait\n\n\n// Added on 23/12/2025\nfast_redirecturl['/en/wxinfo/ts/index.htm",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_hko_tc_gis2.sample"
+  },
+  {
+    "label": "hko_stat",
+    "url": "https://www.hko.gov.hk/cis/statistic/hko_tcptc_statistic_e.htm",
+    "status": 404,
+    "ct": "text/html; charset=utf-8",
+    "bytes": 180902,
+    "head": "<html  lang= \"en\" >\n<head>\n<meta name= \"Comments\" content= \"WCAG2.0_Non_Conforming:wcag_url=#;\" />\n<meta http-equiv= \"Content-Type\" content= \"text/html; CHARSET=UTF-8\">\n<script type= \"text/javascript\" src= \"/js/jquery.min.js\"></script>\n<script type= \"text/javascript\" src= \"/js/jquery-ui.min.js\"></script>\n<title>Hong Kong Observatory</title>\n</head>\n<style>\n\tdiv.content_holder {\n\t\tpadding: 25px;\n\t}\n</style>\n<script>\n\nvar redirecturl = new Array();\nvar fast_redirecturl = new Array();\nvar para_redirecturl = new Array();\n\n//No wait\n\n\n// Added on 23/12/2025\nfast_redirecturl['/en/wxinfo/ts/index.htm",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_hko_stat.sample"
+  },
+  {
+    "label": "atcf_index_dir",
+    "url": "https://ftp.nhc.noaa.gov/atcf/index/",
+    "status": 200,
+    "ct": "text/html;charset=ISO-8859-1",
+    "bytes": 1917,
+    "head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<html>\n <head>\n  <title>Index of /atcf/index</title>\n </head>\n <body>\n<h1>Index of /atcf/index</h1>\n<pre><a href=\"?C=N;O=D\">Name</a>                    <a href=\"?C=M;O=A\">Last modified</a>      <a href=\"?C=S;O=A\">Size</a>  <hr><a href=\"/atcf/\">Parent Directory</a>                             -   \n<a href=\"AE_storms.txt.nhc\">AE_storms.txt.nhc</a>       2019-08-01 21:32    0   \n<a href=\"AL_storms.txt.cphc\">AL_storms.txt.cphc</a>      2021-06-15 09:00  396   \n<a href=\"AL_storms.txt.hpc\">AL_storms.txt.hpc</a>       2012-09-14 14:36  792   \n<a",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_atcf_index_dir.sample"
+  },
+  {
+    "label": "nhc_data",
+    "url": "https://www.nhc.noaa.gov/data/",
+    "status": 200,
+    "ct": "text/html; charset=UTF-8",
+    "bytes": 66478,
+    "head": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>NHC Data Archive</title>\n  <meta charset=\"utf-8\">\n  <script async=\"\" src=\"/assets/js/uswds-init.min.js\"></script>\n  <link rel=\"preload\" as=\"style\" href=\"/assets/css/uswds-styles-22f6e7a4a2.min.css\" />\n  <link rel=\"stylesheet\" href=\"/assets/css/uswds-styles-22f6e7a4a2.min.css\" type=\"text/css\" />\n  \n  </head>\n  <body>\n    <div class=\"skipheader\">\n      <a href=\"#contents\"><img height=\"1\" alt=\"Skip Navigation Links\" src=\"/css/images/skipgraphic.gif\" width=\"1\" border=\"0\"></a>\n    </div>\n    \n    <!-- Top Menu Navigation Section -->\n<div class=\"a",
+    "ok": true,
+    "sample": "data/samples/agencies/deep_nhc_data.sample"
+  },
+  {
+    "label": "sti_root",
+    "url": "https://tcdata.typhoon.org.cn/",
+    "status": 468,
+    "ct": "text/html",
+    "bytes": 14862,
+    "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"icon\" href=\"/.safeline/static/favicon.png\" type=\"image/png\"><title id=\"slg-title\"></title><style>:root{--primary-color:#0067B8;--light-primary-color:#0067B8cc;--font-color:#fff;--light-font-color:#ffffff80;--success-color:#00b87c;--warning-color:#ff6666;--warning-font-color:#fff;--warning-light-font-color:#ffffff80;}</style><style>html{height:100%}body{height:100%;margin:0;font-family:PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif}#slg-bg{background-color:var",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_sti_root.sample"
+  },
+  {
+    "label": "sti_zjl",
+    "url": "http://tcdata.typhoon.org.cn/zjljsj_zlhq.html",
+    "status": 468,
+    "ct": "text/html",
+    "bytes": 14862,
+    "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"icon\" href=\"/.safeline/static/favicon.png\" type=\"image/png\"><title id=\"slg-title\"></title><style>:root{--primary-color:#0067B8;--light-primary-color:#0067B8cc;--font-color:#fff;--light-font-color:#ffffff80;--success-color:#00b87c;--warning-color:#ff6666;--warning-font-color:#fff;--warning-light-font-color:#ffffff80;}</style><style>html{height:100%}body{height:100%;margin:0;font-family:PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif}#slg-bg{background-color:var",
+    "ok": false,
+    "sample": "data/samples/agencies/deep_sti_zjl.sample"
+  }
+]

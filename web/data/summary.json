@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-08-02T14:02:40.660800+00:00",
+  "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
+  "calibration_status": "uncalibrated",
+  "ui_banner": "未校准 · 概率切点为初始猜测 · 仅供内部参考",
+  "headline": {
+    "level": "watch",
+    "level_zh": "关注",
+    "storm_name": "DOLPHIN",
+    "p_main": 0.264,
+    "one_liner": "对上海：关注（p≈0.26，未校准）。关注过程 DOLPHIN；最近点约 256.1 km / lead 168.0 h（最近点在 D-5 以外，仅作集合趋势）。"
+  },
+  "n_tracks": 1476,
+  "n_forecast_tracks": 1474,
+  "n_storms_assessed": 21,
+  "sources": [
+    "cma_babj",
+    "cma_best",
+    "ecmwf_aifs_ens",
+    "ecmwf_aifs_single",
+    "ecmwf_ifs_enfo",
+    "ecmwf_ifs_oper"
+  ],
+  "products_dir": "/Users/cheer/typhoon-impact-system/products/20260802/14z",
+  "web_export": true,
+  "note": "Static snapshot for GitHub Pages demo; regenerate offline with run_layer_a."
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>태풍통보문 - 기상청 날씨누리</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="shortcut icon" href="/w/logo_mark.png" />
+    <link rel="apple-touch-icon-precomposed" href="/w/logo_mark.png" />
+    <meta property="og:title" content="기상청 날씨누리">
+    <meta property="og:description" content="기상청 날씨누리">
+    <meta property="og:image" content="https://www.weather.go.kr/w/iphone-shortcut.png">
+    <meta name="google-site-verification" content="_P1iox01__-mHQsuESbKKKQF3-fHMtks8nkf7But2KY" />
+
+    <link href="/w/resources/css/styles.css?ver=202607091110" rel="stylesheet" type="text/css">
+
+    <link href="/w/resources/css-2021/slick.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/basic.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/common-ui.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/common-ui-mobile.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/common-ui-new-mobile.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/custom.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/component.css?ver=202607091110" rel="stylesheet" type="text/css">
+    <link href="/w/resources/css-2021/print.css?ver=202607091110" rel="stylesheet" media="print" type="text/css" />
+    <link href="/w/resources/css-2021/ie.css?ver=202607091110" rel="stylesheet" type="text/css">
+
+    <script src="/w/resources/js/lodash.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/w/resources/js/clipboard.min.js"></script>
+    <script src="/w/resources/js/moment-with-locales.js"></script>
+    <script src="/w/resources/js/moment-timezone.js"></script>
+    <script src="/w/resources/js/jquery-3.5.0.min.js"></script>
+    <script src="/w/resources/js/jquery-ui.min.js"></script>
+    <script src="/w/resources/js/iscroll-probe.js"></script>
+    <script src="/w/resources/js/scrollbooster.min.js"></script>
+    <script src="/w/resources/js/slick.min.js"></script>
+    <script src="/w/resources/js/mustache.min.js"></script>
+    <script src="/w/resources/js/store.modern.min.js"></script>
+    <script src="/w/resources/js/object-assign.js"></script>
+    <script src="/w/resources/js/highcharts.js"></script>
+    <script src="/w/resources/js/fn.js?ver=202607091110"></script>
+    <script> 
+      window.appBase = "\/w\/";
+      window.vmapBaseUrl = "https:\/\/vmap.kma.go.kr";
+      window.vmapBaseParam = "HIDEMENU=Y";
+      window.wgisBaseUrl = "https:\/\/www.weather.go.kr\/wgis-nuri";
+      var hashParam = null;
+    </script>
+  </head>
+
+  <body class="subp">
+    <a id="skip-to-content" href="#content">본문 바로가기</a>
+    
+      <header class="mb-4 border-b border-gray-200">
+        <div class="flex items-center justify-between container mx-auto px-2 max-w-5xl">
+          <h1 id="logo-kma" class="order-2 !hidden md:!block !w-20 !h-10">
+            <span class="sr-only">기상청</span>
+          </h1>
+          <h2 class="popup-title order-1">태풍통보문</h2>
+          <i id="popup-close-button" class="icon order-3 md:hidden" role="button" data-role="tab-close" aria-label="닫기 버튼">close</i>
+        </div>
+      </header>
+
+      <main class="container px-2 mx-auto space-y-4 lg:px-0 lg:space-y-8 max-w-5xl">
+        <a id="content"></a>
+        
+        <div class="flex items-center justify-between">
+            <nav aria-label="페이지 경로">
+                <ul id="breadcrumb">
+                    <li class="home">
+                        <a href="/w/index.do"><span class="sr-only">홈</span></a>
+                    </li>
+                    
+                        
+                        
+                        <li>
+                            <a href="/w/hazard/typhoon.do"><span>위험기상</span></a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href=""><span>태풍</span></a>
+                        </li>
+                    
+                </ul>
+            </nav>
+
+            <!-- <div class="flex gap-x-4">
+                <span class="share icon fill text-gray-500 !text-lg cursor-pointer">
+                    <span class="sr-only">공유하기</span>
+                </span>
+                <span class="print icon text-gray-500 !text-lg cursor-pointer">
+                    <span class="sr-only">인쇄</span>
+                </span>
+            </div> -->
+        </div>
+    
+        
+            <a id="container"></a>
+            <div class="cont-wrap cmp-typ-report">
+            	
+                <div class="cont-box01">
+                    <div class="tab-menu-wrap">
+                        <div class="tab-menu">
+                            <div class="tab-btn01 tab-sm">
+                                
+                                <a href="?tIdx=1" 
+                                    class="on" 
+                                    title="선택됨"
+                                   ><span>24호 열대저압부</span></a>
+                            </div>
+                            <div class="tab-btn01 tab-sm">
+                                <a href="?tIdx=0"
+                                   ><span>13호 태풍 돌핀</span></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typhoon-report">
+                        <div class="typhoon-item on">
+                            
+                            <div class="typhoon-cont">
+                                <div class="title"><strong>제 24호 열대저압부</strong> 기상청 | 2026년 08월 02일 22시 30분 발표</div>
+                                <div class="over-scroll">
+                                    <table class="table-col">
+                                        <caption>열대저압부 예보, 열대저압부의 일시, 중심위치(위도,경도), 중심기압, 최대풍속(초속, 시속), 진행방향, 이동속도 정보를 확인할 수 있는 표입니다.</caption>
+                                        <colgroup>
+                                            <col />
+                                            <col style="width:5%" />
+                                            <col style="width:6%" />
+                                            <col style="width:6%" />
+                                            <col style="width:10%" />
+                                            <col style="width:7%" /> 
+                                            <col style="width:7%" />  
+                                            <col style="width:7%" />         
+                                            <col style="width:6%" />                                                                            
+                                            <col style="width:10%" />
+                                            <col style="width:10%" />
+                                            <col style="width:10%" />   
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">일시</th>
+                                                <th scope="col" rowspan="2">강도</th>
+                                                <th scope="col" colspan="2">최대풍속</th>
+                                                <th scope="col" rowspan="2">중심기압(hPa)</th>  
+                                                <th scope="col" colspan="2">중심위치</th>     
+                                                <th scope="col" rowspan="2">진행<br />방향</th>         
+                                                <th scope="col" rowspan="2">이동<br />속도<br />(km/h)</th>                                                                                
+                                                <th scope="col" rowspan="2">강풍반경(km)<br />[예외반경]</th>
+                                                <th scope="col" rowspan="2">폭풍반경(km)<br />[예외반경]</th>                                             
+                                                <th scope="col" rowspan="2">70%<br />확률<br />반경(km)</th>
+                                            </tr>
+                                            <tr>
+												<th scope="col" style="border-left:1px solid #e0e6ef;">초속(m/s)</th>
+                                                <th scope="col">시속(km/h)</th>
+                                                <th scope="col">위도(N)</th>
+                                                <th scope="col">경도(E)</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>02일 21시 현재</td>
+                                                <td>TD</td>
+                                                <td>15</td>
+                                                <td>54</td>
+                                                <td>1002</td> 
+                                                <td>16.0</td>
+                                                <td>124.2</td>                      
+                                                <td>북북서</td>      
+                                                <td>16</td>                                                                   
+                                                <td>
+                                                    
+                                                        <span></span>
+                                                        
+                                                    
+                                                    
+                                                </td>
+                                                <td>
+                                                    
+                                                        <span></span>
+                                                        
+                                                    
+                                                    
+                                                </td>                                               
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03일 21시 예상</td>
+                                                <td>1</td>
+                                                <td>18</td>
+                                                <td>65</td>
+                                                <td>1000</td>
+                                                <td>16.7</td>
+                                                <td>123.5</td>  
+                                                <td>북서</td>       
+                                                <td>4</td>                                      
+                                                <td>
+                                                    
+                                                        <span>250</span><br />
+                                                        <span>[남서 약 150]</span>
+                                                    
+                                                    
+                                                </td>
+                                                <td>
+                                                    
+                                                        <span></span>
+                                                        
+                                                    
+                                                    
+                                                </td>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04일 21시 예상</td>
+                                                <td>TD</td>
+                                                <td>15</td>
+                                                <td>54</td>
+                                                <td>1002</td>
+                                                <td>17.3</td>
+                                                <td>123.5</td>  
+                                                <td>북</td>       
+                                                <td>3</td>                                      
+                                                <td>
+                                                    
+                                                        <span></span>
+                                                        
+                                                    
+                                                    
+                                                </td>
+                                                <td>
+                                                    
+                                                        <span></span>
+                                                        
+                                                    
+                                                    
+                                                </td>
+                                                <td>130</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <img class="mgt-15" src="https://www.weather.go.kr/repositary/image/typ/img/RTKO64_202608022230]24_ko.png" alt="제 24호 열대저압부 발생 경로" />
+                                <ul class="ul_arrow_T10 mgt-15">
+                                    <li>이 열대저압부는 24시간 이내에 제14호 태풍 구지라(KUJIRA)로 발달될 것으로 예상되며, 48시간 이내에 열대저압부로 약화될 것으로 예상됨.</li><li>다음 정보는 내일(03일) 04시 30분경에 발표될 예정임.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cmp-stack">
+                    	<div class="cmp-print-download"><a href="https://www.weather.go.kr/w/repositary/xml/typ/pdf/RTKO64_202608022230]24.pdf"  class="pdf-download" target="_blank" title="새창열림">통보문 <strong>다운로드</strong></a></div>
+                	</div>
+                </div>
+                
+            </div>
+        
+      </main>
+    
+
+    <script src="/w/repositary/xml/wnuri_main_tab_config_dev.js?ver=202607091110"></script>
+    
+    <!-- 검색 -->
+    <div class="modal-pop search-wrap" data-pop="open-search-pop">
+        <button class="pop-close" title="읍면동(도로명) 검색 닫기"><span style="text-indent:-999999px; position:absolute;">읍면동(도로명) 검색 닫기</span></button>
+        <div class="layer-pop-wrap v2">
+            <div class="right-wrap">
+                <div class="tab-area">
+                    <div class="tab-wrap03 menu3d-btn-wrap col02">
+                        <div class="tab-btn01"><button type="button" class="on" title="선택됨">읍면동</button></div>
+                        <div class="tab-btn02"><button type="button">도로명</button></div>
+                    </div>
+                </div>
+                <div class="tab-cont-wrap03">
+                    <div class="tab-cont01 on" id="dong-config-in-search">
+                        <div class="sch-box">
+                            <div class="input-wrap">
+                                <div class="sch-btn-area">
+                                    <a href="#" class="sch-tab-01" data-role="selected-wide" tabindex="-1">시/도</a>
+                                    <a href="#" class="sch-tab-02" data-role="selected-city" tabindex="-1">구/군</a>
+                                    <a href="#" class="sch-tab-03" data-role="selected-dong" tabindex="-1">읍면동</a>
+                                </div>
+                                <!-- <a href="#" class="sch-btn txt-only" title="날씨보기" data-role="view-dong">선택</a> -->
+                            </div>
+                        </div>
+                        <div class="addr-wrap">
+                            <ul data-role="result-holder">
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">강원도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">경기도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">경상남도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">경상북도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">광주광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">대구광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">대전광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">부산광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">서울특별시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">세종특별자치시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">울산광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">인천광역시</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">전라남도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">전라북도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">제주특별자치도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">충청남도</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <a href="#" class="addr-chk-btn">충청북도</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <p class="guide-text">
+                            	※ 지역 선택이 안 될 경우: <a href="https://www.kma.go.kr/kma/ext/noti.jsp?bid=noti&mode=view&num=6&page=1&field=&text=" target="_blank" title="새창열림"><span><strong>클릭</strong></span></a>
+                            </p>
+                            <p class="guide-text">
+							  	※ '26.7.1. 전남광주통합특별시와 인천광역시 행정구역 변경에 따라 안내드리니 참고 부탁드립니다.<br>
+							  	&nbsp;&nbsp;- (읍면동) 광주광역시내 구(광산구, 서구, 동구 등)와 전라남도내 시/군 목록은 전남광주통합특별시 내에서 확인하실 수 있습니다.<br>
+							  	&nbsp;&nbsp;- (관심지역) 기존 추가된 관심지역을 삭제하시고 새로 추가해주시기 바랍니다.
+							  </p>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn" data-role="view-dong">지역 선택</button>
+                        </div>
+                    </div>
+                    <div class="tab-cont02" id="load-config-in-search">
+                        <div class="sch-box">
+                            <div class="input-wrap">
+                                    <div class="sch-btn-area">
+                                        <a href="#" class="sch-tab-01" data-role="selected-wide" tabindex="-1">시/도</a>
+                                        <a href="#" class="sch-tab-02" data-role="selected-city" tabindex="-1">구/군</a>
+                                        <a href="#" class="sch-tab-03" data-role="selected-dong" tabindex="-1">도로명</a>
+                                    </div>
+                                    <!-- <a href="#" class="sch-btn txt-only" title="날씨보기" data-role="view-dong">선택</a> -->
+                                </div>
+                            </div>
+                            <!-- 도로명 검색 영역 -->
+                            <div class="sch-box02" data-role="search-box" style="display:none">
+                                <div class="input-wrap" data-role="load-search">
+                                    <input type="text" autocomplete="off" placeholder="도로명 주소 입력" title="도로명 주소 입력">
+                                    <button type="button" class="sch-btn"><span class="hid">도로명 주소 검색</span></button>
+                                </div>
+                                <div class="sch-rdo-wrap" data-role="load-ganada-search">
+                                    <button name="sch-rdo" class="ganada-sch-btn on" value="" title="선택됨">모두</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="가,나">가</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="나,다">나</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="다,라">다</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="라,마">라</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="마,바">마</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="바,사">바</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="사,아">사</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="아,자">아</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="자,차">자</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="차,카">차</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="카,타">카</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="타,파">타</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="파,하">파</button>
+                                    <button name="sch-rdo" class="ganada-sch-btn" value="하,">하</button>
+                                </div>
+                            </div>
+                            <!-- 도로명 검색 영역 end -->
+                            <div class="addr-wrap">
+                              <ul data-role="result-holder">
+                                  <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">강원도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">경기도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">경상남도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">경상북도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">광주광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">대구광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">대전광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">부산광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">서울특별시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">세종특별자치시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">울산광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">인천광역시</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">전라남도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">전라북도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">제주특별자치도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">충청남도</a>
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="radio-wrap">
+		                                    <a href="#" class="addr-chk-btn">충청북도</a>
+		                                </div>
+		                            </li>
+                              </ul>
+                              
+							  <p class="guide-text">
+							  	※ 지역 선택이 안 될 경우: <a href="https://www.kma.go.kr/kma/ext/noti.jsp?bid=noti&mode=view&num=6&page=1&field=&text=" target="_blank" title="새창열림"><span><strong>클릭</strong></span></a>
+							  </p>
+							  <p class="guide-text">
+							  	※ '26.7.1. 전남광주통합특별시와 인천광역시 행정구역 변경에 따라 안내드리니 참고 부탁드립니다.<br>
+							  	&nbsp;&nbsp;- (읍면동) 광주광역시내 구(광산구, 서구, 동구 등)와 전라남도내 시/군 목록은 전남광주통합특별시 내에서 확인하실 수 있습니다.<br>
+							  	&nbsp;&nbsp;- (관심지역) 기존 추가된 관심지역을 삭제하시고 새로 추가해주시기 바랍니다.
+							  </p>
+						  </div>  
+                          <div class="btn-wrap">
+                            <button type="button" class="btn" data-role="view-dong">지역 선택</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="modal-pop set-wrap" data-pop="open-set-pop">
+        <button class="pop-close" title="설정 닫기"></button>
+        <div class="layer-pop-wrap">
+            <div class="left-wrap">
+                <h2 class="title">사용자 설정</h2>
+                <div class="tab-area">
+                    <div class="tab-wrap04">
+                        <div class="tab-btn01"><button type="button" class="on" title="선택됨">화면설정</button></div>
+                        <div class="tab-btn02"><button type="button" class="" title="">도움말</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-wrap">
+                <div class="tab-cont-wrap04" id="weather-config">
+                    <div class="tab-cont01 on">
+                        <div class="from-wrap config-help">
+                            <ul>
+                                <li>
+                                    <label class="tit" for="data-weather-config-display-mode">화면설정</label><a href="#config-help" class="label-help">화면설정 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="display-mode" title="화면설정" id="data-weather-config-display-mode">
+                                            <option value="default">기본화면</option>
+                                            <option value="map">지도화면</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>화면설정</h5>
+                                                <p>
+                                                	<strong>기본화면</strong>: 현재날씨 및 시계열 정보가 포함된 첫화면<br>
+													<strong>지도화면</strong>: 날씨지도 화면을 첫화면으로 표출
+												</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="tit" for="data-weather-config-unit-ws">풍속설정</label><a href="#config-help" class="label-help">풍속설정 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="weather-config-unit-ws" title="풍속설정" id="data-weather-config-unit-ws">
+                                            <option value="m/s">m/s</option>
+                                            <option value="km/h">km/h</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>풍속설정</h5>
+                                                <p>풍속단위를 바꿀 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="tit" for="data-weather-config-location-mode">지역우선설정</label><a href="#config-help" class="label-help">지역우선설정 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="location-mode" title="지역우선설정" id="data-weather-config-location-mode">
+                                            <option value="position">현재위치 우선</option>
+                                            <option value="favorite">관심지역 우선</option>
+                                            <option value="no-location">위치 미확인</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>지역우선설정</h5>
+                                                <p>
+                                                	<strong>현재위치 우선</strong>: PC브라우저의 위치정보나 스마트폰의 GPS정보로 현위치를 확인하여 표출합니다.<br>
+													<strong>관심지역 우선</strong>: 관심지역으로 추가된 지점을 우선 표출합니다.<br>
+													<strong>위치 미확인</strong>: 브라우저에서 위치확인을 요청하지 않습니다. 조회한 지역이 없을 경우 기상청 서울청사 위치를 보여줍니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="tit" for="data-weather-config-tab-mode">탭우선설정</label><a href="#config-help" class="label-help">탭우선설정 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="tab-mode" title="탭우선설정" id="data-weather-config-tab-mode">
+                                            <option value="weather">날씨 우선</option>
+                                            <option value="whole">전국 우선</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>탭우선설정</h5>
+                                                <p>
+                                                	<strong>날씨 우선</strong>: 조회지점의 현재날씨 및 시계열 정보가 포함된 첫화면<br>
+													<strong>전국 우선</strong>: 전국지역의 날씨를 간략하게 표출
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="tit" for="data-weather-config-wthema">날씨아이콘</label><a href="#config-help" class="label-help">날씨아이콘 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="wthema" title="날씨아이콘" id="data-weather-config-wthema">
+                                            <option value="wthema-a">A타입</option>
+                                            <option value="wthema-b">B타입</option>
+                                            <option value="wthema-c">C타입</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>날씨아이콘</h5>
+                                                <p>3가지 타입의 날씨아이콘을 선택할 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                	<div data-role="wthema-wrapper">
+                                    	<span class="wic DB01" title="맑음">맑음</span>
+                                    	<!-- <span class="wic DB02" title="구름조금">구름조금</span> -->
+                                    	<span class="wic DB03" title="구름많음">구름많음</span>
+                                    	<span class="wic DB04" title="흐림">흐림</span>
+                                    	<span class="wic DB05" title="비">비</span>
+                                    	<span class="wic DB06" title="비 또는 눈">비 또는 눈</span>
+                                    	<span class="wic DB07" title="눈 또는 비">눈 또는 비</span>
+                                    	<span class="wic DB08" title="눈">눈</span>
+                                    	<span class="wic DB09" title="소나기">소나기</span>
+                                    	<span class="wic DB10" title="빗방울">빗방울</span>
+                                    	<span class="wic DB11" title="빗방울/눈날림">빗방울/눈날림</span>
+                                    	<span class="wic DB12" title="눈날림">눈날림</span>
+                                    	<!--
+                                    	<span class="wic NB14" title="천둥번개">천둥번개</span>
+                                    	<span class="wic NB15" title="안개">안개</span>
+                                    	<span class="wic NB16" title="황사">황사</span>
+                                    	<span class="wic NB17" title="박무">박무</span>
+                                    	<span class="wic NB18" title="연무">연무</span>
+                                    	<span class="wic NB20" title="가끔 비, 한때 비">가끔 비, 한때 비</span>
+                                    	<span class="wic NB21" title="가끔 눈, 한때 눈">가끔 눈, 한때 눈</span>
+                                    	<span class="wic NB22" title="가끔 비 또는 눈, 한때 비 또는 눈">가끔 비 또는 눈, 한때 비 또는 눈</span>
+                                    	<span class="wic NB23" title="가끔 눈 또는 비, 한때 눈 또는 비">가끔 눈 또는 비, 한때 눈 또는 비</span>
+                                    	 -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="tit" for="data-weather-config-timeline-interval">시간별 예보설정</label><a href="#config-help" class="label-help">시간별 예보설정 설명보기</a>
+                                    <div class="select-wrap">
+                                        <select name="timeline-interval" title="시간별 예보설정" id="data-weather-config-timeline-interval">
+                                            <option value="3">3시간 간격</option>
+                                            <option value="1">1시간 간격</option>
+                                        </select>
+                                    </div>
+                                    <div class="cmp-help-tooltip config-help">
+                                        <div class="shadow-box">
+                                            <div class="inner">
+                                                <a href="#close" class="close-box" style="color:#000;">닫기</a>
+                                                <h5>시간별 예보설정</h5>
+                                                <p>
+                                                	<strong>3시간 간격</strong>: 시간별 예보를 3시간 간격으로 표출<br>
+													<strong>1시간 간격</strong>: 시간별 예보를 1시간 간격으로 표출
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn" data-role="save">저장</button>
+                            <button type="button" class="btn-gray" data-role="cancel">취소</button>
+                        </div>
+                    </div>
+                    <div class="tab-cont02">
+                        <ul class="accordionsecond-wrap help-wrap">
+                            <li class="help-item">
+                                <button class="accordionsecond-tit">현재위치 확인 및 지역검색 방법</button>
+                                <div class="accordionsecond-con">
+                                	<div class="para">날씨누리 홈페이지에 방문하게 되면 이용자의 위치를 인식하여 현재 위치 기준으로 날씨와 지도 정보가 제공됩니다.</div>
+									<div class="para">현재 위치가 육상일 경우 정보 제공의 기준이 되는 현재 위치가 지도 우측에 표기되며, 현재 위치가 해상인 경우 ‘일일예보’ 페이지로 이동하여 해역 정보가 표기됩니다.</div>
+									<div class="para">특정 지역을 조회시, 첫 화면에서 지도 상단의 검색창을 통해 지역별 육상날씨를 확인할 수 있습니다.</div>
+									<div class="para">육상지역 검색은 지역의 읍면동지역 뿐만 아니라 주요건물, 유명산, 공원 등 지명을 검색창에 입력하여 조회된 검색결과를 선택하여 확인할 수 있습니다.</div>
+									<div class="para">바다날씨를 조회하고자 하는 경우, '날씨누리 바다>바다예보>일일예보' 페이지에서 해역을 선택하여 해역별 바다날씨를 확인할 수 있습니다.</div>
+                                </div>
+                            </li>
+                            <li class="help-item">
+                                <button class="accordionsecond-tit">관심지역 설정이란?</button>
+                                <div class="accordionsecond-con">
+                                	<div class="para">육상지역이나 해역을 검색하여 <strong>최대 10개소</strong>까지 내 관심지역으로 설정할 수 있습니다.</div>
+									<div class="para">현재 위치 설정 혹은 검색을 통해 조회한 육상지역 및 해역은 위치 정보 우측의 별표를 클릭하여 관심지역으로 설정할 수 있으며, 관심지역 설정 해제 또한 별표를 다시 클릭하여 해제할 수 있습니다.</div>
+									<div class="para">설정한 관심지역은 현재 위치 정보 우측의 화살표를 클릭하여 확인할 수 있으며, 사용중인 브라우저 캐시 영역에 저장되므로 캐시 삭제시 설정한 관심지역 정보가 초기화됩니다."</div>
+                                    
+                                </div>
+                            </li>
+                            <li class="help-item">
+                                <button class="accordionsecond-tit">설정기능에는 어떤 것들이 있나요?</button>
+                                <div class="accordionsecond-con">
+                                	<div class="para">첫 화면 상단의 톱니바퀴 아이콘을 클릭하여 날씨누리 홈페이지 첫 화면(기본화면, 지도화면) 및 풍속단위(m/s, km/h)를 맞춤 설정할 수 있습니다.</div>
+									<div class="para">설정 화면에서 기본화면과 지도화면 모드 중 방문 시 처음으로 보여지는 첫 화면을 설정할 수 있으며, 지도화면 모드 설정시 '날씨지도'를 전체화면으로 볼 수 있습니다.</div>
+									<div class="para">설정한 첫 화면 모드 및 풍속단위는 사용중인 브라우저 캐시 영역에 저장되므로 캐시 삭제시 설정한 관심지역 정보가 초기화됩니다.</div>
+                                </div>
+                            </li>
+                            <li class="help-item">
+                                <button class="accordionsecond-tit">첫화면 지도는 어떻게 활용할 수 있나요?</button>
+                                <div class="accordionsecond-con">
+                                	<div class="para">날씨누리 첫화면에서 육상 및 해상의 현재 기상정보, 초단기 강수예측, 특보 상황을 지도상에서 확인할 수 있습니다.</div>
+									<div class="para">표시되는 정보는 지도 좌측 상단의 버튼을 선택하여 변경할 수 있으며, 지도는 제공되는 범위안에서 확대 및 축소하여 정보를 조회할 수 있습니다.</div>
+									<div class="para">육상 및 해상의
