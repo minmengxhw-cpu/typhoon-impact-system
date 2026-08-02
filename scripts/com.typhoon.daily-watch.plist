@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  台风日更 · 每天 08:30（系统本地时区，上海用户一般为 CST）
+
+  安装:
+    cp scripts/com.typhoon.daily-watch.plist ~/Library/LaunchAgents/
+    # 如路径不同请先 sed 替换 WorkingDirectory / 可执行文件
+    launchctl unload ~/Library/LaunchAgents/com.typhoon.daily-watch.plist 2>/dev/null
+    launchctl load ~/Library/LaunchAgents/com.typhoon.daily-watch.plist
+
+  卸载:
+    launchctl unload ~/Library/LaunchAgents/com.typhoon.daily-watch.plist
+    rm ~/Library/LaunchAgents/com.typhoon.daily-watch.plist
+
+  日志:
+    tail -f /Users/cheer/typhoon-impact-system/reports/launchd.stdout.log
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.typhoon.daily-watch</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/cheer/typhoon-impact-system/scripts/daily_watch.py</string>
+    <string>--push</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/cheer/typhoon-impact-system</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/cheer/typhoon-impact-system/reports/launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/cheer/typhoon-impact-system/reports/launchd.stderr.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>LANG</key>
+    <string>en_US.UTF-8</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

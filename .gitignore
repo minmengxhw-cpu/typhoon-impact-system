@@ -29,3 +29,8 @@ data/samples/agencies/*.dat.txt
 
 data/samples/agencies/*.dat.txt
 data/samples/agencies/*decoded*
+
+# keep daily reports (small markdown)
+!reports/
+!reports/*.md
+reports/launchd.*.log
