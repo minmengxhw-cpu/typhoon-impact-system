@@ -122,11 +122,30 @@ https://minmengxhw-cpu.github.io/typhoon-impact-system/
     print(f"report → {report}")
     print(f"LEVEL {v.get('level_zh')} storm={f.get('zh')} dist={now.get('dist_shanghai_km')}km")
 
+    # Major-change → Feishu group (config/notify.yaml)
+    notify_rc = run(
+        [sys.executable, str(ROOT / "scripts" / "notify_feishu.py")],
+        check=False,
+    ).returncode
+    if notify_rc != 0:
+        print(f"WARN: notify_feishu exit {notify_rc}", flush=True)
+
     if args.push:
-        run(["git", "add", "web/data", "reports", "scripts/daily_watch.py"], check=False)
+        run(
+            [
+                "git",
+                "add",
+                "web/data",
+                "reports",
+                "config/notify.yaml",
+                "scripts/daily_watch.py",
+                "scripts/notify_feishu.py",
+            ],
+            check=False,
+        )
         # only commit if something staged
         st = subprocess.run(
-            ["git", "status", "--porcelain", "web/data", "reports"],
+            ["git", "status", "--porcelain", "web/data", "reports", "config"],
             cwd=str(ROOT),
             capture_output=True,
             text=True,

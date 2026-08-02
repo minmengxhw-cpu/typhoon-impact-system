@@ -1,0 +1,26 @@
+# 重大变化 → 飞书群推送
+feishu:
+  enabled: true
+  # 用户指定群：oc_381bea46653394d135daf14739524904
+  chat_id: "oc_381bea46653394d135daf14739524904"
+  # 该群为外部群，用户身份发消息会 230027；用应用机器人「团宝」发送
+  as: bot
+  # 页面链接
+  page_url: "https://minmengxhw-cpu.github.io/typhoon-impact-system/"
+
+# 何为「重大变化」
+major_change:
+  # 等级升降：无影响/关注/警戒/行动
+  level_change: true
+  # 焦点台风名称变化（如新命名台风）
+  focus_storm_change: true
+  # 参考概率绝对变化阈值
+  p_main_delta: 0.15
+  # 离上海当前距离减少超过该公里数（接近上海）
+  now_dist_drop_km: 500
+  # 集合最近点距离跨过关键圈（任一方向）
+  dca_threshold_km: [800, 400, 200]
+  # 最近点时效首次进入 N 小时内（D-5≈120h）
+  dca_lead_enter_hours: 120
+  # 首次写入状态也视为重大（便于确认链路）；若不想首跑推送可改 false
+  notify_on_first_run: true

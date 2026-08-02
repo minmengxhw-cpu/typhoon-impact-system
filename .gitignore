@@ -34,3 +34,10 @@ data/samples/agencies/*decoded*
 !reports/
 !reports/*.md
 reports/launchd.*.log
+
+reports/notify.log
+reports/launchd.*.log
+
+reports/last_state.json
+reports/notify.log
+reports/launchd.*.log
