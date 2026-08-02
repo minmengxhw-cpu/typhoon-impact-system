@@ -1,0 +1,3897 @@
+{
+  "generated_at_utc": "2026-08-02T14:18:31.730160+00:00",
+  "focus_storm": {
+    "en": "DOLPHIN",
+    "zh": "白海豚",
+    "id_cma": "2613",
+    "atcf": "15W",
+    "status_now": {
+      "grade": "SuperTY",
+      "grade_plain": "目前是超强台风（非常强），但位置还在很远的洋面上",
+      "lat": 23.6,
+      "lon": 151.1,
+      "dist_shanghai_km": 3034.7,
+      "dist_plain": "还很远，大约 3035 公里（远在西太平洋洋面）",
+      "wind_ms": 55.0,
+      "wind_plain": "超强台风级",
+      "pressure_hpa": 930.0,
+      "valid_time_utc": "2026-08-02T12:00:00+00:00",
+      "location_plain": "西太平洋（日本以东洋面一带），向西偏北方向移动"
+    }
+  },
+  "verdict": {
+    "level": "watch",
+    "level_zh": "关注",
+    "p_main": 0.264,
+    "headline": "白海豚：对上海暂为「关注」",
+    "one_liner": "现在还不到改方案的时候。白海豚眼下远在西北太平洋洋面，集合平均要大约一周后才有可能靠近华东沿海，而且路径分歧很大。建议：把本周及下周可能受影响的活动先标出来，先不取消、先不对外承诺变更。",
+    "for_activity_planner": [
+      "本周末之前：无需改场地/取消；把排期表里 7–10 天后的户外/大型活动标成「观察」",
+      "每天看一眼中央气象台与市气象局是否升级通报",
+      "真正要拍板的窗口更可能在路径进入 5 天预报可靠区之后（约 D-5 起）",
+      "不要只看一张「路径会画到上海旁边」的图就恐慌——当前离散度很大"
+    ],
+    "uncertainty_plain": "在「可能最近」的时刻（约 7 天后），各模式路径像一把扇子散开，平均偏离共识约 485.3 公里。意思是：现在画的「会不会路过上海附近」只有趋势意义，不是定论。",
+    "closest": {
+      "lead_hours": 168.0,
+      "days": 7.0,
+      "dist_km": 256.1,
+      "lat": 28.997,
+      "lon": 120.817,
+      "spread_km": 485.3,
+      "wind_ms": 22.4,
+      "plain": "多源集合平均：大约 7 天后，路径中心可能到离上海约 256 公里的位置；但同时段成员散布约 485.3 公里，可靠性低。"
+    }
+  },
+  "milestones": [
+    {
+      "lead_hours": 0.0,
+      "day_label": "现在",
+      "lat": 22.804,
+      "lon": 153.549,
+      "dist_km": 3299.6,
+      "dist_plain": "还很远，大约 3300 公里（远在西太平洋洋面）",
+      "spread_km": 46.1,
+      "wind_ms": 42.9,
+      "wind_plain": "强台风级"
+    },
+    {
+      "lead_hours": 24.0,
+      "day_label": "约 1 天后",
+      "lat": 24.751,
+      "lon": 148.315,
+      "dist_km": 2724.8,
+      "dist_plain": "还很远，大约 2725 公里（远在西太平洋洋面）",
+      "spread_km": 93.3,
+      "wind_ms": 31.9,
+      "wind_plain": "强热带风暴级"
+    },
+    {
+      "lead_hours": 48.0,
+      "day_label": "约 2 天后",
+      "lat": 25.82,
+      "lon": 143.203,
+      "dist_km": 2202.6,
+      "dist_plain": "仍较远，大约 2203 公里",
+      "spread_km": 134.4,
+      "wind_ms": 35.9,
+      "wind_plain": "台风级"
+    },
+    {
+      "lead_hours": 72.0,
+      "day_label": "约 3 天后",
+      "lat": 26.614,
+      "lon": 137.649,
+      "dist_km": 1654.2,
+      "dist_plain": "仍较远，大约 1654 公里",
+      "spread_km": 178.0,
+      "wind_ms": 36.3,
+      "wind_plain": "台风级"
+    },
+    {
+      "lead_hours": 96.0,
+      "day_label": "约 4 天后",
+      "lat": 27.442,
+      "lon": 132.238,
+      "dist_km": 1124.9,
+      "dist_plain": "进入近海外围视野，大约 1125 公里",
+      "spread_km": 211.7,
+      "wind_ms": 35.5,
+      "wind_plain": "台风级"
+    },
+    {
+      "lead_hours": 120.0,
+      "day_label": "约 5 天后",
+      "lat": 28.239,
+      "lon": 127.455,
+      "dist_km": 666.6,
+      "dist_plain": "开始值得盯紧，大约 667 公里",
+      "spread_km": 263.3,
+      "wind_ms": 33.5,
+      "wind_plain": "台风级"
+    },
+    {
+      "lead_hours": 144.0,
+      "day_label": "约 6 天后",
+      "lat": 28.597,
+      "lon": 123.859,
+      "dist_km": 372.4,
+      "dist_plain": "较近，大约 372 公里",
+      "spread_km": 344.9,
+      "wind_ms": 28.9,
+      "wind_plain": "强热带风暴级"
+    },
+    {
+      "lead_hours": 168.0,
+      "day_label": "约 7 天后",
+      "lat": 28.997,
+      "lon": 120.817,
+      "dist_km": 256.1,
+      "dist_plain": "较近，大约 256 公里",
+      "spread_km": 485.3,
+      "wind_ms": 22.4,
+      "wind_plain": "热带风暴级"
+    }
+  ],
+  "sources_plain": [
+    {
+      "id": "cma",
+      "name": "中央气象台",
+      "role": "国内权威路径，决策引用优先看它"
+    },
+    {
+      "id": "ecmwf_ens",
+      "name": "欧洲中心集合",
+      "role": "几十个成员画出「可能走廊」，看分歧用"
+    },
+    {
+      "id": "ecmwf_oper",
+      "name": "欧洲中心确定性",
+      "role": "一条「主线」参考，不代表必然"
+    },
+    {
+      "id": "aifs",
+      "name": "欧洲 AI 路径",
+      "role": "补充视角；AI 常偏弱强度"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "关注 / 警戒 / 行动",
+      "def": "本系统内部用语，不是气象局蓝黄橙红预警"
+    },
+    {
+      "term": "集合离散度",
+      "def": "很多预报「各说各话」的程度；大=更不确定"
+    },
+    {
+      "term": "最近点距离 DCA",
+      "def": "预报路径离上海最近时有多远"
+    },
+    {
+      "term": "未校准",
+      "def": "阈值还没拿历史台风回算过，只能当趋势参考"
+    }
+  ],
+  "assessment": {
+    "storm_key": "DOLPHIN",
+    "storm_name": "DOLPHIN",
+    "level": "watch",
+    "level_zh": "关注",
+    "p_main": 0.264,
+    "dca_km": 256.1,
+    "dca_lead_hours": 168.0,
+    "wind_at_closest_ms": 22.4,
+    "quadrant": "NE",
+    "motion_kmh": 22.9,
+    "features": {
+      "f_dca": 0.315,
+      "f_wind": 0.55,
+      "f_slow": 0.0,
+      "f_quad": 0.15,
+      "f_spread_penalty": 0.1,
+      "raw_score": 0.238,
+      "shanghai": {
+        "lat": 31.23,
+        "lon": 121.47
+      },
+      "thresholds_status": "initial_guess"
+    },
+    "rationale": [
+      "最近点距离 256 km ≤ 警戒阈 400 km（时效 168 h，权重 0.45）",
+      "最近点附近风速 22 m/s（约热带风暴级）",
+      "上海位于风暴 NE 象限（偏风/增水情景，启发式）",
+      "时效 168 h 离散度 485 km，不确定性高（非确定性分数）"
+    ],
+    "calibration_status": "uncalibrated",
+    "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
+    "ui_banner": "未校准 · 概率切点为初始猜测 · 仅供内部参考",
+    "decision_timeline": [
+      {
+        "horizon": "D-7~D-6",
+        "nature": "生成潜势与集合趋势，仅概率",
+        "action": "扫描活动排期，标记风险场次",
+        "highlight": true
+      },
+      {
+        "horizon": "D-5",
+        "nature": "官方路径开始有效，分歧较大",
+        "action": "通知相关条线，备选方案成型",
+        "highlight": false
+      },
+      {
+        "horizon": "D-4~D-3",
+        "nature": "多来源收敛度可判",
+        "action": "准备对外沟通口径",
+        "highlight": false
+      },
+      {
+        "horizon": "D-2",
+        "nature": "风雨潮量级可估",
+        "action": "预备决策（核对合同免费取消时限）",
+        "highlight": false
+      },
+      {
+        "horizon": "D-1",
+        "nature": "误差大幅收敛",
+        "action": "正式决策发布",
+        "highlight": false
+      },
+      {
+        "horizon": "D-0",
+        "nature": "实况监测",
+        "action": "执行与现场安全",
+        "highlight": false
+      }
+    ],
+    "sources_used": [
+      "cma_babj",
+      "ecmwf_aifs_ens",
+      "ecmwf_aifs_single",
+      "ecmwf_ifs_enfo",
+      "ecmwf_ifs_oper"
+    ]
+  },
+  "consensus": {
+    "n_tracks": 106,
+    "sources_used": [
+      "cma_babj",
+      "ecmwf_aifs_ens",
+      "ecmwf_aifs_single",
+      "ecmwf_ifs_enfo",
+      "ecmwf_ifs_oper"
+    ],
+    "method": "equal_weight_mean",
+    "points": [
+      {
+        "lead_hours": 0.0,
+        "lat": 22.804,
+        "lon": 153.549,
+        "n_members": 106,
+        "spread_km": 46.1,
+        "spread_p90_km": 86.1,
+        "mean_wind_ms": 42.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 6.0,
+        "lat": 23.206,
+        "lon": 152.355,
+        "n_members": 106,
+        "spread_km": 84.3,
+        "spread_p90_km": 167.9,
+        "mean_wind_ms": 32.5,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 12.0,
+        "lat": 23.915,
+        "lon": 150.977,
+        "n_members": 104,
+        "spread_km": 77.4,
+        "spread_p90_km": 150.4,
+        "mean_wind_ms": 32.0,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 18.0,
+        "lat": 24.277,
+        "lon": 149.686,
+        "n_members": 104,
+        "spread_km": 87.8,
+        "spread_p90_km": 158.1,
+        "mean_wind_ms": 31.5,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 24.0,
+        "lat": 24.751,
+        "lon": 148.315,
+        "n_members": 104,
+        "spread_km": 93.3,
+        "spread_p90_km": 173.3,
+        "mean_wind_ms": 31.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 30.0,
+        "lat": 25.172,
+        "lon": 147.049,
+        "n_members": 104,
+        "spread_km": 101.6,
+        "spread_p90_km": 175.7,
+        "mean_wind_ms": 32.8,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 36.0,
+        "lat": 25.399,
+        "lon": 145.745,
+        "n_members": 104,
+        "spread_km": 105.7,
+        "spread_p90_km": 182.5,
+        "mean_wind_ms": 33.4,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 42.0,
+        "lat": 25.617,
+        "lon": 144.471,
+        "n_members": 104,
+        "spread_km": 118.6,
+        "spread_p90_km": 199.2,
+        "mean_wind_ms": 33.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 48.0,
+        "lat": 25.82,
+        "lon": 143.203,
+        "n_members": 104,
+        "spread_km": 134.4,
+        "spread_p90_km": 230.6,
+        "mean_wind_ms": 35.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 54.0,
+        "lat": 26.091,
+        "lon": 141.895,
+        "n_members": 104,
+        "spread_km": 146.8,
+        "spread_p90_km": 252.6,
+        "mean_wind_ms": 37.2,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 60.0,
+        "lat": 26.21,
+        "lon": 140.562,
+        "n_members": 104,
+        "spread_km": 163.3,
+        "spread_p90_km": 268.6,
+        "mean_wind_ms": 37.1,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 66.0,
+        "lat": 26.421,
+        "lon": 139.084,
+        "n_members": 104,
+        "spread_km": 170.3,
+        "spread_p90_km": 279.2,
+        "mean_wind_ms": 36.6,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 72.0,
+        "lat": 26.614,
+        "lon": 137.649,
+        "n_members": 104,
+        "spread_km": 178.0,
+        "spread_p90_km": 311.5,
+        "mean_wind_ms": 36.3,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 78.0,
+        "lat": 26.918,
+        "lon": 136.293,
+        "n_members": 104,
+        "spread_km": 184.6,
+        "spread_p90_km": 316.1,
+        "mean_wind_ms": 36.8,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 84.0,
+        "lat": 27.025,
+        "lon": 134.998,
+        "n_members": 104,
+        "spread_km": 191.8,
+        "spread_p90_km": 342.0,
+        "mean_wind_ms": 36.4,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 90.0,
+        "lat": 27.258,
+        "lon": 133.604,
+        "n_members": 104,
+        "spread_km": 207.6,
+        "spread_p90_km": 340.6,
+        "mean_wind_ms": 34.8,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 96.0,
+        "lat": 27.442,
+        "lon": 132.238,
+        "n_members": 104,
+        "spread_km": 211.7,
+        "spread_p90_km": 341.6,
+        "mean_wind_ms": 35.5,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 102.0,
+        "lat": 27.762,
+        "lon": 131.076,
+        "n_members": 104,
+        "spread_km": 224.9,
+        "spread_p90_km": 371.1,
+        "mean_wind_ms": 35.7,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 108.0,
+        "lat": 27.894,
+        "lon": 129.796,
+        "n_members": 104,
+        "spread_km": 235.4,
+        "spread_p90_km": 381.5,
+        "mean_wind_ms": 34.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 114.0,
+        "lat": 28.114,
+        "lon": 128.645,
+        "n_members": 104,
+        "spread_km": 242.2,
+        "spread_p90_km": 376.5,
+        "mean_wind_ms": 33.4,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 120.0,
+        "lat": 28.239,
+        "lon": 127.455,
+        "n_members": 104,
+        "spread_km": 263.3,
+        "spread_p90_km": 424.6,
+        "mean_wind_ms": 33.5,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 126.0,
+        "lat": 28.406,
+        "lon": 126.44,
+        "n_members": 103,
+        "spread_km": 277.1,
+        "spread_p90_km": 427.0,
+        "mean_wind_ms": 33.3,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 132.0,
+        "lat": 28.446,
+        "lon": 125.508,
+        "n_members": 103,
+        "spread_km": 292.6,
+        "spread_p90_km": 451.7,
+        "mean_wind_ms": 32.4,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 138.0,
+        "lat": 28.513,
+        "lon": 124.61,
+        "n_members": 103,
+        "spread_km": 314.5,
+        "spread_p90_km": 477.1,
+        "mean_wind_ms": 30.5,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 144.0,
+        "lat": 28.597,
+        "lon": 123.859,
+        "n_members": 103,
+        "spread_km": 344.9,
+        "spread_p90_km": 550.3,
+        "mean_wind_ms": 28.9,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 150.0,
+        "lat": 28.724,
+        "lon": 123.044,
+        "n_members": 103,
+        "spread_km": 382.3,
+        "spread_p90_km": 618.6,
+        "mean_wind_ms": 27.3,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 156.0,
+        "lat": 28.767,
+        "lon": 122.225,
+        "n_members": 103,
+        "spread_km": 410.7,
+        "spread_p90_km": 690.8,
+        "mean_wind_ms": 26.0,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 162.0,
+        "lat": 28.739,
+        "lon": 121.531,
+        "n_members": 103,
+        "spread_km": 465.0,
+        "spread_p90_km": 717.2,
+        "mean_wind_ms": 24.1,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 168.0,
+        "lat": 28.997,
+        "lon": 120.817,
+        "n_members": 103,
+        "spread_km": 485.3,
+        "spread_p90_km": 790.0,
+        "mean_wind_ms": 22.4,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 174.0,
+        "lat": 28.998,
+        "lon": 120.154,
+        "n_members": 103,
+        "spread_km": 533.1,
+        "spread_p90_km": 833.6,
+        "mean_wind_ms": 20.8,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 180.0,
+        "lat": 29.019,
+        "lon": 119.7,
+        "n_members": 103,
+        "spread_km": 562.2,
+        "spread_p90_km": 818.2,
+        "mean_wind_ms": 19.2,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 186.0,
+        "lat": 29.147,
+        "lon": 119.223,
+        "n_members": 102,
+        "spread_km": 600.8,
+        "spread_p90_km": 889.2,
+        "mean_wind_ms": 18.6,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      },
+      {
+        "lead_hours": 192.0,
+        "lat": 29.171,
+        "lon": 118.675,
+        "n_members": 102,
+        "spread_km": 652.2,
+        "spread_p90_km": 1009.2,
+        "mean_wind_ms": 17.6,
+        "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
+        "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
+      }
+    ]
+  },
+  "tracks_slim": {
+    "cma_forecast": {
+      "source": "cma_babj",
+      "storm_id": "3279904",
+      "storm_name": "DOLPHIN",
+      "basetime_utc": "2026-08-02T12:00:00+00:00",
+      "member": null,
+      "basin": "WP",
+      "agency": "CMA-BABJ",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/cma_nmc/view_3279904_DOLPHIN.jsonp",
+      "notes": [
+        "forecast_from_latest_point_with_agency_key"
+      ],
+      "meta": {
+        "zh_name": "白海豚",
+        "forecast_agency": "BABJ"
+      },
+      "points": [
+        {
+          "lead_hours": 0.0,
+          "lat": 23.6,
+          "lon": 151.1,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T12:00:00+00:00",
+          "grade": "SuperTY"
+        },
+        {
+          "lead_hours": 12.0,
+          "lat": 24.3,
+          "lon": 148.3,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": null,
+          "grade": "SuperTY"
+        },
+        {
+          "lead_hours": 24.0,
+          "lat": 24.8,
+          "lon": 145.7,
+          "wind_ms": 52.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": null,
+          "grade": "SuperTY"
+        },
+        {
+          "lead_hours": 36.0,
+          "lat": 25.1,
+          "lon": 143.4,
+          "wind_ms": 52.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": null,
+          "grade": "SuperTY"
+        },
+        {
+          "lead_hours": 48.0,
+          "lat": 25.4,
+          "lon": 140.6,
+          "wind_ms": 52.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": null,
+          "grade": "SuperTY"
+        },
+        {
+          "lead_hours": 60.0,
+          "lat": 25.7,
+          "lon": 138.1,
+          "wind_ms": 50.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 940.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        },
+        {
+          "lead_hours": 72.0,
+          "lat": 26.0,
+          "lon": 135.6,
+          "wind_ms": 50.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 940.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        },
+        {
+          "lead_hours": 96.0,
+          "lat": 26.7,
+          "lon": 131.0,
+          "wind_ms": 48.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 945.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        },
+        {
+          "lead_hours": 120.0,
+          "lat": 27.1,
+          "lon": 127.6,
+          "wind_ms": 45.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 950.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        }
+      ]
+    },
+    "cma_best_tail": {
+      "source": "cma_best",
+      "storm_id": "3279904",
+      "storm_name": "DOLPHIN",
+      "basetime_utc": "2026-08-02T12:00:00+00:00",
+      "member": null,
+      "basin": "WP",
+      "agency": "CMA",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/cma_nmc/view_3279904_DOLPHIN.jsonp",
+      "notes": [
+        "best_track_or_analysis_series",
+        "status=start",
+        "zh=白海豚"
+      ],
+      "meta": {
+        "zh_name": "白海豚",
+        "status": "start"
+      },
+      "points": [
+        {
+          "lead_hours": 0.0,
+          "lat": 19.5,
+          "lon": 159.8,
+          "wind_ms": 60.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 920.0,
+          "valid_time_utc": "2026-07-31T15:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 19.8,
+          "lon": 159.2,
+          "wind_ms": 60.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 920.0,
+          "valid_time_utc": "2026-07-31T18:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 20.0,
+          "lon": 158.8,
+          "wind_ms": 60.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 920.0,
+          "valid_time_utc": "2026-07-31T21:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "NW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 20.2,
+          "lon": 158.4,
+          "wind_ms": 60.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 920.0,
+          "valid_time_utc": "2026-08-01T00:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "NW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 20.4,
+          "lon": 158.0,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-01T03:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 20.8,
+          "lon": 157.5,
+          "wind_ms": 58.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 925.0,
+          "valid_time_utc": "2026-08-01T06:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 21.3,
+          "lon": 156.9,
+          "wind_ms": 58.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 925.0,
+          "valid_time_utc": "2026-08-01T09:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 21.6,
+          "lon": 156.2,
+          "wind_ms": 58.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 925.0,
+          "valid_time_utc": "2026-08-01T12:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 21.8,
+          "lon": 155.6,
+          "wind_ms": 58.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 925.0,
+          "valid_time_utc": "2026-08-01T15:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 22.1,
+          "lon": 155.1,
+          "wind_ms": 58.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 925.0,
+          "valid_time_utc": "2026-08-01T18:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 22.5,
+          "lon": 154.3,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-01T21:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 22.7,
+          "lon": 153.6,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T00:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 23.0,
+          "lon": 152.8,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T03:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 23.2,
+          "lon": 152.3,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T06:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 23.4,
+          "lon": 151.6,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T09:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 23.6,
+          "lon": 151.1,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T12:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        }
+      ]
+    },
+    "ecmwf_oper": {
+      "source": "ecmwf_ifs_oper",
+      "storm_id": "15W",
+      "storm_name": "DOLPHIN",
+      "basetime_utc": "2026-08-02T00:00:00+00:00",
+      "member": null,
+      "basin": "WP",
+      "agency": "ECMWF",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/ecmwf/ifs_oper/ifs_oper_step360.bufr",
+      "notes": [
+        "position=primary_of_dual_pair"
+      ],
+      "meta": {
+        "n_subsets": 1,
+        "dual_position": true,
+        "n_times": 42
+      },
+      "points": [
+        {
+          "lead_hours": 0.0,
+          "lat": 22.6,
+          "lon": 153.70000000000002,
+          "wind_ms": 32.9,
+          "wind_averaging": "10min",
+          "pressure_hpa": 954.0,
+          "valid_time_utc": "2026-08-02T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 6.0,
+          "lat": 23.5,
+          "lon": 153.4,
+          "wind_ms": 32.4,
+          "wind_averaging": "10min",
+          "pressure_hpa": 954.0,
+          "valid_time_utc": "2026-08-02T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 12.0,
+          "lat": 23.900000000000002,
+          "lon": 151.8,
+          "wind_ms": 31.900000000000002,
+          "wind_averaging": "10min",
+          "pressure_hpa": 956.0,
+          "valid_time_utc": "2026-08-02T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 18.0,
+          "lat": 24.5,
+          "lon": 150.9,
+          "wind_ms": 34.5,
+          "wind_averaging": "10min",
+          "pressure_hpa": 954.0,
+          "valid_time_utc": "2026-08-02T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 24.0,
+          "lat": 24.6,
+          "lon": 150.20000000000002,
+          "wind_ms": 35.5,
+          "wind_averaging": "10min",
+          "pressure_hpa": 955.0,
+          "valid_time_utc": "2026-08-03T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 30.0,
+          "lat": 25.3,
+          "lon": 147.70000000000002,
+          "wind_ms": 39.1,
+          "wind_averaging": "10min",
+          "pressure_hpa": 954.0,
+          "valid_time_utc": "2026-08-03T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 36.0,
+          "lat": 25.400000000000002,
+          "lon": 145.8,
+          "wind_ms": 43.2,
+          "wind_averaging": "10min",
+          "pressure_hpa": 955.0,
+          "valid_time_utc": "2026-08-03T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 42.0,
+          "lat": 25.5,
+          "lon": 146.0,
+          "wind_ms": 44.2,
+          "wind_averaging": "10min",
+          "pressure_hpa": 952.0,
+          "valid_time_utc": "2026-08-03T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 48.0,
+          "lat": 25.7,
+          "lon": 144.5,
+          "wind_ms": 49.900000000000006,
+          "wind_averaging": "10min",
+          "pressure_hpa": 946.0,
+          "valid_time_utc": "2026-08-04T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 54.0,
+          "lat": 25.7,
+          "lon": 143.3,
+          "wind_ms": 55.0,
+          "wind_averaging": "10min",
+          "pressure_hpa": 936.0,
+          "valid_time_utc": "2026-08-04T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 60.0,
+          "lat": 26.0,
+          "lon": 141.8,
+          "wind_ms": 47.800000000000004,
+          "wind_averaging": "10min",
+          "pressure_hpa": 938.0,
+          "valid_time_utc": "2026-08-04T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 66.0,
+          "lat": 25.8,
+          "lon": 140.5,
+          "wind_ms": 48.900000000000006,
+          "wind_averaging": "10min",
+          "pressure_hpa": 940.0,
+          "valid_time_utc": "2026-08-04T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 72.0,
+          "lat": 26.7,
+          "lon": 137.8,
+          "wind_ms": 44.800000000000004,
+          "wind_averaging": "10min",
+          "pressure_hpa": 944.0,
+          "valid_time_utc": "2026-08-05T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 78.0,
+          "lat": 26.900000000000002,
+          "lon": 136.6,
+          "wind_ms": 45.800000000000004,
+          "wind_averaging": "10min",
+          "pressure_hpa": 942.0,
+          "valid_time_utc": "2026-08-05T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 84.0,
+          "lat": 27.1,
+          "lon": 135.6,
+          "wind_ms": 45.300000000000004,
+          "wind_averaging": "10min",
+          "pressure_hpa": 946.0,
+          "valid_time_utc": "2026-08-05T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 90.0,
+          "lat": 27.400000000000002,
+          "lon": 133.9,
+          "wind_ms": 43.7,
+          "wind_averaging": "10min",
+          "pressure_hpa": 946.0,
+          "valid_time_utc": "2026-08-05T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 96.0,
+          "lat": 27.5,
+          "lon": 133.2,
+          "wind_ms": 44.2,
+          "wind_averaging": "10min",
+          "pressure_hpa": 949.0,
+          "valid_time_utc": "2026-08-06T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 102.0,
+          "lat": 27.6,
+          "lon": 132.0,
+          "wind_ms": 46.300000000000004,
+          "wind_averaging": "10min",
+          "pressure_hpa": 949.0,
+          "valid_time_utc": "2026-08-06T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 108.0,
+          "lat": 28.0,
+          "lon": 130.7,
+          "wind_ms": 41.2,
+          "wind_averaging": "10min",
+          "pressure_hpa": 952.0,
+          "valid_time_utc": "2026-08-06T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 114.0,
+          "lat": 28.5,
+          "lon": 128.2,
+          "wind_ms": 41.7,
+          "wind_averaging": "10min",
+          "pressure_hpa": 951.0,
+          "valid_time_utc": "2026-08-06T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 120.0,
+          "lat": 28.8,
+          "lon": 126.60000000000001,
+          "wind_ms": 39.1,
+          "wind_averaging": "10min",
+          "pressure_hpa": 950.0,
+          "valid_time_utc": "2026-08-07T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 126.0,
+          "lat": 28.8,
+          "lon": 126.60000000000001,
+          "wind_ms": 40.6,
+          "wind_averaging": "10min",
+          "pressure_hpa": 948.0,
+          "valid_time_utc": "2026-08-07T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 132.0,
+          "lat": 28.8,
+          "lon": 125.7,
+          "wind_ms": 41.7,
+          "wind_averaging": "10min",
+          "pressure_hpa": 953.0,
+          "valid_time_utc": "2026-08-07T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 138.0,
+          "lat": 27.900000000000002,
+          "lon": 124.7,
+          "wind_ms": 39.6,
+          "wind_averaging": "10min",
+          "pressure_hpa": 957.0,
+          "valid_time_utc": "2026-08-07T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 144.0,
+          "lat": 28.7,
+          "lon": 123.5,
+          "wind_ms": 34.0,
+          "wind_averaging": "10min",
+          "pressure_hpa": 968.0,
+          "valid_time_utc": "2026-08-08T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 150.0,
+          "lat": 28.900000000000002,
+          "lon": 121.8,
+          "wind_ms": 20.6,
+          "wind_averaging": "10min",
+          "pressure_hpa": 973.0,
+          "valid_time_utc": "2026-08-08T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 156.0,
+          "lat": 27.6,
+          "lon": 120.8,
+          "wind_ms": 18.5,
+          "wind_averaging": "10min",
+          "pressure_hpa": 978.0,
+          "valid_time_utc": "2026-08-08T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 162.0,
+          "lat": 29.1,
+          "lon": 116.10000000000001,
+          "wind_ms": 14.9,
+          "wind_averaging": "10min",
+          "pressure_hpa": 980.0,
+          "valid_time_utc": "2026-08-08T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 168.0,
+          "lat": 29.1,
+          "lon": 116.3,
+          "wind_ms": 12.3,
+          "wind_averaging": "10min",
+          "pressure_hpa": 983.0,
+          "valid_time_utc": "2026-08-09T00:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 174.0,
+          "lat": 29.3,
+          "lon": 112.9,
+          "wind_ms": 10.8,
+          "wind_averaging": "10min",
+          "pressure_hpa": 984.0,
+          "valid_time_utc": "2026-08-09T06:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 180.0,
+          "lat": 25.3,
+          "lon": 119.4,
+          "wind_ms": 10.3,
+          "wind_averaging": "10min",
+          "pressure_hpa": 987.0,
+          "valid_time_utc": "2026-08-09T12:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 186.0,
+          "lat": 29.1,
+          "lon": 116.3,
+          "wind_ms": 11.8,
+          "wind_averaging": "10min",
+          "pressure_hpa": 987.0,
+          "valid_time_utc": "2026-08-09T18:00:00+00:00",
+          "grade": null
+        },
+        {
+          "lead_hours": 192.0,
+          "lat": 22.2,
+          "lon": 114.5,
+          "wind_ms": 8.200000000000001,
+          "wind_averaging": "10min",
+          "pressure_hpa": 988.0,
+          "valid_time_utc": "2026-08-10T00:00:00+00:00",
+          "grade": null
+        }
+      ]
+    },
+    "ensemble": [
+      {
+        "member": 1,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.6,
+            "lon": 153.70000000000002,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.5,
+            "lon": 153.4,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.900000000000002,
+            "lon": 151.8,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.5,
+            "lon": 150.9,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 150.20000000000002,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 147.70000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 145.8,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 146.0,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 144.5,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 143.3,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 141.8,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 140.5,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 137.8,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 136.6,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 135.6,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 133.9,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 133.2,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 132.0,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 130.7,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 28.5,
+            "lon": 128.2,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 126.60000000000001,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 126.60000000000001,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 125.7,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 124.7,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 28.7,
+            "lon": 123.5,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 28.900000000000002,
+            "lon": 121.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 120.8,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 116.10000000000001,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 116.3,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 4,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.7,
+            "lon": 153.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.3,
+            "lon": 152.0,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 150.5,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 149.1,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.2,
+            "lon": 148.0,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 147.0,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 145.8,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 144.4,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 143.20000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 141.6,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 140.9,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 139.3,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 138.0,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 136.4,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 135.2,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 133.7,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 26.8,
+            "lon": 132.5,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 131.1,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 130.0,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 128.6,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 127.10000000000001,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.8,
+            "lon": 125.9,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 125.10000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 27.8,
+            "lon": 124.10000000000001,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 123.3,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 28.3,
+            "lon": 122.0,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 120.60000000000001,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 28.5,
+            "lon": 118.5,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 28.3,
+            "lon": 117.2,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 7,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.6,
+            "lon": 153.5,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 152.3,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.3,
+            "lon": 150.4,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 23.7,
+            "lon": 149.20000000000002,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 147.8,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 146.6,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 24.2,
+            "lon": 145.4,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 144.1,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 24.7,
+            "lon": 142.4,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 141.1,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 139.70000000000002,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 138.1,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 136.70000000000002,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 135.2,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 133.9,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 132.4,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 131.1,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 129.8,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 128.6,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 126.7,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 125.5,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 124.8,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 124.3,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 123.10000000000001,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 122.5,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 121.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 120.8,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 120.3,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 119.7,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 10,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.6,
+            "lon": 153.8,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.0,
+            "lon": 152.20000000000002,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.5,
+            "lon": 150.6,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 23.8,
+            "lon": 149.4,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.2,
+            "lon": 148.0,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 146.8,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 145.6,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 24.8,
+            "lon": 144.4,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 143.20000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 142.1,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 141.0,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 139.9,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 138.8,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 137.6,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 136.3,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.8,
+            "lon": 134.8,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 133.3,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 131.7,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 130.5,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 129.4,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 27.3,
+            "lon": 128.5,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 127.5,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 126.7,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 126.3,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 126.0,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 125.4,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 125.2,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 27.8,
+            "lon": 125.10000000000001,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 28.7,
+            "lon": 124.8,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 13,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.6,
+            "lon": 153.70000000000002,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 152.3,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 151.1,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 149.9,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 148.70000000000002,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 147.6,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 146.5,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 145.20000000000002,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 144.1,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 142.8,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 141.6,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 140.0,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 138.6,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 137.1,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 28.2,
+            "lon": 135.4,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 28.5,
+            "lon": 133.9,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 28.7,
+            "lon": 132.3,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 130.7,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 29.5,
+            "lon": 129.3,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 30.0,
+            "lon": 127.8,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 30.1,
+            "lon": 126.2,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 30.6,
+            "lon": 125.3,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 30.400000000000002,
+            "lon": 124.0,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 31.0,
+            "lon": 122.9,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 30.900000000000002,
+            "lon": 121.9,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 31.0,
+            "lon": 120.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 31.2,
+            "lon": 120.0,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 31.1,
+            "lon": 119.10000000000001,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 31.5,
+            "lon": 118.60000000000001,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 16,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 23.3,
+            "lon": 153.3,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 151.9,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 150.20000000000002,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 148.70000000000002,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 147.6,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 146.20000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 144.9,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 143.70000000000002,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 142.5,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 141.20000000000002,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 139.9,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 138.70000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 137.1,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 135.9,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 134.7,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 133.4,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 131.9,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 130.7,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 28.1,
+            "lon": 129.5,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 28.6,
+            "lon": 127.7,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 28.400000000000002,
+            "lon": 126.4,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 28.900000000000002,
+            "lon": 125.60000000000001,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 29.2,
+            "lon": 124.5,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 29.7,
+            "lon": 123.3,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 29.8,
+            "lon": 122.3,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 30.1,
+            "lon": 121.10000000000001,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 29.900000000000002,
+            "lon": 120.3,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 29.900000000000002,
+            "lon": 119.10000000000001,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 29.8,
+            "lon": 117.9,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 19,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.8,
+            "lon": 153.8,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 152.5,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 151.3,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.3,
+            "lon": 149.70000000000002,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 148.8,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.0,
+            "lon": 147.70000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 146.0,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 145.1,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 144.20000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 142.70000000000002,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 141.0,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 139.20000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 137.70000000000002,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 27.7,
+            "lon": 136.1,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 134.5,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 132.9,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 131.6,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 29.0,
+            "lon": 129.9,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 29.2,
+            "lon": 128.5,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 30.0,
+            "lon": 127.4,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 30.3,
+            "lon": 125.9,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 30.5,
+            "lon": 124.7,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 31.2,
+            "lon": 123.60000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 31.5,
+            "lon": 122.9,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 31.7,
+            "lon": 122.0,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 32.3,
+            "lon": 121.9,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 32.6,
+            "lon": 121.60000000000001,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 33.2,
+            "lon": 121.2,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 33.7,
+            "lon": 121.0,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 22,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.7,
+            "lon": 153.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.0,
+            "lon": 151.9,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.3,
+            "lon": 150.6,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 23.8,
+            "lon": 149.3,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.2,
+            "lon": 147.9,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 146.6,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 145.3,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 24.7,
+            "lon": 143.8,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 142.5,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 141.1,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 25.0,
+            "lon": 139.5,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.0,
+            "lon": 138.20000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 136.8,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 135.2,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 134.0,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 132.5,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 131.0,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 129.7,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 128.4,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 127.4,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 126.7,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 126.2,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 125.60000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 125.10000000000001,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 124.5,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 124.10000000000001,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 123.3,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 122.60000000000001,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 121.60000000000001,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 25,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.8,
+            "lon": 153.3,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 151.8,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.5,
+            "lon": 150.3,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 149.1,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.5,
+            "lon": 147.70000000000002,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 146.20000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 144.70000000000002,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 143.20000000000002,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 141.5,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 140.0,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 138.5,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 136.6,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 135.1,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 133.6,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 131.9,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 130.5,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 129.1,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 127.8,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 126.4,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 125.2,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 124.4,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 123.4,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 122.2,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 120.60000000000001,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 119.10000000000001,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 24.5,
+            "lon": 117.4,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 116.2,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 114.7,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 24.2,
+            "lon": 113.10000000000001,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 28,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.1,
+            "lon": 153.5,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 22.6,
+            "lon": 151.20000000000002,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 22.2,
+            "lon": 150.6,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 22.2,
+            "lon": 148.1,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 22.900000000000002,
+            "lon": 147.70000000000002,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 22.3,
+            "lon": 145.9,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 23.400000000000002,
+            "lon": 143.70000000000002,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 23.400000000000002,
+            "lon": 143.3,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 23.5,
+            "lon": 141.70000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 23.7,
+            "lon": 140.20000000000002,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 138.9,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 24.1,
+            "lon": 136.70000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 136.2,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 24.7,
+            "lon": 134.2,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 133.7,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 24.1,
+            "lon": 131.6,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 25.6,
+            "lon": 130.3,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 129.4,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 128.5,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 127.5,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 127.3,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 25.0,
+            "lon": 125.3,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 125.7,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 125.4,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 122.4,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 121.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 122.9,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 27.400000000000002,
+            "lon": 120.7,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 120.7,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 31,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.900000000000002,
+            "lon": 154.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 152.8,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.7,
+            "lon": 150.8,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.8,
+            "lon": 150.20000000000002,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.8,
+            "lon": 149.0,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 146.1,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 145.3,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 145.0,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 143.6,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 141.0,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 140.8,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 138.9,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 138.4,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 135.6,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 27.7,
+            "lon": 135.3,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 28.400000000000002,
+            "lon": 132.7,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 28.6,
+            "lon": 132.0,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 28.6,
+            "lon": 130.0,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 128.8,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 129.2,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 28.900000000000002,
+            "lon": 128.2,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 126.10000000000001,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 124.0,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 29.2,
+            "lon": 123.5,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 29.0,
+            "lon": 123.2,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 122.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 122.60000000000001,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 29.400000000000002,
+            "lon": 122.2,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 28.900000000000002,
+            "lon": 121.8,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 34,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.400000000000002,
+            "lon": 152.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 24.1,
+            "lon": 151.4,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 150.20000000000002,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 148.9,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 23.2,
+            "lon": 147.6,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 145.4,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 144.5,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 144.1,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 141.9,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 141.0,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 25.8,
+            "lon": 140.1,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 137.9,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 137.70000000000002,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 136.3,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 134.6,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 134.9,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.3,
+            "lon": 132.2,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 130.9,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 129.6,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 129.2,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 27.8,
+            "lon": 128.5,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 127.5,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 126.8,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 28.400000000000002,
+            "lon": 125.5,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 28.400000000000002,
+            "lon": 124.7,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 28.8,
+            "lon": 124.2,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 28.5,
+            "lon": 121.7,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 28.6,
+            "lon": 121.7,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 29.6,
+            "lon": 122.10000000000001,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 37,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 23.5,
+            "lon": 154.0,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.8,
+            "lon": 151.20000000000002,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 151.8,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 150.4,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 147.9,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 146.20000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 146.9,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 145.9,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 142.0,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 143.1,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 142.20000000000002,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 141.4,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 139.4,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 138.6,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 137.1,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 136.3,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 132.1,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 28.1,
+            "lon": 133.0,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 132.3,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 130.4,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 129.0,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 128.9,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 28.2,
+            "lon": 126.10000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 125.0,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 127.4,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 28.1,
+            "lon": 124.4,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 25.0,
+            "lon": 123.2,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 124.2,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 122.0,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 40,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.900000000000002,
+            "lon": 153.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 22.6,
+            "lon": 152.20000000000002,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.900000000000002,
+            "lon": 151.4,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.3,
+            "lon": 149.9,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 147.9,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 147.1,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.900000000000002,
+            "lon": 145.70000000000002,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 143.70000000000002,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 142.9,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 141.3,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 139.9,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 138.20000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 136.5,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 27.5,
+            "lon": 135.0,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 133.5,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 27.6,
+            "lon": 132.1,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 27.7,
+            "lon": 131.0,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 29.0,
+            "lon": 128.2,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 127.0,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 29.0,
+            "lon": 126.60000000000001,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 29.1,
+            "lon": 125.60000000000001,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 28.900000000000002,
+            "lon": 122.10000000000001,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 30.2,
+            "lon": 121.60000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 28.6,
+            "lon": 121.7,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 30.5,
+            "lon": 121.10000000000001,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 30.7,
+            "lon": 121.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 30.0,
+            "lon": 116.3,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 29.3,
+            "lon": 112.9,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 30.3,
+            "lon": 112.3,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 43,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.8,
+            "lon": 154.0,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 152.0,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.0,
+            "lon": 150.1,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 23.6,
+            "lon": 151.4,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 24.1,
+            "lon": 147.6,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 147.9,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 147.3,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.2,
+            "lon": 145.70000000000002,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 24.8,
+            "lon": 145.20000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 143.5,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 24.900000000000002,
+            "lon": 142.20000000000002,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 141.70000000000002,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 140.1,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 140.1,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 138.0,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 136.70000000000002,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 135.8,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 26.8,
+            "lon": 134.8,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.2,
+            "lon": 133.6,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 27.3,
+            "lon": 133.4,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 27.8,
+            "lon": 130.8,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 28.3,
+            "lon": 129.8,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 28.400000000000002,
+            "lon": 129.1,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 28.1,
+            "lon": 128.9,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 28.1,
+            "lon": 126.60000000000001,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 126.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 28.3,
+            "lon": 125.4,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 125.2,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 123.9,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 46,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 23.400000000000002,
+            "lon": 153.4,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.1,
+            "lon": 150.4,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 23.7,
+            "lon": 151.0,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.400000000000002,
+            "lon": 149.8,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 147.9,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 145.5,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 145.3,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 143.5,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 142.0,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 138.9,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 137.0,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 136.3,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 134.6,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 133.0,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 131.4,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 130.0,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 128.9,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 127.60000000000001,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 27.0,
+            "lon": 126.3,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 125.5,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 28.0,
+            "lon": 123.0,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.7,
+            "lon": 122.7,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 27.900000000000002,
+            "lon": 121.0,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 26.8,
+            "lon": 120.2,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 119.9,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 26.1,
+            "lon": 119.8,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 23.900000000000002,
+            "lon": 117.8,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 119.5,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 119.7,
+            "lead_hours": 168.0
+          }
+        ]
+      },
+      {
+        "member": 49,
+        "source": "ecmwf_ifs_enfo",
+        "points": [
+          {
+            "lat": 22.7,
+            "lon": 154.0,
+            "lead_hours": 0.0
+          },
+          {
+            "lat": 23.900000000000002,
+            "lon": 152.1,
+            "lead_hours": 6.0
+          },
+          {
+            "lat": 24.3,
+            "lon": 150.70000000000002,
+            "lead_hours": 12.0
+          },
+          {
+            "lat": 24.3,
+            "lon": 150.0,
+            "lead_hours": 18.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 147.5,
+            "lead_hours": 24.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 146.70000000000002,
+            "lead_hours": 30.0
+          },
+          {
+            "lat": 25.400000000000002,
+            "lon": 145.6,
+            "lead_hours": 36.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 143.8,
+            "lead_hours": 42.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 143.20000000000002,
+            "lead_hours": 48.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 142.0,
+            "lead_hours": 54.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 139.9,
+            "lead_hours": 60.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 137.9,
+            "lead_hours": 66.0
+          },
+          {
+            "lat": 26.0,
+            "lon": 136.5,
+            "lead_hours": 72.0
+          },
+          {
+            "lat": 26.6,
+            "lon": 134.9,
+            "lead_hours": 78.0
+          },
+          {
+            "lat": 26.5,
+            "lon": 135.1,
+            "lead_hours": 84.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 133.6,
+            "lead_hours": 90.0
+          },
+          {
+            "lat": 26.3,
+            "lon": 131.2,
+            "lead_hours": 96.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 130.6,
+            "lead_hours": 102.0
+          },
+          {
+            "lat": 26.7,
+            "lon": 130.0,
+            "lead_hours": 108.0
+          },
+          {
+            "lat": 26.900000000000002,
+            "lon": 128.0,
+            "lead_hours": 114.0
+          },
+          {
+            "lat": 26.400000000000002,
+            "lon": 128.2,
+            "lead_hours": 120.0
+          },
+          {
+            "lat": 27.1,
+            "lon": 125.7,
+            "lead_hours": 126.0
+          },
+          {
+            "lat": 25.3,
+            "lon": 124.60000000000001,
+            "lead_hours": 132.0
+          },
+          {
+            "lat": 25.1,
+            "lon": 125.5,
+            "lead_hours": 138.0
+          },
+          {
+            "lat": 25.7,
+            "lon": 124.60000000000001,
+            "lead_hours": 144.0
+          },
+          {
+            "lat": 24.6,
+            "lon": 123.3,
+            "lead_hours": 150.0
+          },
+          {
+            "lat": 26.2,
+            "lon": 122.10000000000001,
+            "lead_hours": 156.0
+          },
+          {
+            "lat": 24.8,
+            "lon": 120.7,
+            "lead_hours": 162.0
+          },
+          {
+            "lat": 25.5,
+            "lon": 120.3,
+            "lead_hours": 168.0
+          }
+        ]
+      }
+    ]
+  },
+  "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
+  "ui_banner": "未校准 · 仅供内部参考 · 非法定预警",
+  "shanghai": {
+    "lat": 31.23,
+    "lon": 121.47,
+    "name": "上海"
+  }
+}
