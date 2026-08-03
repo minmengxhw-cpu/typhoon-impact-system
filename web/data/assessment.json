@@ -3,21 +3,21 @@
     {
       "storm_key": "DOLPHIN",
       "storm_name": "DOLPHIN",
-      "level": "watch",
-      "level_zh": "关注",
-      "p_main": 0.264,
-      "dca_km": 256.1,
-      "dca_lead_hours": 168.0,
-      "wind_at_closest_ms": 22.4,
-      "quadrant": "NE",
-      "motion_kmh": 22.9,
+      "level": "alert",
+      "level_zh": "警戒",
+      "p_main": 0.449,
+      "dca_km": 539.9,
+      "dca_lead_hours": 120.0,
+      "wind_at_closest_ms": 38.0,
+      "quadrant": "NW",
+      "motion_kmh": 21.2,
       "features": {
-        "f_dca": 0.315,
-        "f_wind": 0.55,
+        "f_dca": 0.262,
+        "f_wind": 1.0,
         "f_slow": 0.0,
-        "f_quad": 0.15,
-        "f_spread_penalty": 0.1,
-        "raw_score": 0.238,
+        "f_quad": 0.12,
+        "f_spread_penalty": 0.0,
+        "raw_score": 0.443,
         "shanghai": {
           "lat": 31.23,
           "lon": 121.47
@@ -25,10 +25,9 @@
         "thresholds_status": "initial_guess"
       },
       "rationale": [
-        "最近点距离 256 km ≤ 警戒阈 400 km（时效 168 h，权重 0.45）",
-        "最近点附近风速 22 m/s（约热带风暴级）",
-        "上海位于风暴 NE 象限（偏风/增水情景，启发式）",
-        "时效 168 h 离散度 485 km，不确定性高（非确定性分数）"
+        "最近点距离 540 km ≤ 关注阈 800 km（时效 120 h，权重 0.75）",
+        "最近点附近风速 38 m/s（约台风级，10 min 相当）",
+        "上海位于风暴 NW 象限（偏雨情景，启发式）"
       ],
       "calibration_status": "uncalibrated",
       "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
@@ -38,13 +37,13 @@
           "horizon": "D-7~D-6",
           "nature": "生成潜势与集合趋势，仅概率",
           "action": "扫描活动排期，标记风险场次",
-          "highlight": true
+          "highlight": false
         },
         {
           "horizon": "D-5",
           "nature": "官方路径开始有效，分歧较大",
           "action": "通知相关条线，备选方案成型",
-          "highlight": false
+          "highlight": true
         },
         {
           "horizon": "D-4~D-3",
@@ -72,11 +71,7 @@
         }
       ],
       "sources_used": [
-        "cma_babj",
-        "ecmwf_aifs_ens",
-        "ecmwf_aifs_single",
-        "ecmwf_ifs_enfo",
-        "ecmwf_ifs_oper"
+        "cma_babj"
       ]
     }
   ],
