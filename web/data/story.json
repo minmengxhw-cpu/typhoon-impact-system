@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-02T14:27:54.730510+00:00",
+  "generated_at_utc": "2026-08-03T00:52:46.356519+00:00",
   "focus_storm": {
     "en": "DOLPHIN",
     "zh": "白海豚",
@@ -8,14 +8,14 @@
     "status_now": {
       "grade": "SuperTY",
       "grade_plain": "目前是超强台风（非常强），但位置还在很远的洋面上",
-      "lat": 23.6,
-      "lon": 151.1,
-      "dist_shanghai_km": 3034.7,
-      "dist_plain": "还很远，大约 3035 公里（远在西太平洋洋面）",
-      "wind_ms": 55.0,
+      "lat": 24.2,
+      "lon": 149.0,
+      "dist_shanghai_km": 2812.0,
+      "dist_plain": "还很远，大约 2812 公里（远在西太平洋洋面）",
+      "wind_ms": 52.0,
       "wind_plain": "超强台风级",
-      "pressure_hpa": 930.0,
-      "valid_time_utc": "2026-08-02T12:00:00+00:00",
+      "pressure_hpa": 935.0,
+      "valid_time_utc": "2026-08-02T21:00:00+00:00",
       "location_plain": "西太平洋（日本以东洋面一带），向西偏北方向移动"
     }
   },
@@ -47,22 +47,22 @@
     {
       "lead_hours": 0.0,
       "day_label": "现在",
-      "lat": 22.804,
-      "lon": 153.549,
-      "dist_km": 3299.6,
-      "dist_plain": "还很远，大约 3300 公里（远在西太平洋洋面）",
-      "spread_km": 46.1,
+      "lat": 22.809,
+      "lon": 153.529,
+      "dist_km": 3297.5,
+      "dist_plain": "还很远，大约 3298 公里（远在西太平洋洋面）",
+      "spread_km": 48.3,
       "wind_ms": 42.9,
       "wind_plain": "强台风级"
     },
     {
       "lead_hours": 24.0,
       "day_label": "约 1 天后",
-      "lat": 24.751,
-      "lon": 148.315,
-      "dist_km": 2724.8,
-      "dist_plain": "还很远，大约 2725 公里（远在西太平洋洋面）",
-      "spread_km": 93.3,
+      "lat": 24.753,
+      "lon": 148.298,
+      "dist_km": 2723.1,
+      "dist_plain": "还很远，大约 2723 公里（远在西太平洋洋面）",
+      "spread_km": 95.0,
       "wind_ms": 31.9,
       "wind_plain": "强热带风暴级"
     },
@@ -70,30 +70,30 @@
       "lead_hours": 48.0,
       "day_label": "约 2 天后",
       "lat": 25.82,
-      "lon": 143.203,
-      "dist_km": 2202.6,
-      "dist_plain": "仍较远，大约 2203 公里",
-      "spread_km": 134.4,
+      "lon": 143.189,
+      "dist_km": 2201.2,
+      "dist_plain": "仍较远，大约 2201 公里",
+      "spread_km": 135.8,
       "wind_ms": 35.9,
       "wind_plain": "台风级"
     },
     {
       "lead_hours": 72.0,
       "day_label": "约 3 天后",
-      "lat": 26.614,
-      "lon": 137.649,
-      "dist_km": 1654.2,
+      "lat": 26.613,
+      "lon": 137.641,
+      "dist_km": 1653.5,
       "dist_plain": "仍较远，大约 1654 公里",
-      "spread_km": 178.0,
-      "wind_ms": 36.3,
+      "spread_km": 178.8,
+      "wind_ms": 36.2,
       "wind_plain": "台风级"
     },
     {
       "lead_hours": 96.0,
       "day_label": "约 4 天后",
-      "lat": 27.442,
-      "lon": 132.238,
-      "dist_km": 1124.9,
+      "lat": 27.441,
+      "lon": 132.239,
+      "dist_km": 1125.0,
       "dist_plain": "进入近海外围视野，大约 1125 公里",
       "spread_km": 211.7,
       "wind_ms": 35.5,
@@ -102,12 +102,12 @@
     {
       "lead_hours": 120.0,
       "day_label": "约 5 天后",
-      "lat": 28.239,
-      "lon": 127.455,
-      "dist_km": 666.6,
+      "lat": 28.237,
+      "lon": 127.463,
+      "dist_km": 667.4,
       "dist_plain": "开始值得盯紧，大约 667 公里",
-      "spread_km": 263.3,
-      "wind_ms": 33.5,
+      "spread_km": 263.7,
+      "wind_ms": 33.4,
       "wind_plain": "台风级"
     },
     {
@@ -265,77 +265,77 @@
     "points": [
       {
         "lead_hours": 0.0,
-        "lat": 22.804,
-        "lon": 153.549,
+        "lat": 22.809,
+        "lon": 153.529,
         "n_members": 106,
-        "spread_km": 46.1,
-        "spread_p90_km": 86.1,
+        "spread_km": 48.3,
+        "spread_p90_km": 85.8,
         "mean_wind_ms": 42.9,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 6.0,
-        "lat": 23.206,
-        "lon": 152.355,
+        "lat": 23.211,
+        "lon": 152.336,
         "n_members": 106,
-        "spread_km": 84.3,
-        "spread_p90_km": 167.9,
+        "spread_km": 86.0,
+        "spread_p90_km": 169.9,
         "mean_wind_ms": 32.5,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 12.0,
-        "lat": 23.915,
-        "lon": 150.977,
+        "lat": 23.919,
+        "lon": 150.959,
         "n_members": 104,
-        "spread_km": 77.4,
-        "spread_p90_km": 150.4,
+        "spread_km": 79.4,
+        "spread_p90_km": 148.5,
         "mean_wind_ms": 32.0,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 18.0,
-        "lat": 24.277,
-        "lon": 149.686,
+        "lat": 24.28,
+        "lon": 149.668,
         "n_members": 104,
-        "spread_km": 87.8,
-        "spread_p90_km": 158.1,
+        "spread_km": 89.5,
+        "spread_p90_km": 158.0,
         "mean_wind_ms": 31.5,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 24.0,
-        "lat": 24.751,
-        "lon": 148.315,
+        "lat": 24.753,
+        "lon": 148.298,
         "n_members": 104,
-        "spread_km": 93.3,
-        "spread_p90_km": 173.3,
+        "spread_km": 95.0,
+        "spread_p90_km": 171.6,
         "mean_wind_ms": 31.9,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 30.0,
-        "lat": 25.172,
-        "lon": 147.049,
+        "lat": 25.173,
+        "lon": 147.031,
         "n_members": 104,
-        "spread_km": 101.6,
-        "spread_p90_km": 175.7,
+        "spread_km": 103.3,
+        "spread_p90_km": 176.5,
         "mean_wind_ms": 32.8,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 36.0,
-        "lat": 25.399,
-        "lon": 145.745,
+        "lat": 25.4,
+        "lon": 145.728,
         "n_members": 104,
-        "spread_km": 105.7,
-        "spread_p90_km": 182.5,
+        "spread_km": 107.4,
+        "spread_p90_km": 181.7,
         "mean_wind_ms": 33.4,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
@@ -343,10 +343,10 @@
       {
         "lead_hours": 42.0,
         "lat": 25.617,
-        "lon": 144.471,
+        "lon": 144.456,
         "n_members": 104,
-        "spread_km": 118.6,
-        "spread_p90_km": 199.2,
+        "spread_km": 120.2,
+        "spread_p90_km": 200.7,
         "mean_wind_ms": 33.9,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
@@ -354,10 +354,10 @@
       {
         "lead_hours": 48.0,
         "lat": 25.82,
-        "lon": 143.203,
+        "lon": 143.189,
         "n_members": 104,
-        "spread_km": 134.4,
-        "spread_p90_km": 230.6,
+        "spread_km": 135.8,
+        "spread_p90_km": 231.8,
         "mean_wind_ms": 35.9,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
@@ -365,10 +365,10 @@
       {
         "lead_hours": 54.0,
         "lat": 26.091,
-        "lon": 141.895,
+        "lon": 141.882,
         "n_members": 104,
-        "spread_km": 146.8,
-        "spread_p90_km": 252.6,
+        "spread_km": 148.2,
+        "spread_p90_km": 252.3,
         "mean_wind_ms": 37.2,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
@@ -376,43 +376,43 @@
       {
         "lead_hours": 60.0,
         "lat": 26.21,
-        "lon": 140.562,
+        "lon": 140.549,
         "n_members": 104,
-        "spread_km": 163.3,
-        "spread_p90_km": 268.6,
+        "spread_km": 164.5,
+        "spread_p90_km": 270.2,
         "mean_wind_ms": 37.1,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 66.0,
-        "lat": 26.421,
-        "lon": 139.084,
+        "lat": 26.42,
+        "lon": 139.074,
         "n_members": 104,
-        "spread_km": 170.3,
-        "spread_p90_km": 279.2,
+        "spread_km": 171.3,
+        "spread_p90_km": 279.9,
         "mean_wind_ms": 36.6,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 72.0,
-        "lat": 26.614,
-        "lon": 137.649,
+        "lat": 26.613,
+        "lon": 137.641,
         "n_members": 104,
-        "spread_km": 178.0,
-        "spread_p90_km": 311.5,
-        "mean_wind_ms": 36.3,
+        "spread_km": 178.8,
+        "spread_p90_km": 310.7,
+        "mean_wind_ms": 36.2,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 78.0,
-        "lat": 26.918,
-        "lon": 136.293,
+        "lat": 26.917,
+        "lon": 136.287,
         "n_members": 104,
-        "spread_km": 184.6,
-        "spread_p90_km": 316.1,
+        "spread_km": 185.2,
+        "spread_p90_km": 316.4,
         "mean_wind_ms": 36.8,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
@@ -420,20 +420,20 @@
       {
         "lead_hours": 84.0,
         "lat": 27.025,
-        "lon": 134.998,
+        "lon": 134.995,
         "n_members": 104,
-        "spread_km": 191.8,
-        "spread_p90_km": 342.0,
+        "spread_km": 192.2,
+        "spread_p90_km": 342.2,
         "mean_wind_ms": 36.4,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 90.0,
-        "lat": 27.258,
-        "lon": 133.604,
+        "lat": 27.257,
+        "lon": 133.603,
         "n_members": 104,
-        "spread_km": 207.6,
+        "spread_km": 207.7,
         "spread_p90_km": 340.6,
         "mean_wind_ms": 34.8,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
@@ -441,56 +441,56 @@
       },
       {
         "lead_hours": 96.0,
-        "lat": 27.442,
-        "lon": 132.238,
+        "lat": 27.441,
+        "lon": 132.239,
         "n_members": 104,
         "spread_km": 211.7,
-        "spread_p90_km": 341.6,
+        "spread_p90_km": 341.7,
         "mean_wind_ms": 35.5,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 102.0,
-        "lat": 27.762,
-        "lon": 131.076,
+        "lat": 27.76,
+        "lon": 131.079,
         "n_members": 104,
-        "spread_km": 224.9,
-        "spread_p90_km": 371.1,
+        "spread_km": 224.8,
+        "spread_p90_km": 371.4,
         "mean_wind_ms": 35.7,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 108.0,
-        "lat": 27.894,
-        "lon": 129.796,
+        "lat": 27.893,
+        "lon": 129.8,
         "n_members": 104,
-        "spread_km": 235.4,
-        "spread_p90_km": 381.5,
+        "spread_km": 235.5,
+        "spread_p90_km": 381.4,
         "mean_wind_ms": 34.9,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 114.0,
-        "lat": 28.114,
-        "lon": 128.645,
+        "lat": 28.113,
+        "lon": 128.651,
         "n_members": 104,
-        "spread_km": 242.2,
-        "spread_p90_km": 376.5,
+        "spread_km": 242.4,
+        "spread_p90_km": 376.0,
         "mean_wind_ms": 33.4,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
       {
         "lead_hours": 120.0,
-        "lat": 28.239,
-        "lon": 127.455,
+        "lat": 28.237,
+        "lon": 127.463,
         "n_members": 104,
-        "spread_km": 263.3,
-        "spread_p90_km": 424.6,
-        "mean_wind_ms": 33.5,
+        "spread_km": 263.7,
+        "spread_p90_km": 425.3,
+        "mean_wind_ms": 33.4,
         "wind_note": "ensemble_mean_mixed_averaging_do_not_compare_agencies_raw",
         "caveat": "低离散度不等于高确定性；各模式误差相关，未叠加历史误差圈前仅供参考"
       },
@@ -633,11 +633,11 @@
       "source": "cma_babj",
       "storm_id": "3279904",
       "storm_name": "DOLPHIN",
-      "basetime_utc": "2026-08-02T12:00:00+00:00",
+      "basetime_utc": "2026-08-02T21:00:00+00:00",
       "member": null,
       "basin": "WP",
       "agency": "CMA-BABJ",
-      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/cma_nmc/view_3279904_DOLPHIN.jsonp",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260803/00z/cma_nmc/view_3279904_DOLPHIN.jsonp",
       "notes": [
         "forecast_from_latest_point_with_agency_key"
       ],
@@ -648,78 +648,58 @@
       "points": [
         {
           "lead_hours": 0.0,
-          "lat": 23.6,
-          "lon": 151.1,
-          "wind_ms": 55.0,
+          "lat": 24.2,
+          "lon": 149.0,
+          "wind_ms": 52.0,
           "wind_averaging": "2min",
-          "pressure_hpa": 930.0,
-          "valid_time_utc": "2026-08-02T12:00:00+00:00",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": "2026-08-02T21:00:00+00:00",
           "grade": "SuperTY"
         },
         {
           "lead_hours": 12.0,
-          "lat": 24.3,
-          "lon": 148.3,
-          "wind_ms": 55.0,
+          "lat": 24.7,
+          "lon": 146.4,
+          "wind_ms": 52.0,
           "wind_averaging": "2min",
-          "pressure_hpa": 930.0,
+          "pressure_hpa": 935.0,
           "valid_time_utc": null,
           "grade": "SuperTY"
         },
         {
           "lead_hours": 24.0,
-          "lat": 24.8,
-          "lon": 145.7,
-          "wind_ms": 52.0,
+          "lat": 25.0,
+          "lon": 143.9,
+          "wind_ms": 50.0,
           "wind_averaging": "2min",
-          "pressure_hpa": 935.0,
+          "pressure_hpa": 940.0,
           "valid_time_utc": null,
-          "grade": "SuperTY"
+          "grade": "STY"
         },
         {
           "lead_hours": 36.0,
-          "lat": 25.1,
-          "lon": 143.4,
-          "wind_ms": 52.0,
+          "lat": 25.2,
+          "lon": 141.6,
+          "wind_ms": 50.0,
           "wind_averaging": "2min",
-          "pressure_hpa": 935.0,
+          "pressure_hpa": 940.0,
           "valid_time_utc": null,
-          "grade": "SuperTY"
+          "grade": "STY"
         },
         {
           "lead_hours": 48.0,
           "lat": 25.4,
-          "lon": 140.6,
-          "wind_ms": 52.0,
+          "lon": 139.2,
+          "wind_ms": 50.0,
           "wind_averaging": "2min",
-          "pressure_hpa": 935.0,
+          "pressure_hpa": 940.0,
           "valid_time_utc": null,
-          "grade": "SuperTY"
+          "grade": "STY"
         },
         {
           "lead_hours": 60.0,
           "lat": 25.7,
-          "lon": 138.1,
-          "wind_ms": 50.0,
-          "wind_averaging": "2min",
-          "pressure_hpa": 940.0,
-          "valid_time_utc": null,
-          "grade": "STY"
-        },
-        {
-          "lead_hours": 72.0,
-          "lat": 26.0,
-          "lon": 135.6,
-          "wind_ms": 50.0,
-          "wind_averaging": "2min",
-          "pressure_hpa": 940.0,
-          "valid_time_utc": null,
-          "grade": "STY"
-        },
-        {
-          "lead_hours": 96.0,
-          "lat": 26.7,
-          "lon": 131.0,
+          "lon": 136.8,
           "wind_ms": 48.0,
           "wind_averaging": "2min",
           "pressure_hpa": 945.0,
@@ -727,12 +707,32 @@
           "grade": "STY"
         },
         {
-          "lead_hours": 120.0,
-          "lat": 27.1,
-          "lon": 127.6,
+          "lead_hours": 72.0,
+          "lat": 25.9,
+          "lon": 134.8,
+          "wind_ms": 48.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 945.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        },
+        {
+          "lead_hours": 96.0,
+          "lat": 26.6,
+          "lon": 131.1,
           "wind_ms": 45.0,
           "wind_averaging": "2min",
           "pressure_hpa": 950.0,
+          "valid_time_utc": null,
+          "grade": "STY"
+        },
+        {
+          "lead_hours": 120.0,
+          "lat": 26.9,
+          "lon": 128.4,
+          "wind_ms": 42.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 955.0,
           "valid_time_utc": null,
           "grade": "STY"
         }
@@ -742,11 +742,11 @@
       "source": "cma_best",
       "storm_id": "3279904",
       "storm_name": "DOLPHIN",
-      "basetime_utc": "2026-08-02T12:00:00+00:00",
+      "basetime_utc": "2026-08-02T21:00:00+00:00",
       "member": null,
       "basin": "WP",
       "agency": "CMA",
-      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/cma_nmc/view_3279904_DOLPHIN.jsonp",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260803/00z/cma_nmc/view_3279904_DOLPHIN.jsonp",
       "notes": [
         "best_track_or_analysis_series",
         "status=start",
@@ -757,45 +757,6 @@
         "status": "start"
       },
       "points": [
-        {
-          "lead_hours": 0.0,
-          "lat": 19.5,
-          "lon": 159.8,
-          "wind_ms": 60.0,
-          "wind_averaging": "2min",
-          "pressure_hpa": 920.0,
-          "valid_time_utc": "2026-07-31T15:00:00+00:00",
-          "grade": "SuperTY",
-          "extra": {
-            "move_dir": "WNW"
-          }
-        },
-        {
-          "lead_hours": 0.0,
-          "lat": 19.8,
-          "lon": 159.2,
-          "wind_ms": 60.0,
-          "wind_averaging": "2min",
-          "pressure_hpa": 920.0,
-          "valid_time_utc": "2026-07-31T18:00:00+00:00",
-          "grade": "SuperTY",
-          "extra": {
-            "move_dir": "WNW"
-          }
-        },
-        {
-          "lead_hours": 0.0,
-          "lat": 20.0,
-          "lon": 158.8,
-          "wind_ms": 60.0,
-          "wind_averaging": "2min",
-          "pressure_hpa": 920.0,
-          "valid_time_utc": "2026-07-31T21:00:00+00:00",
-          "grade": "SuperTY",
-          "extra": {
-            "move_dir": "NW"
-          }
-        },
         {
           "lead_hours": 0.0,
           "lat": 20.2,
@@ -964,6 +925,45 @@
           "extra": {
             "move_dir": "WNW"
           }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 23.8,
+          "lon": 150.4,
+          "wind_ms": 55.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 930.0,
+          "valid_time_utc": "2026-08-02T15:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 24.0,
+          "lon": 149.6,
+          "wind_ms": 52.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": "2026-08-02T18:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
+        },
+        {
+          "lead_hours": 0.0,
+          "lat": 24.2,
+          "lon": 149.0,
+          "wind_ms": 52.0,
+          "wind_averaging": "2min",
+          "pressure_hpa": 935.0,
+          "valid_time_utc": "2026-08-02T21:00:00+00:00",
+          "grade": "SuperTY",
+          "extra": {
+            "move_dir": "WNW"
+          }
         }
       ]
     },
@@ -975,7 +975,7 @@
       "member": null,
       "basin": "WP",
       "agency": "ECMWF",
-      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260802/14z/ecmwf/ifs_oper/ifs_oper_step360.bufr",
+      "raw_path": "/Users/cheer/typhoon-impact-system/archive/20260803/00z/ecmwf/ifs_oper/ifs_oper_step360.bufr",
       "notes": [
         "position=primary_of_dual_pair"
       ],
