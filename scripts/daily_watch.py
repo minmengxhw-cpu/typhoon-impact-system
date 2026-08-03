@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 """
-Daily typhoon watch for Shanghai desk.
-
-1) Ingest ECMWF + CMA (raw archive)
-2) Build Layer A products
-3) Export story-first web/data (focus 白海豚 when active)
-4) Write reports/daily_YYYYMMDD.md
-5) Optional: git commit + push so GitHub Pages refreshes
+Typhoon watch for Shanghai desk — fetch, assess, export, report, Feishu.
 
 Usage:
-  python3 scripts/daily_watch.py
-  python3 scripts/daily_watch.py --push
-  python3 scripts/daily_watch.py --no-fetch   # rebuild from latest archive only
+  python3 scripts/daily_watch.py --slot morning --push
+  python3 scripts/daily_watch.py --slot evening --push
+  python3 scripts/daily_watch.py --no-fetch --slot evening
 """
 from __future__ import annotations
 
@@ -32,33 +26,42 @@ DISCLAIMER = (
 
 def run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess:
     print("+", " ".join(cmd), flush=True)
-    return subprocess.run(
-        cmd,
-        cwd=str(ROOT),
-        check=check,
-        text=True,
-        capture_output=False,
-    )
+    return subprocess.run(cmd, cwd=str(ROOT), check=check, text=True)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--push", action="store_true", help="git commit web/data + reports and push")
-    ap.add_argument("--no-fetch", action="store_true", help="skip network ingest")
+    ap.add_argument("--push", action="store_true")
+    ap.add_argument("--no-fetch", action="store_true")
+    ap.add_argument(
+        "--slot",
+        choices=["morning", "evening", "auto"],
+        default="auto",
+        help="morning/evening Feishu brief; auto picks by local hour",
+    )
+    ap.add_argument(
+        "--major-only-feishu",
+        action="store_true",
+        help="only Feishu on major change (default: always send for slot)",
+    )
     args = ap.parse_args()
 
     print(DISCLAIMER)
     print("calibration_status: UNCALIBRATED")
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d")
     local = datetime.now().astimezone()
-    print(f"daily_watch utc={stamp} local={local.isoformat()}")
+    hour = local.hour
+    if args.slot == "auto":
+        slot = "morning" if hour < 14 else "evening"
+    else:
+        slot = args.slot
+    slot_zh = "早报" if slot == "morning" else "晚报"
+    print(f"daily_watch slot={slot} local={local.isoformat()}")
 
     if not args.no_fetch:
-        # ingest + layer A (run_once already chains layer A)
         rc = run([sys.executable, "-m", "src.ingest.run_once"], check=False).returncode
         if rc != 0:
             print(f"WARN: run_once exit {rc}", flush=True)
-            # try layer A from whatever archive exists
             run([sys.executable, "-m", "src.model.run_layer_a"], check=False)
     else:
         run([sys.executable, "-m", "src.model.run_layer_a"], check=False)
@@ -79,8 +82,8 @@ def main() -> int:
     closest = v.get("closest") or {}
 
     REPORTS.mkdir(parents=True, exist_ok=True)
-    report = REPORTS / f"daily_{stamp}.md"
-    body = f"""# 台风日更 · {local.strftime("%Y-%m-%d %H:%M %Z")}
+    report = REPORTS / f"daily_{stamp}_{slot}.md"
+    body = f"""# 台风{slot_zh} · {local.strftime("%Y-%m-%d %H:%M %Z")}
 
 > {DISCLAIMER}
 > 系统未校准 · 非法定预警 · 内部用语：关注 / 警戒 / 行动
@@ -109,24 +112,31 @@ def main() -> int:
 
 {v.get("uncertainty_plain") or "—"}
 
+## 多源说明
+
+- 中国中央气象台（CMA）：国内路径权威，决策优先引用  
+- 欧洲中心 ECMWF 确定性 + 集合 + AIFS：多成员走廊与分歧  
+- 日本 JMA / JTWC：实时接口尚未稳定接入，本报不编造  
+
 ## 页面
 
 https://minmengxhw-cpu.github.io/typhoon-impact-system/
 
 ---
-自动生成 by `scripts/daily_watch.py`
+自动生成 by `scripts/daily_watch.py --slot {slot}`
 """
     report.write_text(body, encoding="utf-8")
-    # also latest symlink-style copy
     (REPORTS / "latest.md").write_text(body, encoding="utf-8")
     print(f"report → {report}")
     print(f"LEVEL {v.get('level_zh')} storm={f.get('zh')} dist={now.get('dist_shanghai_km')}km")
 
-    # Major-change → Feishu group (config/notify.yaml)
-    notify_rc = run(
-        [sys.executable, str(ROOT / "scripts" / "notify_feishu.py")],
-        check=False,
-    ).returncode
+    # Feishu: always for morning/evening slot; optional major-only
+    notify_cmd = [sys.executable, str(ROOT / "scripts" / "notify_feishu.py")]
+    if args.major_only_feishu:
+        notify_cmd.append("--major")
+    else:
+        notify_cmd.extend(["--slot", slot])
+    notify_rc = run(notify_cmd, check=False).returncode
     if notify_rc != 0:
         print(f"WARN: notify_feishu exit {notify_rc}", flush=True)
 
@@ -136,29 +146,27 @@ https://minmengxhw-cpu.github.io/typhoon-impact-system/
                 "git",
                 "add",
                 "web/data",
-                "reports",
+                "reports/*.md",
                 "config/notify.yaml",
-                "scripts/daily_watch.py",
-                "scripts/notify_feishu.py",
+                "scripts/",
             ],
             check=False,
         )
-        # only commit if something staged
         st = subprocess.run(
-            ["git", "status", "--porcelain", "web/data", "reports", "config"],
+            ["git", "status", "--porcelain", "web/data", "reports", "config", "scripts"],
             cwd=str(ROOT),
             capture_output=True,
             text=True,
         )
         if st.stdout.strip():
             msg = (
-                f"chore(daily): {f.get('zh') or f.get('en')} "
+                f"chore({slot}): {f.get('zh') or f.get('en')} "
                 f"{v.get('level_zh')} dist={now.get('dist_shanghai_km')}km"
             )
             run(["git", "commit", "-m", msg], check=False)
             run(["git", "push", "origin", "main"], check=False)
         else:
-            print("no web/data changes to push")
+            print("no changes to push")
 
     print(DISCLAIMER)
     return 0

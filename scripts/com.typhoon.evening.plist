@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 台风晚报 20:30 本地时区 -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.typhoon.evening</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/cheer/typhoon-impact-system/scripts/daily_watch.py</string>
+    <string>--slot</string>
+    <string>evening</string>
+    <string>--push</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/cheer/typhoon-impact-system</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>20</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/cheer/typhoon-impact-system/reports/launchd.evening.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/cheer/typhoon-impact-system/reports/launchd.evening.stderr.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Users/cheer/.local/bin</string>
+    <key>LANG</key>
+    <string>en_US.UTF-8</string>
+    <key>HOME</key>
+    <string>/Users/cheer</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

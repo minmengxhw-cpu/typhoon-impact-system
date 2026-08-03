@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-03T00:52:46.037507+00:00",
+  "generated_at_utc": "2026-08-03T02:30:42.829315+00:00",
   "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
   "calibration_status": "uncalibrated",
   "ui_banner": "未校准 · 概率切点为初始猜测 · 仅供内部参考",
@@ -21,7 +21,7 @@
     "ecmwf_ifs_enfo",
     "ecmwf_ifs_oper"
   ],
-  "products_dir": "/Users/cheer/typhoon-impact-system/products/20260803/00z",
+  "products_dir": "/Users/cheer/typhoon-impact-system/products/20260803/02z",
   "focus": "DOLPHIN",
   "web_export": true
 }

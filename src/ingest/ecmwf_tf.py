@@ -51,20 +51,31 @@ def _retrieve_one(
     stream: str,
     step: int,
     target: Path,
+    timeout_sec: int = 90,
 ) -> datetime:
+    """Retrieve with a hard wall-clock timeout so daily jobs cannot hang forever."""
+    import concurrent.futures
     from ecmwf.opendata import Client
 
-    client = Client(source=source, model=model if model != "ifs" else "ifs")
-    kwargs = {
-        "time": 0,
-        "stream": stream,
-        "type": "tf",
-        "step": step,
-        "target": str(target),
-    }
-    if model != "ifs":
-        kwargs["model"] = model
-    result = client.retrieve(**kwargs)
+    def _do():
+        client = Client(source=source, model=model if model != "ifs" else "ifs")
+        kwargs = {
+            "time": 0,
+            "stream": stream,
+            "type": "tf",
+            "step": step,
+            "target": str(target),
+        }
+        if model != "ifs":
+            kwargs["model"] = model
+        return client.retrieve(**kwargs)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
+        fut = ex.submit(_do)
+        try:
+            result = fut.result(timeout=timeout_sec)
+        except concurrent.futures.TimeoutError as e:
+            raise TimeoutError(f"ecmwf retrieve timeout {timeout_sec}s {source} step={step}") from e
     return getattr(result, "datetime", None) or datetime.now(timezone.utc)
 
 

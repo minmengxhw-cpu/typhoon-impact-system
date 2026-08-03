@@ -76,19 +76,26 @@ src/model/      解析 / 共识 / 影响评分
 
 ## GitHub Pages
 
-推送到 `main` 后由 Actions 部署 `web/`：
-
 **https://minmengxhw-cpu.github.io/typhoon-impact-system/**
 
-展示数据来自 `web/data/` 精简快照。刷新：
+## 早晚自动研判 → 飞书
+
+| 时间 | 任务 |
+|---|---|
+| **08:30** | 早报：拉数 → 多源研判 → 飞书 + 更新 Pages |
+| **20:30** | 晚报：同上 |
+| 重大变化 | 等级/距离圈/焦点台风变化时，简报内标注「相对上一报的变化」 |
 
 ```bash
-python3 -m src.model.run_layer_a
-python3 scripts/export_web_data.py
-git add web/data && git commit -m "chore: refresh pages data" && git push
+# 本机已装 launchd：com.typhoon.morning / com.typhoon.evening
+# 手动补发
+python3 scripts/daily_watch.py --slot morning --push
+python3 scripts/daily_watch.py --slot evening --push
 ```
 
-详见 [docs/deploy.md](docs/deploy.md)。
+飞书群：`config/notify.yaml` → `oc_381bea46653394d135daf14739524904`（机器人「团宝」）
+
+综合源（人话对照）：**中国中央气象台** + **欧洲 ECMWF 确定性/集合** + **AIFS**；JMA/JTWC 实时未稳定接入时明确写「不编造」。
 
 ## 文档
 
