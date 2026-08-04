@@ -134,119 +134,52 @@ def _point_at_lead(points: List[dict], lead: float) -> Optional[dict]:
     return min(points, key=lambda p: abs(float(p.get("lead_hours") or 0) - lead))
 
 
-def multi_source_lines(story: dict, storm_en: str) -> List[str]:
-    """Build plain-language multi-agency comparison from products tracks."""
-    lines: List[str] = []
-    tracks_path = PRODUCTS / "tracks.json"
+def _track_milestones(story: dict, storm_en: str) -> List[str]:
+    """Short path outlook lines: now / +3d / +5d distance to Shanghai (CMA first)."""
     slim = (story.get("tracks_slim") or {}) if story else {}
-
-    # Prefer full products if present
     tracks: List[dict] = []
+    tracks_path = PRODUCTS / "tracks.json"
     if tracks_path.exists():
         try:
             doc = json.loads(tracks_path.read_text(encoding="utf-8"))
             tracks = [
                 t
                 for t in (doc.get("tracks") or [])
-                if (t.get("storm_name") or "").upper() == storm_en.upper()
-                or (t.get("storm_id") or "").upper() in ("15W", storm_en.upper())
+                if (t.get("storm_name") or "").upper() == (storm_en or "").upper()
             ]
         except Exception:
             tracks = []
-
-    def desc_track(label: str, t: Optional[dict], wind_note: str) -> Optional[str]:
-        if not t or not t.get("points"):
-            return None
-        pts = t["points"]
-        p0 = pts[0]
-        # furthest forecast with position
-        p_far = pts[-1]
-        # prefer ~72h and ~120h
-        p72 = _point_at_lead(pts, 72) or p_far
-        p120 = _point_at_lead(pts, 120) or p_far
-        d0 = hav(SH[0], SH[1], float(p0["lat"]), float(p0["lon"]))
-        d72 = hav(SH[0], SH[1], float(p72["lat"]), float(p72["lon"]))
-        d120 = hav(SH[0], SH[1], float(p120["lat"]), float(p120["lon"]))
-        w0 = p0.get("wind_ms")
-        wnote = f"，风速约 {w0:.0f} m/s（{wind_note}）" if isinstance(w0, (int, float)) else f"（{wind_note}）"
-        return (
-            f"**{label}**：近中心距上海约 {d0:.0f} km{wnote}；"
-            f"约 3 天后约 {d72:.0f} km，约 5 天后约 {d120:.0f} km"
-        )
-
-    # Named sources
     cma = next((t for t in tracks if t.get("source") == "cma_babj"), None) or slim.get(
         "cma_forecast"
     )
-    oper = next(
-        (t for t in tracks if t.get("source") == "ecmwf_ifs_oper" and t.get("member") is None),
-        None,
-    ) or slim.get("ecmwf_oper")
-    aifs = next(
-        (t for t in tracks if "aifs_single" in (t.get("source") or "") and t.get("member") is None),
-        None,
-    )
-
-    for label, t, note in [
-        ("中国 · 中央气象台", cma, "CMA 约 2 分钟风，国内决策优先引用"),
-        ("欧洲 · ECMWF 确定性", oper, "ECMWF 约 10 米风"),
-        ("欧洲 · AIFS（AI）", aifs, "AI 路径，强度常偏弱"),
-    ]:
-        s = desc_track(label, t, note)
-        if s:
-            lines.append(s)
-
-    # Ensemble spread from consensus
-    cons = story.get("consensus") or {}
-    pts = cons.get("points") or []
-    if pts:
-        p120 = _point_at_lead(pts, 120) or pts[min(len(pts) - 1, 20)]
-        spread = p120.get("spread_km")
-        d = hav(SH[0], SH[1], float(p120["lat"]), float(p120["lon"]))
-        lines.append(
-            f"**欧洲 · ECMWF/AIFS 集合共识**：约 5 天后中心距上海约 {d:.0f} km"
-            + (f"，成员平均离散约 {spread:.0f} km（越大越不确定）" if spread is not None else "")
-        )
-
-    # Honesty about unavailable agencies
-    lines.append(
-        "**日本 JMA / 美军 JTWC**：实时接口本阶段尚未稳定接入"
-        "（旧路径 404 或网络超时），本报不编造其路径；回算可用 UCAR a-deck 历史库。"
-    )
-    lines.append(
-        "**香港天文台 / 台湾 CWA**：未作为路径主源解析；有官方公报时以原文为准。"
-    )
-    if not lines:
-        lines.append("多源细节暂不可用，仅有综合等级结论。")
+    if not cma or not cma.get("points"):
+        return []
+    pts = cma["points"]
+    lines = []
+    for lead, label in [(0, "现在"), (72, "约3天后"), (120, "约5天后")]:
+        p = _point_at_lead(pts, float(lead))
+        if not p:
+            continue
+        d = hav(SH[0], SH[1], float(p["lat"]), float(p["lon"]))
+        grade = p.get("grade") or ""
+        wind = p.get("wind_ms")
+        extra = f"，{grade}" if grade else ""
+        if isinstance(wind, (int, float)):
+            extra += f"，约{wind:.0f}m/s"
+        lines.append(f"{label}：中心距上海约 **{d:.0f} km**{extra}")
     return lines
 
 
-def advice_for_slot(slot: str, cur: dict) -> List[str]:
+def _one_line_advice(cur: dict) -> str:
     level = cur.get("level") or "none"
     dca_h = float(cur.get("dca_lead_hours") or 999)
-    dca = float(cur.get("dca_km") or 9999)
-    base = list(cur.get("todos") or [])
-    extra: List[str] = []
-    if slot == "morning":
-        extra.append("今日：扫一眼中央气象台与市气象局晨间更新，活动排期标「观察」即可")
-        if level in ("none", "watch") and dca_h > 120:
-            extra.append("今日一般无需改场地/取消；重点看 5–7 天后的户外场次")
-        elif level == "alert" or (dca_h <= 120 and dca < 400):
-            extra.append("今日起备选方案应成型，对外口径统一，合同取消时限提前核对")
-        elif level == "action":
-            extra.append("今日进入决策窗口：按单位流程明确是否调整活动")
-    else:  # evening
-        extra.append("今晚：对照早报看路径/强度是否收拢；若无明显变化，明日继续观察")
-        if level in ("none", "watch"):
-            extra.append("明日白天一般可按原计划；把后天及以后的风险场次再标一遍")
-        if dca_h <= 96:
-            extra.append("最近点已进入约 4 天内：明晨起提高查看频率（官方公报 + 本页）")
-    # merge unique
-    out: List[str] = []
-    for x in extra + base:
-        if x and x not in out:
-            out.append(x)
-    return out[:5]
+    if level == "action":
+        return "进入决策窗口，按单位流程明确是否调整活动。"
+    if level == "alert" or (dca_h <= 120 and float(cur.get("dca_km") or 9999) < 400):
+        return "备选方案成型；本周中后户外场次标「观察」，进 D-5 再拍板。"
+    if level == "watch":
+        return "先观察、不改行程；把 5–10 天后的户外活动标一下即可。"
+    return "暂无影响，正常排期。"
 
 
 def build_scheduled_markdown(
@@ -258,56 +191,58 @@ def build_scheduled_markdown(
     urgent: bool = False,
     page_url: str = "",
 ) -> str:
+    """极简简报：走向 + 对本市 + 一句建议。"""
     local = datetime.now().astimezone()
-    title_bits = []
-    if urgent:
-        title_bits.append("【升级】")
-    title_bits.append(f"台风{slot_label}")
-    title = "".join(title_bits)
+    tag = "【升级】" if urgent else ""
+    name = cur.get("storm_zh") or cur.get("storm_en") or "—"
+    level = cur.get("level_zh") or "—"
+    now_km = float(cur.get("now_dist_km") or 0)
+    grade = cur.get("now_grade") or "—"
+    dca_d = float(cur.get("dca_lead_hours") or 0) / 24.0
+    dca_km = float(cur.get("dca_km") or 0)
+    spread = cur.get("dca_spread_km")
 
-    multi = multi_source_lines(story, cur.get("storm_en") or "DOLPHIN")
-    advice = advice_for_slot(slot, cur)
+    # movement plain from story if present
+    now_block = (story.get("focus_storm") or {}).get("status_now") or {}
+    move = now_block.get("location_plain") or "路径见中央台"
+
+    track_lines = _track_milestones(story, cur.get("storm_en") or "")
+    if not track_lines:
+        track_lines = [
+            f"现在：距上海约 **{now_km:.0f} km** · {grade}",
+            f"集合趋势：约 {dca_d:.0f} 天后最近点约 {dca_km:.0f} km"
+            + (f"（分歧约 {spread:.0f} km，仅作趋势）" if spread else "（仅作趋势）"),
+        ]
+
+    # 一句走向：用 now + 5d if available
+    outlook = move
+    if len(track_lines) >= 3:
+        outlook = f"{move}。{track_lines[0]}；{track_lines[2]}"
 
     lines = [
-        f"**{title}** · {local.strftime('%Y-%m-%d %H:%M')}（北京时间）",
+        f"**{tag}台风{slot_label}** {local.strftime('%m/%d %H:%M')}",
+        f"**{name}**｜**{level}**",
         "",
-        f"**焦点**：{cur.get('storm_zh')}（{cur.get('storm_en')}）",
-        f"**对上海综合研判**：**{cur.get('level_zh')}**"
-        f"（参考 p≈{float(cur.get('p_main') or 0):.2f}，未校准；非蓝黄橙红预警）",
-        f"**现在**：距上海约 {float(cur.get('now_dist_km') or 0):.0f} km · {cur.get('now_grade')}",
-        (
-            f"**集合「可能最近」**：约 {float(cur.get('dca_lead_hours') or 0)/24:.1f} 天后 · "
-            f"{float(cur.get('dca_km') or 0):.0f} km"
-            + (
-                f" · 散布 {cur.get('dca_spread_km')} km"
-                if cur.get("dca_spread_km") is not None
-                else ""
-            )
+        f"**走向** {outlook}",
+        f"**对本市** 等级「{level}」。"
+        + (
+            f"集合约 {dca_d:.0f} 天后有靠近可能，但分歧大，不作定论。"
+            if dca_d >= 5 and level in ("关注", "警戒")
+            else "近几日中心仍远，无明显风雨影响。"
+            if now_km > 800
+            else "开始需要盯紧官方更新。"
         ),
-        "",
-        f"**一句话**：{cur.get('one_liner') or '—'}",
-        "",
-        "**多国/多源对照（人话）**",
+        f"**建议** {_one_line_advice(cur)}",
     ]
-    for m in multi:
-        lines.append(f"- {m}")
-
     if reasons:
-        lines += ["", "**相对上一报的变化**"]
-        for r in reasons:
-            lines.append(f"- {r}")
-
-    lines += ["", f"**{slot_label}行动建议**"]
-    for i, a in enumerate(advice, 1):
-        lines.append(f"{i}. {a}")
-
-    if cur.get("uncertainty"):
-        lines += ["", f"**不确定性**：{cur.get('uncertainty')}"]
-
+        # 只保留最关键 1–2 条变化
+        short = [r for r in reasons if "等级" in r or "焦点" in r or "进入" in r][:2]
+        if not short:
+            short = reasons[:1]
+        lines.append("**变化** " + "；".join(short))
     lines += [
         "",
-        f"看板：{page_url}",
-        "",
+        f"{page_url}",
         f"_{DISCLAIMER}_",
     ]
     return "\n".join(lines)

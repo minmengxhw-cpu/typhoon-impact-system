@@ -83,47 +83,21 @@ def main() -> int:
 
     REPORTS.mkdir(parents=True, exist_ok=True)
     report = REPORTS / f"daily_{stamp}_{slot}.md"
-    body = f"""# 台风{slot_zh} · {local.strftime("%Y-%m-%d %H:%M %Z")}
+    body = f"""# 台风{slot_zh} · {local.strftime("%m/%d %H:%M")}
+
+**{f.get("zh") or f.get("en") or "—"}**｜**{v.get("level_zh") or "—"}**
+
+**走向** {now.get("location_plain") or "—"}  
+现在距上海约 **{now.get("dist_shanghai_km")} km** · {now.get("grade") or now.get("grade_plain") or "—"}  
+集合趋势：约 {closest.get("days")} 天后最近点约 {closest.get("dist_km")} km（分歧 {closest.get("spread_km")} km，仅趋势）
+
+**对本市** {v.get("one_liner") or "—"}
+
+**建议** 先观察、不轻易改行程；5–10 天后户外场次标「观察」；进 D-5 再拍板。
 
 > {DISCLAIMER}
-> 系统未校准 · 非法定预警 · 内部用语：关注 / 警戒 / 行动
-
-## 焦点：{f.get("zh") or f.get("en") or "—"}（{f.get("en") or ""}）
-
-| 项 | 结论 |
-|---|---|
-| 研判等级 | **{v.get("level_zh") or "—"}**（p≈{v.get("p_main")}） |
-| 现在位置 | {now.get("location_plain") or "—"} |
-| 离上海 | {now.get("dist_shanghai_km")} km · {now.get("dist_plain") or ""} |
-| 现在强度 | {now.get("grade_plain") or now.get("grade") or "—"} |
-| 集合最近点 | 约 {closest.get("days")} 天后 · {closest.get("dist_km")} km · 散布 {closest.get("spread_km")} km |
-
-## 一句话
-
-{v.get("one_liner") or "—"}
-
-## 单位建议
-
-"""
-    for i, t in enumerate(v.get("for_activity_planner") or [], 1):
-        body += f"{i}. {t}\n"
-    body += f"""
-## 不确定性
-
-{v.get("uncertainty_plain") or "—"}
-
-## 多源说明
-
-- 中国中央气象台（CMA）：国内路径权威，决策优先引用  
-- 欧洲中心 ECMWF 确定性 + 集合 + AIFS：多成员走廊与分歧  
-- 日本 JMA / JTWC：实时接口尚未稳定接入，本报不编造  
-
-## 页面
 
 https://minmengxhw-cpu.github.io/typhoon-impact-system/
-
----
-自动生成 by `scripts/daily_watch.py --slot {slot}`
 """
     report.write_text(body, encoding="utf-8")
     (REPORTS / "latest.md").write_text(body, encoding="utf-8")
