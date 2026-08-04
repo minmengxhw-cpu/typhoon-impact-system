@@ -78,6 +78,23 @@ src/model/      解析 / 共识 / 影响评分
 
 **https://minmengxhw-cpu.github.io/typhoon-impact-system/**
 
+## 数据底座（多国链条）
+
+| 链 | 来源 | 状态 |
+|---|---|---|
+| 中国 | CMA JSONP | ✅ 实时 |
+| 欧洲 | ECMWF Open Data `type=tf` | ✅ 实时 |
+| 日本 | JMA bosai `targetTc.json` | ✅ 列表（路径 JSON 仍补） |
+| 美国/多模式 | UCAR NWP a-deck + TCVitals + CHIPS | ✅ 实时（JTWC 分析在 vitals） |
+| 回算 | UCAR adecks_open 历史年 | ✅ |
+
+```bash
+python3 -m src.ingest.run_once     # 全链拉取
+python3 -m src.ingest.health       # 健康矩阵 -> reports/source_health.json
+```
+
+详见 [docs/data-source-matrix.md](docs/data-source-matrix.md)。
+
 ## 早晚自动研判 → 飞书
 
 | 时间 | 任务 |

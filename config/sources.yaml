@@ -1,0 +1,180 @@
+# 数据源注册表（底座）。status 只能是实测结果，禁止编造。
+# last_probe 由 scripts/probe_sources.py / health 更新
+# role: backbone | agency | ensemble_archive | vitals | historical | context
+
+meta:
+  version: 2
+  updated: "2026-08-04"
+  rule: "无 data/samples 真实样本 + 本表 ok 记录，不得写解析器"
+
+sources:
+  ecmwf_opendata_tf:
+    name_zh: 欧洲中心开放数据·台风路径 BUFR
+    agency: ECMWF
+    country: EU
+    role: backbone
+    wind: 10m_approx
+    endpoints:
+      - "ecmwf-opendata Client source=aws|ecmwf type=tf"
+    status: ok
+    realtime: true
+    notes: "IFS enfo/oper + AIFS; step 探测 360/240/…"
+
+  cma_nmc_jsonp:
+    name_zh: 中央气象台台风网 JSONP
+    agency: CMA/NMC
+    country: CN
+    role: agency
+    wind: 2min_typical
+    endpoints:
+      - "http://typhoon.nmc.cn/weatherservice/typhoon/jsons/list_default"
+      - "http://typhoon.nmc.cn/weatherservice/typhoon/jsons/view_{id}"
+    status: ok
+    realtime: true
+    notes: "双括号 JSONP；决策引用主源"
+
+  jma_bosai_target_tc:
+    name_zh: 日本气象厅 bosai 活动台风列表
+    agency: JMA/RSMC Tokyo
+    country: JP
+    role: agency
+    wind: 10min
+    endpoints:
+      - "https://www.jma.go.jp/bosai/typhoon/data/targetTc.json"
+    status: ok_intermittent
+    realtime: true
+    notes: "2026-08-04 实测 200，返回 TC2615/2613；完整路径 JSON 路径仍在探测，超时常见"
+
+  jma_multi_vptw:
+    name_zh: 日本气象厅 multi VPTW 警告 JSON
+    agency: JMA
+    country: JP
+    role: agency
+    endpoints:
+      - "https://www.data.jma.go.jp/multi/data/VPTW60/warning.json"
+    status: empty_or_blocked
+    realtime: unknown
+    notes: "HTML 引用存在但 body 为空；暂不解析"
+
+  ucar_adeck_open:
+    name_zh: UCAR 开放 a-deck（含 JTWC 等技术路径，回算）
+    agency: UCAR/RAL + JTWC/models
+    country: US
+    role: ensemble_archive
+    wind: mixed_1min_when_jtwc
+    endpoints:
+      - "https://hurricanes.ral.ucar.edu/repository/data/adecks_open/{YYYY}/awp{NN}{YYYY}.dat"
+    status: ok
+    realtime: false
+    notes: "2024/2025 目录实测 OK；2026 目录 404（截至 2026-08-04）。回算/Layer B 主源"
+
+  ucar_chips_realtime_atcf:
+    name_zh: UCAR CHIPS 实时 ATCF 目录
+    agency: UCAR + multi-model
+    country: US
+    role: ensemble_archive
+    wind: mixed
+    endpoints:
+      - "https://hurricanes.ral.ucar.edu/repository/data/chips_realtime_atcf/"
+      - "https://hurricanes.ral.ucar.edu/repository/data/chips_realtime_atcf/{YYYY}/"
+      - "https://hurricanes.ral.ucar.edu/repository/data/chips_realtime_atcf/all_chips_adecks.{YYYY}"
+    status: ok
+    realtime: true
+    notes: "2026 目录与 all_chips_adecks.2026 存在；用于美系/多模式实时 a-deck 链"
+
+  ucar_tcvitals:
+    name_zh: UCAR 开放 TCVitals（分析位置）
+    agency: multi
+    country: US
+    role: vitals
+    endpoints:
+      - "https://hurricanes.ral.ucar.edu/repository/data/tcvitals_open/combined_tcvitals.{YYYY}.dat"
+    status: ok
+    realtime: true
+    notes: "含当年 vitals，作现报位置交叉验证"
+
+  ucar_bdeck_open:
+    name_zh: UCAR 开放 b-deck 最佳路径
+    agency: multi
+    country: US
+    role: historical
+    endpoints:
+      - "https://hurricanes.ral.ucar.edu/repository/data/bdecks_open/{YYYY}/"
+    status: ok
+    realtime: false
+
+  ibtracs:
+    name_zh: IBTrACS 最佳路径
+    agency: NOAA/NCEI
+    country: US
+    role: historical
+    endpoints:
+      - "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/"
+    status: ok_intermittent
+    realtime: false
+    notes: "本机有时超时；样本已存 data/samples"
+
+  jtwc_official:
+    name_zh: JTWC 官网/RSS
+    agency: JTWC
+    country: US
+    role: agency
+    endpoints:
+      - "https://www.metoc.navy.mil/jtwc/rss/jtwc.rss"
+      - "https://www.metoc.navy.mil/jtwc/jtwc.html"
+    status: unreachable_local
+    realtime: true
+    notes: "上海侧多次 ReadTimeout；不直连。改用 UCAR ATCF 中 JTWC tech（如 JTWC/OFCL 字段，以样本为准）"
+
+  nhc_atcf:
+    name_zh: NHC ATCF 公开目录
+    agency: NHC
+    country: US
+    role: ensemble_archive
+    endpoints:
+      - "https://ftp.nhc.noaa.gov/atcf/aid_public/"
+    status: unreachable_local
+    realtime: true
+    notes: "仅 AL/EP/CP；无 WP。超时常见"
+
+  hko_opendata:
+    name_zh: 香港天文台开放数据
+    agency: HKO
+    country: HK
+    role: context
+    endpoints:
+      - "https://data.weather.gov.hk/weatherAPI/opendata/weather.php"
+    status: unreachable_local
+    realtime: true
+    notes: "通用天气可用时作上下文；旧 tc_gis 404"
+
+  cwa_page:
+    name_zh: 台湾中央气象署台风页
+    agency: CWA
+    country: TW
+    role: context
+    endpoints:
+      - "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html"
+    status: html_only
+    realtime: true
+    notes: "HTML 可达；无 token 前不接 API"
+
+  kma_page:
+    name_zh: 韩国气象厅台风页
+    agency: KMA
+    country: KR
+    role: context
+    status: not_probed_this_round
+
+# 接入优先级（运行时）
+pipeline_order:
+  realtime:
+    - ecmwf_opendata_tf
+    - cma_nmc_jsonp
+    - jma_bosai_target_tc
+    - ucar_chips_realtime_atcf
+    - ucar_tcvitals
+  archive_backfill:
+    - ucar_adeck_open
+    - ucar_bdeck_open
+    - ibtracs
