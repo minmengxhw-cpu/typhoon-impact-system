@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-04T00:57:06.173425+00:00",
+  "generated_at_utc": "2026-08-04T06:30:30.798784+00:00",
   "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
   "calibration_status": "uncalibrated",
   "ui_banner": "未校准 · 概率切点为初始猜测 · 仅供内部参考",
@@ -10,9 +10,9 @@
     "p_main": 0.235,
     "one_liner": "白海豚：对上海暂为「关注」。现在还不到改方案的时候。白海豚眼下远在西北太平洋洋面，集合平均要大约一周后才有可能靠近华东沿海，而且路径分歧很大。建议：把本周及下周可能受影响的活动先标出来，先不取消、先不对外承诺变更。"
   },
-  "n_tracks": 1403,
-  "n_forecast_tracks": 1402,
-  "n_storms_assessed": 21,
+  "n_tracks": 1442,
+  "n_forecast_tracks": 1441,
+  "n_storms_assessed": 20,
   "sources": [
     "cma_babj",
     "cma_best",
@@ -21,7 +21,7 @@
     "ecmwf_ifs_enfo",
     "ecmwf_ifs_oper"
   ],
-  "products_dir": "/Users/cheer/typhoon-impact-system/products/20260804/00z",
+  "products_dir": "/Users/cheer/typhoon-impact-system/products/20260804/06z",
   "focus": "DOLPHIN",
   "web_export": true
 }

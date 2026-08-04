@@ -6,11 +6,11 @@
       "level": "watch",
       "level_zh": "关注",
       "p_main": 0.235,
-      "dca_km": 40.3,
+      "dca_km": 121.1,
       "dca_lead_hours": 198.0,
-      "wind_at_closest_ms": 17.9,
-      "quadrant": "NE",
-      "motion_kmh": 21.3,
+      "wind_at_closest_ms": 17.6,
+      "quadrant": "SE",
+      "motion_kmh": 20.8,
       "features": {
         "f_dca": 0.25,
         "f_wind": 0.55,
@@ -25,10 +25,10 @@
         "thresholds_status": "initial_guess"
       },
       "rationale": [
-        "最近点距离 40 km ≤ 行动阈 200 km（时效 198 h，权重 0.25）",
+        "最近点距离 121 km ≤ 行动阈 200 km（时效 198 h，权重 0.25）",
         "最近点附近风速 18 m/s（约热带风暴级）",
-        "上海位于风暴 NE 象限（偏风/增水情景，启发式）",
-        "时效 198 h 离散度 624 km，不确定性高（非确定性分数）"
+        "上海位于风暴 SE 象限（偏风/增水情景，启发式）",
+        "时效 198 h 离散度 678 km，不确定性高（非确定性分数）"
       ],
       "calibration_status": "uncalibrated",
       "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
