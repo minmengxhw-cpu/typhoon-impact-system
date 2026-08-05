@@ -5,19 +5,19 @@
       "storm_name": "DOLPHIN",
       "level": "watch",
       "level_zh": "关注",
-      "p_main": 0.235,
-      "dca_km": 149.9,
-      "dca_lead_hours": 210.0,
-      "wind_at_closest_ms": 17.4,
+      "p_main": 0.14,
+      "dca_km": 75.9,
+      "dca_lead_hours": 228.0,
+      "wind_at_closest_ms": 16.8,
       "quadrant": "SE",
-      "motion_kmh": 19.6,
+      "motion_kmh": 19.3,
       "features": {
         "f_dca": 0.25,
-        "f_wind": 0.55,
+        "f_wind": 0.2,
         "f_slow": 0.0,
         "f_quad": 0.15,
         "f_spread_penalty": 0.1,
-        "raw_score": 0.205,
+        "raw_score": 0.1,
         "shanghai": {
           "lat": 31.23,
           "lon": 121.47
@@ -25,10 +25,10 @@
         "thresholds_status": "initial_guess"
       },
       "rationale": [
-        "最近点距离 150 km ≤ 行动阈 200 km（时效 210 h，权重 0.25）",
-        "最近点附近风速 17 m/s（约热带风暴级）",
+        "最近点距离 76 km ≤ 行动阈 200 km（时效 228 h，权重 0.25）",
+        "最近点附近风速 17 m/s，偏弱",
         "上海位于风暴 SE 象限（偏风/增水情景，启发式）",
-        "时效 210 h 离散度 741 km，不确定性高（非确定性分数）"
+        "时效 228 h 离散度 856 km，不确定性高（非确定性分数）"
       ],
       "calibration_status": "uncalibrated",
       "disclaimer": "内部研判参考，不构成气象预报。权威信息以上海市气象局、上海市防汛指挥部发布为准。",
