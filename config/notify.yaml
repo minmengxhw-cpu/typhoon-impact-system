@@ -1,6 +1,7 @@
 # 飞书推送：早晚固定简报 + 重大变化即时加推
 feishu:
-  enabled: true
+  # 2026-08-06 用户要求停止项目飞书推送
+  enabled: false
   chat_id: "oc_381bea46653394d135daf14739524904"
   # 外部群必须用 bot（团宝）
   as: bot
